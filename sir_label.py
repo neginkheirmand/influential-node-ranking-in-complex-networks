@@ -180,13 +180,6 @@ def process_graph(args):
     print(g_name)
     Sir_of_graph(g_path, num_b=6, result_path=result_path)
 
-def create_SIR_dir(g_name, result_path):
-    # Function to create directory
-    dir_path = f"{result_path}/{g_name}"
-    if not os.path.exists(dir_path):
-        os.makedirs(dir_path)
-    print(f"Directory {dir_path} created")
-
 def init_worker():
     # Ignore SIGINT in the child processes to allow graceful termination in the parent
     signal.signal(signal.SIGINT, signal.SIG_IGN)
@@ -222,7 +215,7 @@ def main():
 
     print("All graphs have been processed or terminated.")
 
-# This block ensures the code runs correctly on Windows
+
 if __name__ == '__main__':
-    multiprocessing.freeze_support()  # For Windows
+    multiprocessing.freeze_support()  
     main()
