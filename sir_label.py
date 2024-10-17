@@ -28,8 +28,27 @@ def save_tuple(tpl, path):
             writer.writerow(tpl)
 
 
-def get_B_Value(G):
-    num_b=6
+def create_SIR_dir(graph_name, result_path = './datasets/SIR_Results/'):
+    sir_dir =os.path.join(result_path, graph_name)
+    if not folder_exists(sir_dir):
+        print("creating: ", sir_dir)
+        sir_dir = Path(sir_dir)
+        sir_dir.mkdir(parents=True)
+
+
+def get_graph_paths(dataset_dir= "./datasets/"):
+    graph_list = []
+    for dirpath, _, files in os.walk(dataset_dir):
+        for filename in files:
+            try:
+                if filename.endswith(".edges"):
+                    file_path = os.path.join(dirpath, filename) 
+                    graph_list.append((file_path, os.path.splitext(filename)[0]))
+            except Exception as e: 
+                print(e, f'{filename}')
+    return graph_list
+
+def get_B_Value(G, num_b=6):
     # Get the mean degree (k) of the graph
     degrees = [deg for _, deg in G.degree()]
     mean_degree = np.mean(degrees)
@@ -92,26 +111,41 @@ def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
         # plt.close()  # Close the plot to free memory
     return affected_scales
 
-def get_sir_dict(sir_of_graph, affected_scales, node):
-    b_list = affected_scales.keys()
-    for b in b_list:
-        sir_of_graph[b].append((node, affected_scales[b]))
-    return sir_of_graph
 
 
+            # def get_sir_dict(sir_of_graph, affected_scales, node):
+            #     b_list = affected_scales.keys()
+            #     for b in b_list:
+            #         sir_of_graph[b].append((node, affected_scales[b]))
+            #     return sir_of_graph
 
-# path should be something 
-def Sir_of_graph(graph_path, result_path = './datasets/SIR_Results/'):
+def get_sir_graph_paths(graph_path, num_b,  result_path = './datasets/SIR_Results/'):
+    graph_name = os.path.splitext(os.path.basename(graph_path))[0]
+    paths= []
+    for i in range(num_b):
+        sir_dir =os.path.join(result_path, graph_name)
+        sir_dir = os.path.join(sir_dir, f'{i}.csv')
+        paths.append(sir_dir)
+    return paths
+
+
+#TODO CHECK WHETHER IT ALREADY EXISTS
+def add_tuples(node, graph_path, num_b,  affected_scales, result_path = './datasets/SIR_Results/'):
+    paths = get_sir_graph_paths(graph_path, num_b, result_path )
+    i = 0
+    for b in affected_scales.keys():
+        save_tuple((node, affected_scales[b]), paths[i] )
+        i+=1
+
+def Sir_of_graph(graph_path, num_b = 6, result_path = './datasets/SIR_Results/'):
     G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
-    B_values =get_B_Value(G)
-    sir_of_graph = {b: [] for b in B_values}   # a dict containing list of tuples 
-    # paths
+    B_values =get_B_Value(G, num_b)
     for node in sorted(G.nodes()):
         # process node
         infected = {node: 1}
         affected_scales = SIR(G, infected, B_values)
-        sir_of_graph = get_sir_dict(sir_of_graph, affected_scales, node)
-        print(sir_of_graph)
+        add_tuples(node, graph_path, num_b, affected_scales, result_path)
+        print('added node ', node, 'from ', graph_path)
 
 
 # save_tuple((1, 1.64384), 'a.csv')
@@ -126,41 +160,6 @@ def Sir_of_graph(graph_path, result_path = './datasets/SIR_Results/'):
 
 
 
-
-def create_SIR_dir(graph_name, result_path = './datasets/SIR_Results/'):
-    sir_dir =os.path.join(result_path, graph_name)
-    if not folder_exists(sir_dir):
-        print("creating: ", sir_dir)
-        sir_dir = Path(sir_dir)
-        sir_dir.mkdir(parents=True)
-
-
-def get_graph_paths(dataset_dir= "./datasets/"):
-    graph_list = []
-    for dirpath, _, files in os.walk(dataset_dir):
-        for filename in files:
-            try:
-                if filename.endswith(".edges"):
-                    file_path = os.path.join(dirpath, filename) 
-                    graph_list.append((file_path, os.path.splitext(filename)[0]))
-                    # print(file_path)
-                    # print(filename)
-                    # print("hhhh")
-                    # graph = nx.read_edgelist(file_path, comments="%", nodetype=int)
-                    # b_list = sir_model(graph, 0.1,5,1000)
-                    # b_dict = get_Bdict_from_Blist(b_list)
-                    # i = 0
-                    # for b in b_dict.keys():
-                    #     b_dict[b]=sorted(b_dict[b], key=lambda x: x[0])
-                    #     x_  = [t[0] for t in b_dict[b]]
-                    #     y_  = [t[1] for t in b_dict[b]]
-                    #     Sir = pd.DataFrame({'Node':x_,'SIR':y_})
-                    #     Sir.to_csv(f'{filename}.csv',index=False)
-                    #     i+=1
-            except Exception as e: 
-                print(e, f'{filename}')
-    return graph_list
-
 def main():
     graph_list = get_graph_paths()
     result_path = './datasets/SIR_Results/'
@@ -168,6 +167,9 @@ def main():
         create_SIR_dir(g_name, result_path)
 
     for (g_path, g_name) in graph_list:
+        print(g_name)
+        Sir_of_graph(g_path, num_b=6, result_path=result_path)
+
         
     
     
