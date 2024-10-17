@@ -3,8 +3,10 @@ import ndlib.models.ModelConfig as mc
 import ndlib.models.epidemics as ep
 import numpy as np
 import os
-import matplotlib.pyplot as plt
-from ndlib.viz.mpl.DiffusionTrend import DiffusionTrend
+import csv
+
+# import matplotlib.pyplot as plt
+# from ndlib.viz.mpl.DiffusionTrend import DiffusionTrend
 
 def file_exists(file_path):
     return os.path.isfile(file_path)
@@ -12,8 +14,21 @@ def file_exists(file_path):
 def folder_exists(folder_path):
     return os.path.isdir(folder_path)
 
+def save_tuple(tpl, path):
+    if not file_exists(path):
+        with open(path, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['Node', 'SIR'])
+            writer.writerow(tpl)
 
-def SIR(G, infected, gama=1, num_b=6, num_iterations=100, num_steps=100):
+    else: 
+        with open(path, mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(tpl)
+
+
+def get_B_Value(G):
+    num_b=6
     # Get the mean degree (k) of the graph
     degrees = [deg for _, deg in G.degree()]
     mean_degree = np.mean(degrees)
@@ -21,6 +36,12 @@ def SIR(G, infected, gama=1, num_b=6, num_iterations=100, num_steps=100):
     B_Threshold = mean_degree / (mean_degree**2 - mean_degree)
     # Range of B values
     B_values = np.linspace(1 * B_Threshold, 1.9 * B_Threshold, num_b)
+    # Use numpy's round function
+    B_values = np.round(B_values, 3)
+    B_values = B_values.tolist()
+    return B_values
+
+def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
     num_nodes = G.number_of_nodes()
     affected_scales = {}
 
@@ -58,7 +79,7 @@ def SIR(G, infected, gama=1, num_b=6, num_iterations=100, num_steps=100):
         
         # Calculate the affected scale for the current B
         affected_scale = recovered_sum / (num_iterations * num_nodes)
-        affected_scales[round(B, 3)] = round(affected_scale, 3)
+        affected_scales[B] = round(affected_scale, 3)
 
         # Plot the trend for each B
         # viz = DiffusionTrend(model, trends[-1])  # Use the last iteration's trends for visualization
@@ -68,9 +89,39 @@ def SIR(G, infected, gama=1, num_b=6, num_iterations=100, num_steps=100):
         # plt.title(f"Diffusion Trend for B={round(B, 3)}")
         
         # plt.close()  # Close the plot to free memory
+    return affected_scales
 
+def get_sir_dict(sir_of_graph, affected_scales, node):
+    b_list = affected_scales.keys()
+    for b in b_list:
+        sir_of_graph[b].append((node, affected_scales[b]))
+    return sir_of_graph
 
+def Sir_of_graph(path):
+    G = nx.read_edgelist(path, comments="%", nodetype=int)
+    B_values =get_B_Value(G)
+    sir_of_graph = {b: [] for b in B_values}   # a dict containing list of tuples 
+    i = 0
+    for node in sorted(G.nodes()):
+        # process node
+        infected = {node: 1}
+        affected_scales = SIR(G, infected, B_values)
+        sir_of_graph = get_sir_dict(sir_of_graph, affected_scales, node)
+        print(sir_of_graph)
 
+        i+=1
+        if i ==2:
+            break
+
+save_tuple((1, 1.64384), 'a.csv')
+
+# Sir_of_graph('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges')
+
+# G = nx.read_edgelist('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges', comments="%", nodetype=int)
+# B_values =get_B_Value(G)
+# print(B_values)
+# affected_scales = SIR(G, {1: 1}, B_values)
+# print(affected_scales)
 
 # directory = "./datasets/"
 # graph_list = []
