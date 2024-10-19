@@ -51,7 +51,7 @@ def get_graph_paths(dataset_dir= "./datasets/"):
                 print(e, f'{filename}')
     return graph_list
 
-def get_B_Value(G, num_b=6):
+def get_B_Value(G, num_b=3):
     # Get the mean degree (k) of the graph
     degrees = [deg for _, deg in G.degree()]
     mean_degree = np.mean(degrees)
@@ -122,7 +122,7 @@ def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
             #         sir_of_graph[b].append((node, affected_scales[b]))
             #     return sir_of_graph
 
-def get_sir_graph_paths(graph_path, num_b,  result_path = './datasets/SIR_Results/'):
+def get_sir_graph_paths(graph_path, num_b=3,  result_path = './datasets/SIR_Results/'):
     graph_name = os.path.splitext(os.path.basename(graph_path))[0]
     paths= []
     for i in range(num_b):
@@ -144,7 +144,7 @@ def add_tuples(node, paths,  affected_scales, result_path = './datasets/SIR_Resu
         save_tuple((node, affected_scales[b]), paths[i] )
         i+=1
 
-def Sir_of_graph(graph_path, num_b = 6, result_path = './datasets/SIR_Results/'):
+def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/'):
     G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
     B_values =get_B_Value(G, num_b)
     paths = get_sir_graph_paths(graph_path, num_b, result_path)
@@ -163,8 +163,6 @@ def Sir_of_graph(graph_path, num_b = 6, result_path = './datasets/SIR_Results/')
         print('added node ', node, 'from ', graph_path)
 
 
-# save_tuple((1, 1.64384), 'a.csv')
-
 # Sir_of_graph('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges')
 
 # G = nx.read_edgelist('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges', comments="%", nodetype=int)
@@ -178,7 +176,7 @@ def Sir_of_graph(graph_path, num_b = 6, result_path = './datasets/SIR_Results/')
 def process_graph(args):
     g_path, g_name, result_path = args
     print(g_name)
-    Sir_of_graph(g_path, num_b=6, result_path=result_path)
+    Sir_of_graph(g_path, num_b=3, result_path=result_path)
 
 def init_worker():
     # Ignore SIGINT in the child processes to allow graceful termination in the parent
@@ -192,8 +190,8 @@ def main():
     for (g_path, g_name) in graph_list:
         create_SIR_dir(g_name, result_path)
 
-    # Set the number of processes to 4
-    pool_size = 4
+    # Set the number of processes to 2
+    pool_size = 2
 
     # Create a pool of workers, using init_worker to handle SIGINT correctly
     with multiprocessing.Pool(processes=pool_size, initializer=init_worker) as pool:
