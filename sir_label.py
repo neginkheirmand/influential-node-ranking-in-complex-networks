@@ -8,6 +8,9 @@ from pathlib import Path
 import multiprocessing
 import signal
 import pandas as pd
+from dotenv import load_dotenv
+import os
+
 
 # import matplotlib.pyplot as plt
 # from ndlib.viz.mpl.DiffusionTrend import DiffusionTrend
@@ -186,12 +189,18 @@ def main():
     graph_list = get_graph_paths()
     result_path = './datasets/SIR_Results/'
 
+    load_dotenv(".env")
+    machine_name = os.getenv("MACHINE_NAME")
+    if machine_name=='negin_mch':
+        graph_list = [item for item in graph_list if item[1] != 'arenas-pgp' and item[1] != 'ChicagoRegional']
+
+
     # Preprocessing: create directories for each graph
     for (g_path, g_name) in graph_list:
         create_SIR_dir(g_name, result_path)
 
     # Set the number of processes to 2
-    pool_size = 2
+    pool_size = 3
 
     # Create a pool of workers, using init_worker to handle SIGINT correctly
     with multiprocessing.Pool(processes=pool_size, initializer=init_worker) as pool:
