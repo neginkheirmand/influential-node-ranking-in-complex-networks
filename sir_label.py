@@ -186,9 +186,6 @@ def main():
     graph_list = get_graph_paths()
     result_path = './datasets/SIR_Results/'
 
-    print(graph_list)
-    input()
-
     # Preprocessing: create directories for each graph
     for (g_path, g_name) in graph_list:
         create_SIR_dir(g_name, result_path)
