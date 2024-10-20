@@ -193,15 +193,20 @@ def main():
     machine_name = os.getenv("MACHINE_NAME")
     if machine_name=='negin_mch':
         graph_list = [item for item in graph_list if item[1] != 'arenas-pgp' and item[1] != 'ChicagoRegional']
+    else:
+        graph_list = [item for item in graph_list if item[1] == 'arenas-pgp' or item[1] == 'ChicagoRegional']
 
 
     # Preprocessing: create directories for each graph
     for (g_path, g_name) in graph_list:
         create_SIR_dir(g_name, result_path)
 
-    # Set the number of processes to 2
-    pool_size = 5
-
+    # Set the number of processes depending on the machine
+    pool_size = 5 
+    if machine_name=='negin_mch':
+        pool_size = 6
+        
+        
     # Create a pool of workers, using init_worker to handle SIGINT correctly
     with multiprocessing.Pool(processes=pool_size, initializer=init_worker) as pool:
         try:
