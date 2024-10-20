@@ -9,7 +9,7 @@ import multiprocessing
 import signal
 import pandas as pd
 from dotenv import load_dotenv
-import os
+import json
 
 
 # import matplotlib.pyplot as plt
@@ -152,18 +152,23 @@ def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/')
     B_values =get_B_Value(G, num_b)
     paths = get_sir_graph_paths(graph_path, num_b, result_path)
 
-    nodes = sorted(G.nodes())
+    nodes = sorted(G.nodes()) 
+    prev_siz = 0
+    size_ = len(nodes)
     if file_exists(paths[0]):
         prev_nodes = get_previously_sim_values(paths[0])
+        prev_siz = len(prev_nodes)
         nodes = list(set(nodes) - set(prev_nodes))
-        print("Continuing from where we left off graph: ", graph_path, 'node: ', nodes[0])
+        nodes = sorted(nodes)
+        print("Continuing from where we left off graph: ", graph_path, 'node: ', nodes[0],'   size:',  prev_siz,  '/', size_)
 
     for node in nodes:
         # process node
         infected = {node: 1}
         affected_scales = SIR(G, infected, B_values)
         add_tuples(node, paths, affected_scales, result_path)
-        print('added node ', node, 'from ', graph_path)
+        prev_siz+=1
+        print('added node ', node, 'from ', graph_path,'   size:',  prev_siz,  '/', size_)
 
 
 # Sir_of_graph('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges')
@@ -192,13 +197,11 @@ def main():
     load_dotenv(".env")
     machine_name = os.getenv("MACHINE_NAME")
 
-    print(graph_list)
-    input()
-    if machine_name=='negin_mch':
-        graph_list = [item for item in graph_list if item[1] != 'arenas-pgp' and item[1] != 'ChicagoRegional']
-    else:
-        graph_list = [item for item in graph_list if item[1] != 'CA-GrQc' and item[1] != 'CA-HepTh' and item[1] != 'email' and item[1] != 'faa' and item[1] != 'facebook_combined' and item[1] != 'figeys']
 
+    with open('machine.json') as f:
+        d = json.load(f)
+        graph_list = [item for item in graph_list if item[1] in d[machine_name]]
+    
 
     # Preprocessing: create directories for each graph
     for (g_path, g_name) in graph_list:
