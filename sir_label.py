@@ -200,7 +200,7 @@ def main():
         create_SIR_dir(g_name, result_path)
 
     # Set the number of processes to 2
-    pool_size = 3
+    pool_size = 5
 
     # Create a pool of workers, using init_worker to handle SIGINT correctly
     with multiprocessing.Pool(processes=pool_size, initializer=init_worker) as pool:
