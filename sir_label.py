@@ -185,6 +185,7 @@ def process_graph(args):
     g_path, g_name, result_path = args
     print(g_name)
     Sir_of_graph(g_path, num_b=3, result_path=result_path)
+    print("done with ", g_name)
 
 def init_worker():
     # Ignore SIGINT in the child processes to allow graceful termination in the parent
