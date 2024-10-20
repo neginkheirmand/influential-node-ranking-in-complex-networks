@@ -191,10 +191,13 @@ def main():
 
     load_dotenv(".env")
     machine_name = os.getenv("MACHINE_NAME")
+
+    print(graph_list)
+    input()
     if machine_name=='negin_mch':
         graph_list = [item for item in graph_list if item[1] != 'arenas-pgp' and item[1] != 'ChicagoRegional']
     else:
-        graph_list = [item for item in graph_list if item[1] == 'arenas-pgp' or item[1] == 'ChicagoRegional']
+        graph_list = [item for item in graph_list if item[1] != 'CA-GrQc' and item[1] != 'CA-HepTh' and item[1] != 'email' and item[1] != 'faa' and item[1] != 'facebook_combined' and item[1] != 'figeys']
 
 
     # Preprocessing: create directories for each graph
