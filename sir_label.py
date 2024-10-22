@@ -211,7 +211,8 @@ def main():
     # Set the number of processes depending on the machine
     pool_size = 5 
     if machine_name=='negin_mch':
-        pool_size = 6
+        pool_size = 4
+        # pool_size = 6
         
         
     # Create a pool of workers, using init_worker to handle SIGINT correctly
