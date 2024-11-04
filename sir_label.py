@@ -170,17 +170,6 @@ def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/')
         prev_siz+=1
         print('added node ', node, 'from ', graph_path,'   size:',  prev_siz,  '/', size_)
 
-
-# Sir_of_graph('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges')
-
-# G = nx.read_edgelist('./datasets/BA_EXP/ba_edgelist_exp3_4000_10.edges', comments="%", nodetype=int)
-# B_values =get_B_Value(G)
-# print(B_values)
-# affected_scales = SIR(G, {1: 1}, B_values)
-# print(affected_scales)
-
-
-
 def process_graph(args):
     g_path, g_name, result_path = args
     print(g_name)
@@ -192,17 +181,24 @@ def init_worker():
     signal.signal(signal.SIGINT, signal.SIG_IGN)
 
 def main():
-    graph_list = get_graph_paths()
-    result_path = './datasets/SIR_Results/'
 
     load_dotenv(".env")
     machine_name = os.getenv("MACHINE_NAME")
-
+    print('machine_name: ', machine_name)
+    result_path = os.getenv("RESULT_ADDRESS")
+    print('result_path: ', result_path)
+    dataset_dir = os.getenv("DATASET_DIR")
+    print('dataset_dir: ', dataset_dir)
+    graph_list = get_graph_paths(dataset_dir)
 
     with open('machine.json') as f:
         d = json.load(f)
         graph_list = [item for item in graph_list if item[1] in d[machine_name]]
-    
+
+    print('graph_list: ')
+    for graph in graph_list:
+        print(graph)
+
 
     # Preprocessing: create directories for each graph
     for (g_path, g_name) in graph_list:
@@ -211,8 +207,9 @@ def main():
     # Set the number of processes depending on the machine
     pool_size = 5 
     if machine_name=='negin_mch':
+        pool_size = 1
         # pool_size = 4
-        pool_size = 6
+        # pool_size = 6
         
         
     # Create a pool of workers, using init_worker to handle SIGINT correctly
