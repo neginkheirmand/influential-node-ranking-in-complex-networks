@@ -83,7 +83,7 @@ def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
             
             # Configuration setup
             config = mc.Configuration()
-            config.add_model_parameter('beta', B)  # Set infection rate to current B
+            config.add_model_parameter('d', B)  # Set infection rate to current B
             config.add_model_parameter('gamma', gama)  # Recovery probability = 1
             # config.add_model_initial_configuration("Infected",  {0: 1})  # Start with node 0 infected
             config.add_model_initial_configuration("Infected",  infected)  
