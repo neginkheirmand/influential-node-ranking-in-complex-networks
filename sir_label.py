@@ -70,7 +70,7 @@ def get_B_Value(G, num_b=3):
     B_values = B_values.tolist()
     return B_values
 
-def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=100):
+def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=200):
     num_nodes = G.number_of_nodes()
     affected_scales = {}
     infected_scales = {}
@@ -98,7 +98,7 @@ def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=100):
             
             iteration = None
             # Run the model until all nodes are either recovered or susceptible
-            for step in range(200):  # Maximum 200 steps
+            for step in range(num_steps):  # Maximum 200 steps
                 iteration = model.iteration()
                 trends.append(model.build_trends([iteration]))
                 
@@ -184,6 +184,10 @@ def main():
     print('result_path: ', result_path)
     dataset_dir = os.getenv("DATASET_DIR")
     print('dataset_dir: ', dataset_dir)
+    pool_sz = int(os.getenv("POOL_SIZE"))
+    print('POOL size: ', pool_sz)
+    input()
+
     graph_list = get_graph_paths(dataset_dir)
 
     with open('machine.json') as f:
@@ -200,14 +204,9 @@ def main():
         create_SIR_dir(g_name, result_path)
 
     # Set the number of processes depending on the machine
-    pool_size = 5 
-    if machine_name=='negin_mch':
-        pool_size = 1
-        # pool_size = 4
-        # pool_size = 6
         
     # Create a pool of workers, using init_worker to handle SIGINT correctly
-    with multiprocessing.Pool(processes=pool_size, initializer=init_worker) as pool:
+    with multiprocessing.Pool(processes=pool_sz, initializer=init_worker) as pool:
         try:
             # Prepare arguments as tuples (g_path, g_name, result_path) for each graph
             args_list = [(g_path, g_name, result_path) for (g_path, g_name) in graph_list]
