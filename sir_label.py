@@ -25,7 +25,7 @@ def save_tuple(tpl, path):
     if not file_exists(path):
         with open(path, mode='w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(['Node', 'SIR'])
+            writer.writerow(['Node', 'SIR', 'Infected_sum'])
             writer.writerow(tpl)
 
     else: 
@@ -57,23 +57,30 @@ def get_graph_paths(dataset_dir= "./datasets/"):
 def get_B_Value(G, num_b=3):
     # Get the mean degree (k) of the graph
     degrees = [deg for _, deg in G.degree()]
+    
+    # First moment (mean degree)
     mean_degree = np.mean(degrees)
-    # Calculate B_Threshold
-    B_Threshold = mean_degree / (mean_degree**2 - mean_degree)
+
+    # Second moment (mean of squared degrees)
+    mean_degree_squared = np.mean([deg**2 for deg in degrees])
+
+    # Epidemic threshold (B_Threshold)
+    B_Threshold = mean_degree / (mean_degree_squared - mean_degree)
     # Range of B values
-    B_values = np.linspace(1 * B_Threshold, 1.9 * B_Threshold, num_b)
+    B_values = np.linspace(1 * B_Threshold, 2 * B_Threshold, num_b)
     # Use numpy's round function
     B_values = np.round(B_values, 3)
     B_values = B_values.tolist()
     return B_values
 
-def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
+def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=100):
     num_nodes = G.number_of_nodes()
     affected_scales = {}
-
+    infected_scales = {}
     for B in B_values:
         recovered_sum = 0  # To store the sum of recovered nodes across all iterations
-        
+        infected_sum = 0
+
         # Store trends for plotting
         trends = []
 
@@ -83,7 +90,7 @@ def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
             
             # Configuration setup
             config = mc.Configuration()
-            config.add_model_parameter('d', B)  # Set infection rate to current B
+            config.add_model_parameter('beta', B)  # Set infection rate to current B
             config.add_model_parameter('gamma', gama)  # Recovery probability = 1
             # config.add_model_initial_configuration("Infected",  {0: 1})  # Start with node 0 infected
             config.add_model_initial_configuration("Infected",  infected)  
@@ -91,39 +98,28 @@ def SIR(G, infected, B_values, gama=1, num_iterations=100, num_steps=100):
             # Set the model configuration
             model.set_initial_status(config)
             
-            # Run the model until all nodes are either recovered or susceptible
-            iteration = model.iteration_bunch(num_steps)
             
-            # Store trends for plotting (useful for later visualization)
-            trends.append(model.build_trends(iteration))
+            iteration = None
+            # Run the model until all nodes are either recovered or susceptible
+            for step in range(200):  # Maximum 200 steps
+                iteration = model.iteration()
+                trends.append(model.build_trends([iteration]))
+                
+                # Check if all nodes are either recovered or susceptible (no infected nodes left)
+                if iteration['node_count'][1] == 0:  # Index 1 corresponds to 'Infected'
+                    break  # Exit the loop if no infected nodes remain
 
             # Get the final state after the infection spread
-            final_state = iteration[-1]['node_count']
+            final_state = iteration['node_count']
             recovered_nodes = final_state[2]  # Index 2 represents 'Recovered' nodes
-            
             recovered_sum += recovered_nodes
+            infected_sum += final_state[1]
         
         # Calculate the affected scale for the current B
         affected_scale = recovered_sum / (num_iterations * num_nodes)
         affected_scales[B] = round(affected_scale, 3)
-
-        # Plot the trend for each B
-        # viz = DiffusionTrend(model, trends[-1])  # Use the last iteration's trends for visualization
-        
-        # plt.figure()  # Create a new figure for each plot
-        # viz.plot()  # Call the plot method of the viz object
-        # plt.title(f"Diffusion Trend for B={round(B, 3)}")
-        
-        # plt.close()  # Close the plot to free memory
-    return affected_scales
-
-
-
-            # def get_sir_dict(sir_of_graph, affected_scales, node):
-            #     b_list = affected_scales.keys()
-            #     for b in b_list:
-            #         sir_of_graph[b].append((node, affected_scales[b]))
-            #     return sir_of_graph
+        infected_scales[B] = infected_sum 
+    return affected_scales, infected_scales
 
 def get_sir_graph_paths(graph_path, num_b=3,  result_path = './datasets/SIR_Results/'):
     graph_name = os.path.splitext(os.path.basename(graph_path))[0]
@@ -141,11 +137,12 @@ def get_previously_sim_values(sir_graph_path):
 
 
 #TODO CHECK WHETHER IT ALREADY EXISTS
-def add_tuples(node, paths,  affected_scales, result_path = './datasets/SIR_Results/'):
+def add_tuples(node, paths,  affected_scales, infected_scales):
     i = 0
     for b in affected_scales.keys():
-        save_tuple((node, affected_scales[b]), paths[i] )
+        save_tuple((node, affected_scales[b], infected_scales[b]), paths[i] )
         i+=1
+
 
 def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/'):
     G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
@@ -165,10 +162,11 @@ def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/')
     for node in nodes:
         # process node
         infected = {node: 1}
-        affected_scales = SIR(G, infected, B_values)
-        add_tuples(node, paths, affected_scales, result_path)
+        affected_scales, infected_scales = SIR(G, infected, B_values)
+        add_tuples(node, paths, affected_scales, infected_scales)
         prev_siz+=1
         print('added node ', node, 'from ', graph_path,'   size:',  prev_siz,  '/', size_)
+    print(f"done with {paths[0]}")
 
 def process_graph(args):
     g_path, g_name, result_path = args
@@ -210,7 +208,6 @@ def main():
         pool_size = 1
         # pool_size = 4
         # pool_size = 6
-        
         
     # Create a pool of workers, using init_worker to handle SIGINT correctly
     with multiprocessing.Pool(processes=pool_size, initializer=init_worker) as pool:
