@@ -12,9 +12,6 @@ from dotenv import load_dotenv
 import json
 
 
-# import matplotlib.pyplot as plt
-# from ndlib.viz.mpl.DiffusionTrend import DiffusionTrend
-
 def file_exists(file_path):
     return os.path.isfile(file_path)
 
@@ -113,7 +110,7 @@ def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=100):
             final_state = iteration['node_count']
             recovered_nodes = final_state[2]  # Index 2 represents 'Recovered' nodes
             recovered_sum += recovered_nodes
-            infected_sum += final_state[1]
+            infected_sum += final_state[1]# Index 1 represents 'inffected' nodes
         
         # Calculate the affected scale for the current B
         affected_scale = recovered_sum / (num_iterations * num_nodes)
