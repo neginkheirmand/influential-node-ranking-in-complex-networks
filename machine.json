@@ -31,7 +31,9 @@
         "ba_edgelist_3000_10",
         "ba_edgelist_exp1_4000_4",
         "ba_edgelist_exp1_5000_4",
-        "ba_edgelist_exp1_8000_4"
+        "ba_edgelist_exp1_8000_4",
+        "maybe-PROTEINS-full",
+        "vidal"
     ],
     "negin_mch": [
         "CA-GrQc",
@@ -44,10 +46,7 @@
         "Peh_edge",
         "Stelzl",
         "tvshow_edges",
-        "vidal",
         "web-EPA"
     ],
-    "mhd_mch": [
-        "maybe-PROTEINS-full"
-    ]
+    "mhd_mch": []
 }
