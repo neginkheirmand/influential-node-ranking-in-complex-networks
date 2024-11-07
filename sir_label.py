@@ -186,7 +186,6 @@ def main():
     print('dataset_dir: ', dataset_dir)
     pool_sz = int(os.getenv("POOL_SIZE"))
     print('POOL size: ', pool_sz)
-    input()
 
     graph_list = get_graph_paths(dataset_dir)
 
