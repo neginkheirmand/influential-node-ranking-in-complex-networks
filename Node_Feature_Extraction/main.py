@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import networkx as nx
 import csv
+import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
@@ -149,6 +150,25 @@ def feature_graph(graph_path, graph_name, feature_path = './datasets/Features/')
 
         print(f"done with {graph_name}, created {graph_feature_path}")
 
+
+
+def adjancency_mat(G, node, graph_feature_path, L= 9):
+    neighbors = list(G.neighbors(node))
+    df = pd.read_csv(graph_feature_path)
+    # Ensure the DataFrame is indexed by 'Node' to make lookups easier
+    df.set_index('Node', inplace=True)
+    
+    # Sort neighbors by their WiD3 values
+    sorted_neighbors = sorted(neighbors, key=lambda x: df.at[x, 'WiD3'], reverse=True)
+    sorted_neighbors.insert(0, node) #insert node at position zero of the list 
+    ad_matrix = np.zeros((L, L))
+    # Fill the adjacency matrix based on connections in G
+    for i, node_i in enumerate(sorted_neighbors[:L]):
+        for j, node_j in enumerate(sorted_neighbors[:L]):
+            if G.has_edge(node_i, node_j):  # Check if there's an edge between node_i and node_j
+                ad_matrix[i, j] = 1  # Set 1 if there is an edge
+
+    return ad_matrix
 
 def main():
     feature_path = './datasets/Features/'
