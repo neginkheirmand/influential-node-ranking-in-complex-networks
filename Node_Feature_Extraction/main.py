@@ -67,6 +67,75 @@ def WiD3(graph_feature_path, G):
 
     df.to_csv(graph_feature_path, index=False)
 
+def WiH1(graph_feature_path, G):
+    df = pd.read_csv(graph_feature_path)
+    # Convert the 'Node' column to index for quick lookups
+    df.set_index('Node', inplace=True)
+    WiH1_values = []
+    # Iterate over each node in the DataFrame
+    for node in df.index:
+        # Get neighbors of the node
+        neighbors = G.neighbors(node)
+
+        # Build SHi: collect the WiD1 values of all neighbors
+        SHi = [df.at[neighbor, 'WiD1'] for neighbor in neighbors if neighbor in df.index]
+
+        # Sort SHi in descending order for easier processing
+        SHi_sorted = sorted(SHi, reverse=True)
+
+        # Determine the largest h such that there are at least h elements >= h
+        h = 0
+        for i, value in enumerate(SHi_sorted):
+            if value >= (i + 1):  # i+1 because list is 0-indexed
+                h = i + 1
+            else:
+                break
+
+        # Store WiH1 for the node
+        WiH1_values.append(h)
+
+    # Add WiH1 to the DataFrame
+    df['WiH1'] = WiH1_values
+
+    # Reset index if needed
+    df.reset_index(inplace=True)
+    df.to_csv(graph_feature_path, index=False)
+    return 
+
+def WiH2(graph_feature_path, G):
+    df = pd.read_csv(graph_feature_path)
+    def compute_WiH2(row):
+        node = row['Node']
+        neighbors = list(G.neighbors(node))
+        
+        # Sum the WiH1 value of the node and its neighbors
+        sum_WiH1 = row['WiH1'] + sum(df[df['Node'].isin(neighbors)]['WiH1'])
+        return sum_WiH1
+
+    # Apply the function to create the WiH2 column
+    df['WiH2'] = df.apply(compute_WiH2, axis=1)
+
+    # Save the updated DataFrame 
+    df.to_csv(graph_feature_path, index=False)
+    return
+
+def WiH3(graph_feature_path, G):
+    df = pd.read_csv(graph_feature_path)
+    def compute_WiH3(row):
+        node = row['Node']
+        neighbors = list(G.neighbors(node))
+        
+        # Sum the WiH2 value of the node and its neighbors
+        sum_WiH2 = row['WiH2'] + sum(df[df['Node'].isin(neighbors)]['WiH2'])
+        return sum_WiH2
+
+    # Apply the function to create the WiD2 column
+    df['WiH3'] = df.apply(compute_WiH3, axis=1)
+
+    # Save the updated DataFrame to the CSV file 
+    df.to_csv(graph_feature_path, index=False)
+    return
+
 def feature_graph(graph_path, graph_name, feature_path = './datasets/Features/'):
     G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
     graph_feature_path = os.path.join(feature_path, graph_name + '.csv')
@@ -74,6 +143,9 @@ def feature_graph(graph_path, graph_name, feature_path = './datasets/Features/')
         WiD1(graph_feature_path, G)
         WiD2(graph_feature_path, G)
         WiD3(graph_feature_path, G)
+        WiH1(graph_feature_path, G)
+        WiH2(graph_feature_path, G)
+        WiH3(graph_feature_path, G)
 
         print(f"done with {graph_name}, created {graph_feature_path}")
 
