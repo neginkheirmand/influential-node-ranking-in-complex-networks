@@ -151,7 +151,6 @@ def feature_graph(graph_path, graph_name, feature_path = './datasets/Features/')
         print(f"done with {graph_name}, created {graph_feature_path}")
 
 
-
 def adjancency_mat(G, node, graph_feature_path, L= 9):
     neighbors = list(G.neighbors(node))
     df = pd.read_csv(graph_feature_path)
@@ -161,6 +160,8 @@ def adjancency_mat(G, node, graph_feature_path, L= 9):
     # Sort neighbors by their WiD3 values
     sorted_neighbors = sorted(neighbors, key=lambda x: df.at[x, 'WiD3'], reverse=True)
     sorted_neighbors.insert(0, node) #insert node at position zero of the list 
+
+    print(sorted_neighbors)
     ad_matrix = np.zeros((L, L))
     # Fill the adjacency matrix based on connections in G
     for i, node_i in enumerate(sorted_neighbors[:L]):
@@ -169,6 +170,39 @@ def adjancency_mat(G, node, graph_feature_path, L= 9):
                 ad_matrix[i, j] = 1  # Set 1 if there is an edge
 
     return ad_matrix
+#TODO: check whether the neighbors should be sorted with the same WiXt
+def channel_set(L, adj_matrix, G, graph_feature_path, WiXt,  node):  #wiDt= 'WiD1'
+    df = pd.read_csv(graph_feature_path)
+    # Ensure the DataFrame is indexed by 'Node' to make lookups easier
+    df.set_index('Node', inplace=True)
+
+    neighbors = list(G.neighbors(node))
+    # Sort neighbors by their WiD3 values
+    sorted_neighbors = sorted(neighbors, key=lambda x: df.at[x, WiXt], reverse=True)
+    sorted_neighbors.insert(0, node) #insert node at position zero of the list 
+
+    deg_chanl_set = np.zeros((L , L)) 
+    for l in range(L): 
+        for k in range(L):
+            if l == k: 
+                deg_chanl_set[l, k] = df.at[node, WiXt]  # WiXt+ alk(which is always 0)
+            elif k != 0 and l == 0 and adj_matrix[0, k]: # if adj_matrix[0, k] is 0 then this is a zero-padding and k_node doesnt exist
+                k_node = sorted_neighbors[k]
+                deg_chanl_set[0, k] = adj_matrix[0, k] * df.at[k_node, WiXt] 
+            elif l != 0 and k == 0 and adj_matrix[l, 0]!=0 : 
+                l_node = sorted_neighbors[l]
+                deg_chanl_set[l, 0] = adj_matrix[l, 0] * df.at[l_node, WiXt] 
+            else: 
+                deg_chanl_set[l, k] = adj_matrix[l, k] 
+    return deg_chanl_set
+# L = 4
+# node = 5
+# ad_mat = adjancency_mat(G, node, csv_filename, L)
+# print("-------")
+# print(channel_set(L, ad_mat, G, csv_filename, 'WiD3', node))\
+# channel_set(L, ad_mat, G, csv_filename, 'WiH3', node)
+
+
 
 def main():
     feature_path = './datasets/Features/'
