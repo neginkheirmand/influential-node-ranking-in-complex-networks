@@ -1,1 +1,52 @@
-{"BA_mch_0": ["ba_edgelist_1000_4", "ba_edgelist_2000_4", "ba_edgelist_exp2_2000_10", "ba_edgelist_3000_4", "ba_edgelist_3000_20", "ba_edgelist_exp3_4000_6", "ba_edgelist_exp1_6000_4", "ChicagoRegional", "jazz", "ia-crime-moreno", "p2p-Gnutella04"], "BA_mch_1": ["ba_edgelist_1000_10", "ba_edgelist_exp2_2000_4", "ba_edgelist_2000_20", "ba_edgelist_exp1_3000_4", "ba_edgelist_exp3_4000_2", "ba_edgelist_exp3_4000_10", "ba_edgelist_exp1_7000_4", "LastFM", "sex"], "BA_mch_2": ["ba_edgelist_1000_20", "ba_edgelist_2000_10", "ba_edgelist_exp2_2000_20", "ba_edgelist_3000_10", "ba_edgelist_exp1_4000_4", "ba_edgelist_exp1_5000_4", "ba_edgelist_exp1_8000_4", "maybe-PROTEINS-full", "vidal", "arenas-pgp"], "negin_mch": ["CA-GrQc", "CA-HepTh", "faa", "facebook_combined", "figeys", "email", "NS", "Peh_edge", "Stelzl", "tvshow_edges", "web-EPA"], "mhd_mch": []}
+{
+    "BA_mch_0": [
+        "ba_edgelist_1000_4",
+        "ba_edgelist_2000_4",
+        "ba_edgelist_exp2_2000_10",
+        "ba_edgelist_3000_4",
+        "ba_edgelist_3000_20",
+        "ba_edgelist_exp3_4000_6",
+        "ba_edgelist_exp1_6000_4",
+        "ChicagoRegional",
+        "jazz",
+        "ia-crime-moreno",
+        "p2p-Gnutella04"
+    ],
+    "BA_mch_1": [
+        "ba_edgelist_1000_10",
+        "ba_edgelist_exp2_2000_4",
+        "ba_edgelist_2000_20",
+        "ba_edgelist_exp1_3000_4",
+        "ba_edgelist_exp3_4000_2",
+        "ba_edgelist_exp3_4000_10",
+        "ba_edgelist_exp1_7000_4",
+        "LastFM",
+        "sex"
+    ],
+    "BA_mch_2": [
+        "ba_edgelist_1000_20",
+        "ba_edgelist_2000_10",
+        "ba_edgelist_exp2_2000_20",
+        "ba_edgelist_3000_10",
+        "ba_edgelist_exp1_4000_4",
+        "ba_edgelist_exp1_5000_4",
+        "ba_edgelist_exp1_8000_4",
+        "maybe-PROTEINS-full",
+        "vidal",
+        "arenas-pgp"
+    ],
+    "negin_mch": [
+        "CA-GrQc",
+        "CA-HepTh",
+        "faa",
+        "facebook_combined",
+        "figeys",
+        "email",
+        "NS",
+        "Peh_edge",
+        "Stelzl",
+        "tvshow_edges",
+        "web-EPA"
+    ],
+    "mhd_mch": []
+}
