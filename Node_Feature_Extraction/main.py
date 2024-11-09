@@ -177,8 +177,10 @@ def channel_set(L, adj_matrix, G, graph_feature_path, WiXt,  node):  #wiDt= 'WiD
     df.set_index('Node', inplace=True)
 
     neighbors = list(G.neighbors(node))
-    # Sort neighbors by their WiD3 values
-    sorted_neighbors = sorted(neighbors, key=lambda x: df.at[x, WiXt], reverse=True)
+    
+    # TODO: see what changes if you sort by different things, just remember the sorting for adjacency matrix and this function should be the same
+    # sorted_neighbors = sorted(neighbors, key=lambda x: df.at[x, WiXt], reverse=True)
+    sorted_neighbors = sorted(neighbors, key=lambda x: df.at[x, 'WiD3'], reverse=True)
     sorted_neighbors.insert(0, node) #insert node at position zero of the list 
 
     deg_chanl_set = np.zeros((L , L)) 
