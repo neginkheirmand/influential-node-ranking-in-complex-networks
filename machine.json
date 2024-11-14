@@ -5,7 +5,6 @@
         "ba_edgelist_exp3_4000_6",
         "ba_edgelist_exp1_6000_4",
         "p2p-Gnutella04",
-        "jazz",
         "LastFM"
     ],
     "BA_mch_1": [
@@ -13,17 +12,16 @@
         "ba_edgelist_exp3_4000_2",
         "ba_edgelist_exp3_4000_10",
         "ba_edgelist_exp1_7000_4",
-        "sex",
         "powergrid",
-        "vidal"
+        "vidal",
+        "politician_edges"
     ],
     "BA_mch_2": [
         "ba_edgelist_exp2_2000_20",
         "ba_edgelist_exp1_4000_4",
         "ba_edgelist_exp1_5000_4",
         "ba_edgelist_exp1_8000_4",
-        "arenas-pgp",
-        "politician_edges"
+        "arenas-pgp"
     ],
     "negin_mch": [
         "CA-GrQc",
@@ -41,6 +39,8 @@
         "ia-crime-moreno",
         "maybe-PROTEINS-full",
         "NS",
-        "faa"
+        "faa",
+        "jazz",
+        "sex"
     ]
 }
