@@ -114,7 +114,7 @@ def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=200):
         
         # Calculate the affected scale for the current B
         affected_scale = recovered_sum / (num_iterations * num_nodes)
-        affected_scales[B] = round(affected_scale, 5)
+        affected_scales[B] = round(affected_scale, 6)
         infected_scales[B] = infected_sum 
     return affected_scales, infected_scales
 
