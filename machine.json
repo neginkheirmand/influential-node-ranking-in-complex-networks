@@ -1,6 +1,5 @@
 {
     "BA_mch_0": [
-        "ba_edgelist_exp2_2000_4",
         "ba_edgelist_exp1_3000_4",
         "ba_edgelist_exp3_4000_6",
         "ba_edgelist_exp1_6000_4",
@@ -21,6 +20,7 @@
         "ba_edgelist_exp1_4000_4",
         "ba_edgelist_exp1_5000_4",
         "ba_edgelist_exp1_8000_4",
+        "ba_edgelist_exp2_2000_4",
         "arenas-pgp"
     ],
     "negin_mch": [
