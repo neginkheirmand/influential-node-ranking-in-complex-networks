@@ -13,7 +13,8 @@
         "ba_edgelist_exp3_4000_2",
         "ba_edgelist_exp3_4000_10",
         "ba_edgelist_exp1_7000_4",
-        "sex"
+        "sex",
+        "powergrid"
     ],
     "BA_mch_2": [
         "ba_edgelist_exp2_2000_20",
@@ -21,7 +22,8 @@
         "ba_edgelist_exp1_5000_4",
         "ba_edgelist_exp1_8000_4",
         "vidal",
-        "arenas-pgp"
+        "arenas-pgp",
+        "politician_edges"
     ],
     "negin_mch": [
         "CA-GrQc",
