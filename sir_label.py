@@ -70,7 +70,8 @@ def get_B_Value(G, num_b=3):
     B_values = B_values.tolist()
     return B_values
 
-def SIR(G, infected, B_values, gama=1.0, num_iterations=100, num_steps=200):
+def SIR(G, infected, B_values, gama=1.0, num_iterations=400, num_steps=200):
+# def SIR(G, infected, B_values, gama=1.0, num_iterations=1000, num_steps=200):
     num_nodes = G.number_of_nodes()
     affected_scales = {}
     infected_scales = {}
