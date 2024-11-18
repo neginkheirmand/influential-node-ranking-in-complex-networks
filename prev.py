@@ -9,27 +9,37 @@ from tqdm import tqdm
 
 
 def get_graph_paths(dataset_dir):
+    nop = ["ia-crime-moreno", "maybe-PROTEINS-full", "sex", "ChicagoRegional"]
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
-            print(filename)
             try:
-                # if not filename.startswith("ba_edgelist") and filename.endswith(".edges"):
-                if filename.endswith(".edges"):
+                name = os.path.splitext(filename)[0]
+                if filename.endswith(".edges") and not (name in nop):
+                    print(name)
                     file_path = os.path.join(dirpath, filename) 
-                    graph_list.append((file_path, os.path.splitext(filename)[0]))
+                    graph_list.append((file_path, name))
             except Exception as e: 
                 print(e, f'{filename}')
     return graph_list
 
+
 dataset_dir = "./datasets/"
 graph_list = get_graph_paths(dataset_dir)
-print(graph_list)
 
-# pre-generate graph visualizations
-visualizations = {}
+# Create a folder to save individual pickle files if it doesn't exist
+pickle_dir = "./assets/pickles/"
+os.makedirs(pickle_dir, exist_ok=True)
+
+# Pre-generate graph visualizations
 for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
-    print(path)
+    pickle_filename = os.path.join(pickle_dir, f"{name}_visualization.pkl")
+    
+    if os.path.exists(pickle_filename):
+        print(f"Skipping {name}, already exists: {pickle_filename}")
+        continue  # Skip graphs already in pickle
+
+    print(f"Processing {name}")
     try:
         # Load the graph
         G = nx.read_edgelist(path)
@@ -46,12 +56,20 @@ for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
             G, pos, node_color=color_map, with_labels=True, edge_color='gray', font_size=10, ax=ax
         )
 
-        # Save the figure in a dictionary
-        visualizations[name] = fig
-        plt.close(fig)  # Close the plot to free up memory
+        # Save the figure in a separate pickle file
+        with open(pickle_filename, "wb") as f:
+            pickle.dump(fig, f)
+        print(f"Saved pickle for {name} as {pickle_filename}")
+
+        # Save the PNG file for later use
+        png_filename = f"./assets/img/previsualizations/{name}_graph.png"
+        fig.savefig(png_filename, dpi=300, bbox_inches="tight")
+        print(f"Saved PNG for {name} as {png_filename}")
+        
+        # Close the plot to free up memory
+        plt.close(fig)
+
     except Exception as e:
         print(f"Failed to generate visualization for {name}: {e}")
 
-# Save visualizations to a file for future use
-with open("graph_visualizations.pkl", "wb") as f:
-    pickle.dump(visualizations, f)
+print("Individual pickle files and PNGs saved successfully.")
