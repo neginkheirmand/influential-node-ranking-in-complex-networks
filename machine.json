@@ -38,9 +38,11 @@
         "jazz",
         "NS",
         "faa",
-        "ChicagoRegional",
-        "ia-crime-moreno",
-        "maybe-PROTEINS-full",
-        "sex"
+        "ba_edgelist_1000_4"
+        // ,
+        // "ChicagoRegional",
+        // "ia-crime-moreno",
+        // "maybe-PROTEINS-full",
+        // "sex"
     ]
 }
