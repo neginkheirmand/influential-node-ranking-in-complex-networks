@@ -11,7 +11,6 @@
         "ba_edgelist_exp3_4000_2",
         "ba_edgelist_exp3_4000_10",
         "ba_edgelist_exp1_7000_4",
-        "powergrid",
         "vidal",
         "politician_edges"
     ],
@@ -32,7 +31,8 @@
         "Stelzl",
         "tvshow_edges",
         "web-EPA",
-        "arenas-pgp"
+        "arenas-pgp", 
+        "powergrid"
     ],
     "mhd_mch": [
         "ChicagoRegional",
