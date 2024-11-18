@@ -44,6 +44,7 @@ def get_graph_paths(dataset_dir= "./datasets/"):
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
             try:
+                # if not filename.startswith("ba_edgelist") and filename.endswith(".edges"):
                 if filename.endswith(".edges"):
                     file_path = os.path.join(dirpath, filename) 
                     graph_list.append((file_path, os.path.splitext(filename)[0]))
