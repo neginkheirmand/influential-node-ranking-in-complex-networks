@@ -15324,3 +15324,21 @@
 2024-11-18 18:21:01,793 - INFO - added node 2230 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2231/8000
 2024-11-18 18:21:55,122 - INFO - added node 2231 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2232/8000
 2024-11-18 18:23:20,081 - INFO - added node 2232 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2233/8000
+2024-11-18 18:24:24,935 - INFO - added node 2233 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2234/8000
+2024-11-18 18:25:21,266 - INFO - added node 2234 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2235/8000
+2024-11-18 18:26:25,116 - INFO - machine: BA_mch_2
+2024-11-18 18:26:25,116 - INFO - pool size: 2
+2024-11-18 18:26:25,355 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_20
+2024-11-18 18:26:25,355 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_4000_4
+2024-11-18 18:26:25,355 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_5000_4
+2024-11-18 18:26:25,355 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_8000_4
+2024-11-18 18:26:25,355 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_4
+2024-11-18 18:26:25,355 - INFO - -- graph item: ba_edgelist_exp1_8000_4
+2024-11-18 18:26:25,405 - INFO - starting ba_edgelist_exp1_8000_4
+2024-11-18 18:26:25,512 - INFO - Continuing from where we left off graph: ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, node: 2235, size: 2235/8000
+2024-11-18 18:26:32,446 - INFO - added node 2235 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2236/8000
+2024-11-18 18:27:36,817 - INFO - added node 2235 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2236/8000
+2024-11-18 18:28:40,681 - INFO - added node 2236 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2237/8000
+2024-11-18 18:30:03,204 - INFO - added node 2237 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2238/8000
+2024-11-18 18:31:11,397 - INFO - added node 2238 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2239/8000
+2024-11-18 18:32:06,521 - INFO - added node 2239 from ./datasets/BA_EXP/ba_edgelist_exp1_8000_4.edges, size: 2240/8000
