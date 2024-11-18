@@ -18,7 +18,6 @@
         "ba_edgelist_exp2_2000_20",
         "ba_edgelist_exp1_4000_4",
         "ba_edgelist_exp1_5000_4",
-        "ba_edgelist_exp1_8000_4",
         "ba_edgelist_exp2_2000_4"
     ],
     "negin_mch": [
@@ -32,7 +31,8 @@
         "tvshow_edges",
         "web-EPA",
         "arenas-pgp", 
-        "powergrid"
+        "powergrid",
+        "ba_edgelist_exp1_8000_4"
     ],
     "mhd_mch": [
         "jazz",
