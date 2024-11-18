@@ -10,12 +10,14 @@ from tqdm import tqdm
 
 def get_graph_paths(dataset_dir):
     nop = ["ia-crime-moreno", "maybe-PROTEINS-full", "sex", "ChicagoRegional"]
+    # yup = ["faa","politician_edges","Stelzl","tvshow_edges","vidal"]
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
             try:
                 name = os.path.splitext(filename)[0]
-                if filename.endswith(".edges") and not (name in nop):
+                if filename.endswith(".edges") and not (name in nop) :
+                # if filename.endswith(".edges") and not (name in nop) and name in yup:
                     print(name)
                     file_path = os.path.join(dirpath, filename) 
                     graph_list.append((file_path, name))
@@ -30,6 +32,7 @@ graph_list = get_graph_paths(dataset_dir)
 # Create a folder to save individual pickle files if it doesn't exist
 pickle_dir = "./assets/pickles/"
 os.makedirs(pickle_dir, exist_ok=True)
+input()
 
 # Pre-generate graph visualizations
 for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
@@ -40,6 +43,7 @@ for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
         continue  # Skip graphs already in pickle
 
     print(f"Processing {name}")
+    input()
     try:
         # Load the graph
         G = nx.read_edgelist(path)

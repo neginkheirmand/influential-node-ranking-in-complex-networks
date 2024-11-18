@@ -1,35 +1,46 @@
+import os
 import pickle
 import streamlit as st
 import matplotlib.pyplot as plt
 
-# Load the visualizations from the pickle file
-pickle_filename = "./graph_visualizations.pkl"
-visualizations = {}
+# Directory where pickles are saved
+pickle_dir = "./assets/pickles/"
 
-try:
-    with open(pickle_filename, "rb") as f:
-        visualizations = pickle.load(f)
-    st.success(f"Loaded {len(visualizations)} visualizations from {pickle_filename}")
-except Exception as e:
-    st.error(f"Failed to load visualizations: {e}")
+# Get the list of pickle files
+def get_pickle_files(pickle_dir):
+    return [
+        f for f in os.listdir(pickle_dir) 
+        if f.endswith("_visualization.pkl")
+    ]
 
-# Add a page for selecting and displaying a graph
+# Display the graphs in Streamlit
 st.title("Graph Viewer")
-st.header("Select a Graph to View")
+st.header("Select and View Graphs")
 
-# Create a selection box to choose a graph
-graph_names = list(visualizations.keys())
-selected_graph = st.selectbox("Select a graph", graph_names)
+# Get the list of available `.pkl` files
+pickle_files = get_pickle_files(pickle_dir)
 
-# Plot the selected graph
-if selected_graph:
-    st.write(f"Displaying the graph: {selected_graph}")
-    
-    # Retrieve the figure from the visualizations dictionary
-    fig = visualizations.get(selected_graph)
+if pickle_files:
+    # Remove the "_visualization.pkl" suffix for better readability
+    graph_names = [os.path.splitext(f)[0].replace("_visualization", "") for f in pickle_files]
 
-    if fig:
-        # Display the figure in the Streamlit app
-        st.pyplot(fig)
-    else:
-        st.error("Graph visualization not found.")
+    # Create a dropdown for selecting the graph
+    selected_graph = st.selectbox("Select a graph", graph_names)
+
+    # Load and display the selected graph
+    if selected_graph:
+        st.write(f"Displaying the graph: {selected_graph}")
+        pickle_path = os.path.join(pickle_dir, f"{selected_graph}_visualization.pkl")
+
+        try:
+            # Load the figure from the `.pkl` file
+            with open(pickle_path, "rb") as f:
+                fig = pickle.load(f)
+
+            # Display the figure in Streamlit
+            st.pyplot(fig)
+
+        except Exception as e:
+            st.error(f"Failed to load the graph visualization: {e}")
+else:
+    st.warning("No saved graph visualizations found in the pickle directory.")
