@@ -222,7 +222,7 @@ elif page == "Graph Viewer":
             try:
                 with open(pickle_path, "rb") as f:
                     fig = pickle.load(f)
-                st.pyplot(fig)
+                st.plotly_chart(fig)
                 
             except EOFError:
                 st.error(f"Pickle file is corrupted or incomplete: {pickle_path}")
