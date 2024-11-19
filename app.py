@@ -4,7 +4,9 @@ import pandas as pd
 import streamlit as st
 import networkx as nx
 import matplotlib.pyplot as plt
-from pyvis.network import Network
+import numpy as np
+from math import ceil
+import networkx as nx
 
 
 def get_graph_paths(dataset_dir= "./datasets/"):
@@ -53,6 +55,77 @@ def get_graph_features(graph_name, file_path="graph_info.xlsx"):
 
 
 
+def get_B_Value(G, num_b=3):
+    # Get the mean degree (k) of the graph
+    degrees = [deg for _, deg in G.degree()]
+    
+    # First moment (mean degree)
+    mean_degree = np.mean(degrees)
+
+    # Second moment (mean of squared degrees)
+    mean_degree_squared = np.mean([deg**2 for deg in degrees])
+
+    # Epidemic threshold (B_Threshold)
+    B_Threshold = mean_degree / (mean_degree_squared - mean_degree)
+    # Range of B values
+    B_values = np.linspace(1 * B_Threshold, 2 * B_Threshold, num_b)
+    # Use numpy's round function
+    B_values = np.round(B_values, 3)
+    B_values = B_values.tolist()
+    return B_values
+
+def read_sir_csv(filename):
+    """
+    Reads the SIR results from a CSV file and returns Node and SIR values.
+    """
+    data = pd.read_csv(filename)
+    x = data['Node']  # Node indices
+    y = data['SIR']   # SIR values
+    return x, y
+
+def get_sir_graph_paths(net_name, num_b=3,  result_path = './datasets/SIR_Results/'):
+    paths= []
+    for i in range(num_b):
+        sir_dir =os.path.join(result_path, net_name)
+        sir_dir = os.path.join(sir_dir, f'{i}.csv')
+        paths.append(sir_dir)
+    return paths
+
+
+# Function to plot node importance using SIR for different B values
+def plot_node_importance_using_sir(graph_path, sir_csv_paths):
+    colors = ['red', 'green', 'blue', 'yellow', 'black', 'cyan', 'magenta']
+    G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
+    num_nodes = G.number_of_nodes()
+    b_list = get_B_Value(G, len(sir_csv_paths))
+
+    max_width = 100  # Maximum figure width in inches
+    width = min(ceil(num_nodes / 10), max_width)
+
+    plt.figure(figsize=(width, 10))
+
+    for i, (b, filename) in enumerate(zip(b_list, sir_csv_paths)):
+        if i >= len(colors):  # Avoid running out of colors
+            print("Warning: Insufficient colors; reusing colors.")
+            i = i % len(colors)
+
+        # Read data from the file
+        x, y = read_sir_csv(filename)
+
+        # Plot the data
+        plt.plot(x, y, color=colors[i], label=f'B = {b}')
+
+    # Adding labels, title, legend, and grid
+    plt.xlabel('Node Index')
+    plt.ylabel('SIR Value')
+    plt.title('Node Importance using SIR for Different B Values')
+    plt.legend()
+    plt.grid(True)
+
+    # Display the plot in Streamlit
+    st.pyplot(plt)
+
+
 def load_graph(graph_file):
     G = nx.read_edgelist(graph_file)
     return G
@@ -70,7 +143,7 @@ st.header("Welcome to LCNN Graph Management Application")
 
 # Sidebar
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Select a Page", ["Graph Files", "Home", "About", "Graph Viewer" ])
+page = st.sidebar.radio("Select a Page", ["Graph Files", "Home", "About", "Graph Viewer", "SIR analyzer"])
 
 # Main Page Logic
 if page == "Home":
@@ -167,4 +240,30 @@ elif page == "Graph Viewer":
                 st.error(f"An error occurred while loading the pickle: {e}")
     else:
         st.warning("No saved graph visualizations found in the pickle directory.")
+elif page=="SIR analyzer":
+    st.header("My Graph SIR Analyzer")
+    st.title("My Graph SIR Analyzer")
+    st.header("Select and View SIR Results of a graph")
+
+    # Get the list of available `.pkl` files
+    graph_list = get_graph_paths()
+    if graph_list:
+        graph_names = [name for _, name in graph_list]
+    
+        selected_graph_name = st.selectbox("Select a graph", graph_names)
+
+        # Load and display the selected graph
+        if selected_graph_name:
+            st.write(f"Displaying the graph: {selected_graph_name}")
+            selected_graph_path = next(path for path, name in graph_list if name == selected_graph_name)
+            G = load_graph(selected_graph_path)
+            b_values = get_B_Value(G)
+            # Create a DataFrame with B values as a single row
+            b_values_df = pd.DataFrame([b_values], columns=[f'B_{i+1}' for i in range(len(b_values))])
+
+            # Display the table in Streamlit
+            st.title("B Values Table")
+            st.table(b_values_df)
+            plot_node_importance_using_sir(selected_graph_path, get_sir_graph_paths(selected_graph_name))
+
 

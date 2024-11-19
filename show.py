@@ -3,6 +3,7 @@ import pickle
 import streamlit as st
 import matplotlib.pyplot as plt
 
+
 # Directory where pickles are saved
 pickle_dir = "./assets/pickles/"
 
@@ -12,6 +13,7 @@ def get_pickle_files(pickle_dir):
         f for f in os.listdir(pickle_dir) 
         if f.endswith("_visualization.pkl")
     ]
+
 
 # Display the graphs in Streamlit
 st.title("Graph Viewer")
