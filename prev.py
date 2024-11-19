@@ -10,14 +10,14 @@ from tqdm import tqdm
 
 def get_graph_paths(dataset_dir):
     nop = ["ia-crime-moreno", "maybe-PROTEINS-full", "sex", "ChicagoRegional"]
-    # yup = ["faa","politician_edges","Stelzl","tvshow_edges","vidal"]
+    yup = ["faa","politician_edges","Stelzl","tvshow_edges","vidal"]
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
             try:
                 name = os.path.splitext(filename)[0]
-                if filename.endswith(".edges") and not (name in nop) :
-                # if filename.endswith(".edges") and not (name in nop) and name in yup:
+                # if filename.endswith(".edges") and not (name in nop) :
+                if filename.endswith(".edges") and not (name in nop) and name in yup:
                     print(name)
                     file_path = os.path.join(dirpath, filename) 
                     graph_list.append((file_path, name))
@@ -63,7 +63,12 @@ for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
         # Save the figure in a separate pickle file
         with open(pickle_filename, "wb") as f:
             pickle.dump(fig, f)
-        print(f"Saved pickle for {name} as {pickle_filename}")
+        # Verify if the file is written correctly
+        if os.path.exists(pickle_filename) and os.path.getsize(pickle_filename) > 0:
+            print(f"Pickle file saved successfully: {pickle_filename}")
+        else:
+            print(f"Failed to save pickle file: {pickle_filename}")
+
 
         # Save the PNG file for later use
         png_filename = f"./assets/img/previsualizations/{name}_graph.png"

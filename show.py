@@ -31,16 +31,17 @@ if pickle_files:
     if selected_graph:
         st.write(f"Displaying the graph: {selected_graph}")
         pickle_path = os.path.join(pickle_dir, f"{selected_graph}_visualization.pkl")
-
+        if not os.path.exists(pickle_path):
+            print(f"Pickle file does not exist: {pickle_path}")
+        elif os.path.getsize(pickle_path) == 0:
+            print(f"Pickle file is empty: {pickle_path}")
         try:
-            # Load the figure from the `.pkl` file
             with open(pickle_path, "rb") as f:
                 fig = pickle.load(f)
-
-            # Display the figure in Streamlit
             st.pyplot(fig)
-
+        except EOFError:
+            st.error(f"Pickle file is corrupted or incomplete: {pickle_path}")
         except Exception as e:
-            st.error(f"Failed to load the graph visualization: {e}")
+            st.error(f"An error occurred while loading the pickle: {e}")
 else:
     st.warning("No saved graph visualizations found in the pickle directory.")
