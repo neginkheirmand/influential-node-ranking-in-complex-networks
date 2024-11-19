@@ -28,6 +28,30 @@ def get_pickle_files(pickle_dir):
         if f.endswith("_visualization.pkl")
     ]
 
+def get_graph_features(graph_name, file_path="graph_info.xlsx"):
+    try:
+        # Read the Excel file into a DataFrame
+        df = pd.read_excel(file_path)
+        
+        # Ensure the graph name is in the DataFrame
+        if "graph G" not in df.columns:
+            raise KeyError("'Graph Name' column not found in the Excel file.")
+        
+        # Filter the DataFrame for the requested graph
+        graph_info = df[df["graph G"] == graph_name]
+        
+        if graph_info.empty:
+            return None  # Graph not found
+        
+        # Convert the row to a dictionary of features
+        features = graph_info.iloc[0].to_dict()  # Take the first match (if multiple exist)
+        return features
+    
+    except Exception as e:
+        print(f"Error reading or processing the file: {e}")
+        return None
+
+
 
 def load_graph(graph_file):
     G = nx.read_edgelist(graph_file)
@@ -122,14 +146,21 @@ elif page == "Graph Viewer":
         if selected_graph:
             st.write(f"Displaying the graph: {selected_graph}")
             pickle_path = os.path.join(pickle_dir, f"{selected_graph}_visualization.pkl")
-            if not os.path.exists(pickle_path):
-                print(f"Pickle file does not exist: {pickle_path}")
-            elif os.path.getsize(pickle_path) == 0:
-                print(f"Pickle file is empty: {pickle_path}")
+            features  = get_graph_features(selected_graph)
+
+            #add the table 
+            if features:
+                # Convert features dictionary to a DataFrame for better display
+                features_df = pd.DataFrame(features.items(), columns=["Feature", "Value"])
+                st.write("### Graph Features")
+                st.table(features_df)  # Display the features as a table
+            else:
+                st.warning(f"No features found for the graph: {selected_graph}")
             try:
                 with open(pickle_path, "rb") as f:
                     fig = pickle.load(f)
                 st.pyplot(fig)
+                
             except EOFError:
                 st.error(f"Pickle file is corrupted or incomplete: {pickle_path}")
             except Exception as e:
