@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from math import ceil
 import networkx as nx
+import plotly.graph_objects as go
 
 
 def get_graph_paths(dataset_dir= "./datasets/"):
@@ -93,37 +94,29 @@ def get_sir_graph_paths(net_name, num_b=3,  result_path = './datasets/SIR_Result
 
 
 # Function to plot node importance using SIR for different B values
-def plot_node_importance_using_sir(graph_path, sir_csv_paths):
-    colors = ['red', 'green', 'blue', 'yellow', 'black', 'cyan', 'magenta']
+def plot_interactive_sir(graph_path, sir_csv_paths):
+    fig = go.Figure()
+    
     G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
     num_nodes = G.number_of_nodes()
     b_list = get_B_Value(G, len(sir_csv_paths))
 
-    max_width = 100  # Maximum figure width in inches
-    width = min(ceil(num_nodes / 10), max_width)
 
-    plt.figure(figsize=(width, 10))
+    colors = ['red', 'green', 'blue', 'yellow', 'black', 'cyan', 'magenta']
+    
+    for i, sir_csv in enumerate(sir_csv_paths):
+        x, y = read_sir_csv(sir_csv)
+        fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name=f"B = {b_list[i]}", line=dict(color=colors[i % len(colors)])))
 
-    for i, (b, filename) in enumerate(zip(b_list, sir_csv_paths)):
-        if i >= len(colors):  # Avoid running out of colors
-            print("Warning: Insufficient colors; reusing colors.")
-            i = i % len(colors)
-
-        # Read data from the file
-        x, y = read_sir_csv(filename)
-
-        # Plot the data
-        plt.plot(x, y, color=colors[i], label=f'B = {b}')
-
-    # Adding labels, title, legend, and grid
-    plt.xlabel('Node Index')
-    plt.ylabel('SIR Value')
-    plt.title('Node Importance using SIR for Different B Values')
-    plt.legend()
-    plt.grid(True)
-
-    # Display the plot in Streamlit
-    st.pyplot(plt)
+    fig.update_layout(
+        title="Node Importance using SIR for Different B Values",
+        xaxis_title="Node Index",
+        yaxis_title="SIR Value",
+        legend_title="B Values",
+        height=600,
+        width=1200,
+    )
+    return fig
 
 
 def load_graph(graph_file):
@@ -264,6 +257,7 @@ elif page=="SIR analyzer":
             # Display the table in Streamlit
             st.title("B Values Table")
             st.table(b_values_df)
-            plot_node_importance_using_sir(selected_graph_path, get_sir_graph_paths(selected_graph_name))
+            sir_plot = plot_interactive_sir(selected_graph_path, get_sir_graph_paths(selected_graph_name))
+            st.plotly_chart(sir_plot)
 
 
