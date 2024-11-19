@@ -9,6 +9,8 @@ from tqdm import tqdm
 def get_graph_paths(dataset_dir):
     # Exclude specific large files
     nop = ["ia-crime-moreno", "maybe-PROTEINS-full", "sex", "ChicagoRegional"]
+    nop2 = ['arenas-pgp', 'CA-GrQc', 'CA-HepTh', 'p2p-Gnutella04']
+    #TODO THESE GRAPHS NEED PREV
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
