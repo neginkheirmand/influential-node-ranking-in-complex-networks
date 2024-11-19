@@ -170,7 +170,7 @@ def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/')
 def process_graph(args):
     g_path, g_name, result_path = args
     print(g_name)
-    Sir_of_graph(g_path, num_b=3, result_path=result_path)
+    Sir_of_graph(g_path, num_b=3, result_path=result_path)  #TODO: later i can run another 2 representations of it and sum it with the already created ones to get 5 num_b
     print("done with ", g_name)
 
 def init_worker():
