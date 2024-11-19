@@ -187,7 +187,7 @@ elif page == "Graph Files":
             st.warning("No `.edges` files found in the specified directory.")
 elif page == "Graph Viewer":
     st.header("Graph Viewer")
-    pickle_dir = "./assets/pickles/"
+    pickle_dir = "./assets/prev_go/"
     # Display the graphs in Streamlit
     st.title("Graph Viewer")
     st.header("Select and View Graphs")
