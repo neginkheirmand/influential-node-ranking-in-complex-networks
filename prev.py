@@ -10,14 +10,14 @@ from tqdm import tqdm
 
 def get_graph_paths(dataset_dir):
     nop = ["ia-crime-moreno", "maybe-PROTEINS-full", "sex", "ChicagoRegional"]
-    yup = ["faa","politician_edges","Stelzl","tvshow_edges","vidal"]
+    # yup = ["faa","politician_edges","Stelzl","tvshow_edges","vidal"]
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
             try:
                 name = os.path.splitext(filename)[0]
-                # if filename.endswith(".edges") and not (name in nop) :
-                if filename.endswith(".edges") and not (name in nop) and name in yup:
+                if filename.endswith(".edges") and not (name in nop) :
+                # if filename.endswith(".edges") and not (name in nop) and name in yup:
                     print(name)
                     file_path = os.path.join(dirpath, filename) 
                     graph_list.append((file_path, name))
