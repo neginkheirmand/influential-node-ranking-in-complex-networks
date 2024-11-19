@@ -9,6 +9,7 @@ from tqdm import tqdm
 
 
 def get_graph_paths(dataset_dir):
+    # TODO: These big files werent done 
     nop = ["ia-crime-moreno", "maybe-PROTEINS-full", "sex", "ChicagoRegional"]
     # yup = ["faa","politician_edges","Stelzl","tvshow_edges","vidal"]
     graph_list = []
