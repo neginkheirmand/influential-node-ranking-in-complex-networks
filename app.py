@@ -13,7 +13,7 @@ def get_graph_paths(dataset_dir= "./datasets/"):
         for filename in files:
             try:
                 # if not filename.startswith("ba_edgelist") and filename.endswith(".edges"):
-                if filename.endswith(".edges"):
+                if filename.endswith(".edges") and (filename.startswith("ba_edgelist_exp") or not filename.startswith("ba_edgelist")  ):
                     file_path = os.path.join(dirpath, filename) 
                     graph_list.append((file_path, os.path.splitext(filename)[0]))
             except Exception as e: 
@@ -110,8 +110,11 @@ elif page == "Graph Viewer":
 
     if pickle_files:
         # Remove the "_visualization.pkl" suffix for better readability
-        graph_names = [os.path.splitext(f)[0].replace("_visualization", "") for f in pickle_files]
-
+        # graph_names = [os.path.splitext(f)[0].replace("_visualization", "") for f in pickle_files]
+        
+        graph_names = get_graph_paths("./datasets/")
+        for i in range(len(graph_names)):
+            graph_names[i]=graph_names[i][1]
         # Create a dropdown for selecting the graph
         selected_graph = st.selectbox("Select a graph", graph_names)
 
