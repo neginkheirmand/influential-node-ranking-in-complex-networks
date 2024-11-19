@@ -1,4 +1,5 @@
 import os
+import pickle
 import pandas as pd
 import streamlit as st
 import networkx as nx
@@ -19,6 +20,13 @@ def get_graph_paths(dataset_dir= "./datasets/"):
                 print(e, f'{filename}')
     return graph_list
 
+
+# Get the list of pickle files
+def get_pickle_files(pickle_dir):
+    return [
+        f for f in os.listdir(pickle_dir) 
+        if f.endswith("_visualization.pkl")
+    ]
 
 
 def load_graph(graph_file):
@@ -92,43 +100,37 @@ elif page == "Graph Files":
             st.warning("No `.edges` files found in the specified directory.")
 elif page == "Graph Viewer":
     st.header("Graph Viewer")
+    pickle_dir = "./assets/pickles/"
+    # Display the graphs in Streamlit
+    st.title("Graph Viewer")
+    st.header("Select and View Graphs")
 
-    # Get the list of available graph files
-    dataset_dir = "./datasets/"
-    graph_files = get_graph_paths(dataset_dir)
+    # Get the list of available `.pkl` files
+    pickle_files = get_pickle_files(pickle_dir)
 
-    if not graph_files:
-        st.warning("No graph files found in the dataset directory.")
+    if pickle_files:
+        # Remove the "_visualization.pkl" suffix for better readability
+        graph_names = [os.path.splitext(f)[0].replace("_visualization", "") for f in pickle_files]
+
+        # Create a dropdown for selecting the graph
+        selected_graph = st.selectbox("Select a graph", graph_names)
+
+        # Load and display the selected graph
+        if selected_graph:
+            st.write(f"Displaying the graph: {selected_graph}")
+            pickle_path = os.path.join(pickle_dir, f"{selected_graph}_visualization.pkl")
+            if not os.path.exists(pickle_path):
+                print(f"Pickle file does not exist: {pickle_path}")
+            elif os.path.getsize(pickle_path) == 0:
+                print(f"Pickle file is empty: {pickle_path}")
+            try:
+                with open(pickle_path, "rb") as f:
+                    fig = pickle.load(f)
+                st.pyplot(fig)
+            except EOFError:
+                st.error(f"Pickle file is corrupted or incomplete: {pickle_path}")
+            except Exception as e:
+                st.error(f"An error occurred while loading the pickle: {e}")
     else:
-        # Create a dropdown menu for selecting a graph file
-        graph_names = [name for _, name in graph_files]
-        selected_graph = st.selectbox("Select a graph to view:", graph_names)
+        st.warning("No saved graph visualizations found in the pickle directory.")
 
-        # Add a button to trigger graph loading
-        if st.button("Load Graph"):
-            # Get the full path of the selected graph
-            selected_file_path = next(
-                (path for path, name in graph_files if name == selected_graph), None
-            )
-
-            if selected_file_path:
-                try:
-                    # Load and display the selected graph
-                    G = nx.read_edgelist(selected_file_path)
-
-                    # Calculate node positions
-                    pos = nx.spring_layout(G)
-
-                    # Create a color map for the nodes
-                    color_map = ['skyblue' for _ in G.nodes()]
-
-                    # Plot the graph
-                    st.write(f"### Graph Visualization: {selected_graph}")
-                    plt.figure(figsize=(10, 7))
-                    nx.draw(
-                        G, pos, node_color=color_map, with_labels=True, edge_color='gray', font_size=10
-                    )
-                    st.pyplot(plt)
-
-                except Exception as e:
-                    st.error(f"Failed to load or plot the graph: {e}")
