@@ -32,7 +32,6 @@ graph_list = get_graph_paths(dataset_dir)
 # Create a folder to save individual pickle files if it doesn't exist
 pickle_dir = "./assets/pickles/"
 os.makedirs(pickle_dir, exist_ok=True)
-input()
 
 # Pre-generate graph visualizations
 for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
@@ -43,10 +42,11 @@ for path, name in tqdm(graph_list, desc="Processing Graphs", unit="graph"):
         continue  # Skip graphs already in pickle
 
     print(f"Processing {name}")
-    input()
     try:
         # Load the graph
         G = nx.read_edgelist(path)
+
+        G.remove_edges_from(nx.selfloop_edges(G))
 
         # Calculate node positions
         pos = nx.spring_layout(G)
