@@ -155,8 +155,8 @@ def Sir_of_graph(graph_path, num_b = 3, result_path = './datasets/SIR_Results/')
         prev_nodes = get_previously_sim_values(paths[0])
         prev_siz = len(prev_nodes)
         nodes = list(set(nodes) - set(prev_nodes))
-        # nodes = sorted(nodes)
-        nodes = sorted(nodes, reverse=True)
+        nodes = sorted(nodes)
+        # nodes = sorted(nodes, reverse=True)
         print("Continuing from where we left off graph: ", graph_path, 'node: ', nodes[0],'   size:',  prev_siz,  '/', size_)
 
     for node in nodes:
