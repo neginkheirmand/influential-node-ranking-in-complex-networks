@@ -16,7 +16,7 @@ def get_graph_paths(dataset_dir):
         for filename in files:
             try:
                 name = os.path.splitext(filename)[0]
-                if filename.endswith(".edges") and not (name in nop) and name in nop2:
+                if filename.endswith(".edges") :
                     print(name)
                     file_path = os.path.join(dirpath, filename)
                     graph_list.append((file_path, name))

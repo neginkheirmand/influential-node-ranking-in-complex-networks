@@ -24736,3 +24736,1687 @@
 2024-11-21 06:44:15,135 - INFO - -- graph item: politician_edges
 2024-11-21 06:44:15,199 - INFO - starting politician_edges
 2024-11-21 06:44:15,360 - INFO - Continuing from where we left off graph: ./datasets/other/politician_edges.edges, node: 4478, size: 4480/5908
+2024-11-21 06:45:16,945 - INFO - added node 4478 from ./datasets/other/politician_edges.edges, size: 4481/5908
+2024-11-21 06:46:09,469 - INFO - added node 4479 from ./datasets/other/politician_edges.edges, size: 4482/5908
+2024-11-21 06:46:49,628 - INFO - added node 4480 from ./datasets/other/politician_edges.edges, size: 4483/5908
+2024-11-21 06:47:17,626 - INFO - added node 4481 from ./datasets/other/politician_edges.edges, size: 4484/5908
+2024-11-21 06:48:11,066 - INFO - added node 4482 from ./datasets/other/politician_edges.edges, size: 4485/5908
+2024-11-21 06:48:41,437 - INFO - added node 4483 from ./datasets/other/politician_edges.edges, size: 4486/5908
+2024-11-21 06:49:46,659 - INFO - added node 4484 from ./datasets/other/politician_edges.edges, size: 4487/5908
+2024-11-21 06:50:19,643 - INFO - added node 4485 from ./datasets/other/politician_edges.edges, size: 4488/5908
+2024-11-21 06:50:50,450 - INFO - added node 4486 from ./datasets/other/politician_edges.edges, size: 4489/5908
+2024-11-21 06:51:47,133 - INFO - added node 4487 from ./datasets/other/politician_edges.edges, size: 4490/5908
+2024-11-21 06:52:59,941 - INFO - added node 4488 from ./datasets/other/politician_edges.edges, size: 4491/5908
+2024-11-21 06:53:47,682 - INFO - added node 4489 from ./datasets/other/politician_edges.edges, size: 4492/5908
+2024-11-21 06:55:55,342 - INFO - added node 4490 from ./datasets/other/politician_edges.edges, size: 4493/5908
+2024-11-21 06:57:17,511 - INFO - added node 4491 from ./datasets/other/politician_edges.edges, size: 4494/5908
+2024-11-21 06:57:47,267 - INFO - added node 4492 from ./datasets/other/politician_edges.edges, size: 4495/5908
+2024-11-21 06:58:17,076 - INFO - added node 4493 from ./datasets/other/politician_edges.edges, size: 4496/5908
+2024-11-21 06:59:08,604 - INFO - added node 4494 from ./datasets/other/politician_edges.edges, size: 4497/5908
+2024-11-21 06:59:35,912 - INFO - added node 4495 from ./datasets/other/politician_edges.edges, size: 4498/5908
+2024-11-21 07:02:16,587 - INFO - added node 4496 from ./datasets/other/politician_edges.edges, size: 4499/5908
+2024-11-21 07:02:44,891 - INFO - added node 4497 from ./datasets/other/politician_edges.edges, size: 4500/5908
+2024-11-21 07:06:42,288 - INFO - added node 4498 from ./datasets/other/politician_edges.edges, size: 4501/5908
+2024-11-21 07:07:25,722 - INFO - added node 4499 from ./datasets/other/politician_edges.edges, size: 4502/5908
+2024-11-21 07:09:41,937 - INFO - added node 4500 from ./datasets/other/politician_edges.edges, size: 4503/5908
+2024-11-21 07:13:16,081 - INFO - added node 4501 from ./datasets/other/politician_edges.edges, size: 4504/5908
+2024-11-21 07:13:45,433 - INFO - added node 4502 from ./datasets/other/politician_edges.edges, size: 4505/5908
+2024-11-21 07:14:15,268 - INFO - added node 4503 from ./datasets/other/politician_edges.edges, size: 4506/5908
+2024-11-21 07:14:50,706 - INFO - added node 4504 from ./datasets/other/politician_edges.edges, size: 4507/5908
+2024-11-21 07:17:20,579 - INFO - added node 4505 from ./datasets/other/politician_edges.edges, size: 4508/5908
+2024-11-21 07:18:03,875 - INFO - added node 4506 from ./datasets/other/politician_edges.edges, size: 4509/5908
+2024-11-21 07:18:44,774 - INFO - added node 4507 from ./datasets/other/politician_edges.edges, size: 4510/5908
+2024-11-21 07:19:48,477 - INFO - added node 4508 from ./datasets/other/politician_edges.edges, size: 4511/5908
+2024-11-21 07:20:28,967 - INFO - added node 4509 from ./datasets/other/politician_edges.edges, size: 4512/5908
+2024-11-21 07:21:40,148 - INFO - added node 4510 from ./datasets/other/politician_edges.edges, size: 4513/5908
+2024-11-21 07:23:13,222 - INFO - added node 4511 from ./datasets/other/politician_edges.edges, size: 4514/5908
+2024-11-21 07:24:03,267 - INFO - added node 4512 from ./datasets/other/politician_edges.edges, size: 4515/5908
+2024-11-21 07:24:33,296 - INFO - added node 4513 from ./datasets/other/politician_edges.edges, size: 4516/5908
+2024-11-21 07:25:02,777 - INFO - added node 4514 from ./datasets/other/politician_edges.edges, size: 4517/5908
+2024-11-21 07:25:39,598 - INFO - added node 4515 from ./datasets/other/politician_edges.edges, size: 4518/5908
+2024-11-21 07:26:51,360 - INFO - added node 4516 from ./datasets/other/politician_edges.edges, size: 4519/5908
+2024-11-21 07:28:31,937 - INFO - added node 4517 from ./datasets/other/politician_edges.edges, size: 4520/5908
+2024-11-21 07:29:22,620 - INFO - added node 4518 from ./datasets/other/politician_edges.edges, size: 4521/5908
+2024-11-21 07:31:27,182 - INFO - added node 4519 from ./datasets/other/politician_edges.edges, size: 4522/5908
+2024-11-21 07:32:10,841 - INFO - added node 4520 from ./datasets/other/politician_edges.edges, size: 4523/5908
+2024-11-21 07:33:03,349 - INFO - added node 4521 from ./datasets/other/politician_edges.edges, size: 4524/5908
+2024-11-21 07:33:36,188 - INFO - added node 4522 from ./datasets/other/politician_edges.edges, size: 4525/5908
+2024-11-21 07:37:50,553 - INFO - added node 4523 from ./datasets/other/politician_edges.edges, size: 4526/5908
+2024-11-21 07:38:36,159 - INFO - added node 4524 from ./datasets/other/politician_edges.edges, size: 4527/5908
+2024-11-21 07:43:00,978 - INFO - added node 4525 from ./datasets/other/politician_edges.edges, size: 4528/5908
+2024-11-21 07:43:28,546 - INFO - added node 4526 from ./datasets/other/politician_edges.edges, size: 4529/5908
+2024-11-21 07:44:19,055 - INFO - added node 4527 from ./datasets/other/politician_edges.edges, size: 4530/5908
+2024-11-21 07:45:16,992 - INFO - added node 4528 from ./datasets/other/politician_edges.edges, size: 4531/5908
+2024-11-21 07:45:45,734 - INFO - added node 4529 from ./datasets/other/politician_edges.edges, size: 4532/5908
+2024-11-21 07:47:03,565 - INFO - added node 4530 from ./datasets/other/politician_edges.edges, size: 4533/5908
+2024-11-21 07:47:36,079 - INFO - added node 4531 from ./datasets/other/politician_edges.edges, size: 4534/5908
+2024-11-21 07:48:48,005 - INFO - added node 4532 from ./datasets/other/politician_edges.edges, size: 4535/5908
+2024-11-21 07:49:36,729 - INFO - added node 4533 from ./datasets/other/politician_edges.edges, size: 4536/5908
+2024-11-21 07:50:08,347 - INFO - added node 4534 from ./datasets/other/politician_edges.edges, size: 4537/5908
+2024-11-21 07:52:29,349 - INFO - added node 4535 from ./datasets/other/politician_edges.edges, size: 4538/5908
+2024-11-21 07:52:59,714 - INFO - added node 4536 from ./datasets/other/politician_edges.edges, size: 4539/5908
+2024-11-21 07:56:56,750 - INFO - added node 4537 from ./datasets/other/politician_edges.edges, size: 4540/5908
+2024-11-21 07:57:51,989 - INFO - added node 4538 from ./datasets/other/politician_edges.edges, size: 4541/5908
+2024-11-21 07:58:30,606 - INFO - added node 4539 from ./datasets/other/politician_edges.edges, size: 4542/5908
+2024-11-21 07:59:02,589 - INFO - added node 4540 from ./datasets/other/politician_edges.edges, size: 4543/5908
+2024-11-21 08:00:05,599 - INFO - added node 4541 from ./datasets/other/politician_edges.edges, size: 4544/5908
+2024-11-21 08:02:08,384 - INFO - added node 4542 from ./datasets/other/politician_edges.edges, size: 4545/5908
+2024-11-21 08:02:38,774 - INFO - added node 4543 from ./datasets/other/politician_edges.edges, size: 4546/5908
+2024-11-21 08:03:13,624 - INFO - added node 4544 from ./datasets/other/politician_edges.edges, size: 4547/5908
+2024-11-21 08:04:30,209 - INFO - added node 4545 from ./datasets/other/politician_edges.edges, size: 4548/5908
+2024-11-21 08:05:02,676 - INFO - added node 4546 from ./datasets/other/politician_edges.edges, size: 4549/5908
+2024-11-21 08:05:53,314 - INFO - added node 4547 from ./datasets/other/politician_edges.edges, size: 4550/5908
+2024-11-21 08:06:40,943 - INFO - added node 4548 from ./datasets/other/politician_edges.edges, size: 4551/5908
+2024-11-21 08:08:51,847 - INFO - added node 4549 from ./datasets/other/politician_edges.edges, size: 4552/5908
+2024-11-21 08:09:39,326 - INFO - added node 4550 from ./datasets/other/politician_edges.edges, size: 4553/5908
+2024-11-21 08:10:53,004 - INFO - added node 4551 from ./datasets/other/politician_edges.edges, size: 4554/5908
+2024-11-21 08:11:35,106 - INFO - added node 4552 from ./datasets/other/politician_edges.edges, size: 4555/5908
+2024-11-21 08:12:05,068 - INFO - added node 4553 from ./datasets/other/politician_edges.edges, size: 4556/5908
+2024-11-21 08:12:56,134 - INFO - added node 4554 from ./datasets/other/politician_edges.edges, size: 4557/5908
+2024-11-21 08:14:21,818 - INFO - added node 4555 from ./datasets/other/politician_edges.edges, size: 4558/5908
+2024-11-21 08:14:58,776 - INFO - added node 4556 from ./datasets/other/politician_edges.edges, size: 4559/5908
+2024-11-21 08:15:37,807 - INFO - added node 4557 from ./datasets/other/politician_edges.edges, size: 4560/5908
+2024-11-21 08:17:19,106 - INFO - added node 4558 from ./datasets/other/politician_edges.edges, size: 4561/5908
+2024-11-21 08:17:57,446 - INFO - added node 4559 from ./datasets/other/politician_edges.edges, size: 4562/5908
+2024-11-21 08:18:25,737 - INFO - added node 4560 from ./datasets/other/politician_edges.edges, size: 4563/5908
+2024-11-21 08:19:18,058 - INFO - added node 4561 from ./datasets/other/politician_edges.edges, size: 4564/5908
+2024-11-21 08:19:50,386 - INFO - added node 4562 from ./datasets/other/politician_edges.edges, size: 4565/5908
+2024-11-21 08:20:38,558 - INFO - added node 4563 from ./datasets/other/politician_edges.edges, size: 4566/5908
+2024-11-21 08:21:09,023 - INFO - added node 4564 from ./datasets/other/politician_edges.edges, size: 4567/5908
+2024-11-21 08:22:03,037 - INFO - added node 4565 from ./datasets/other/politician_edges.edges, size: 4568/5908
+2024-11-21 08:22:32,683 - INFO - added node 4566 from ./datasets/other/politician_edges.edges, size: 4569/5908
+2024-11-21 08:23:03,377 - INFO - added node 4567 from ./datasets/other/politician_edges.edges, size: 4570/5908
+2024-11-21 08:23:35,456 - INFO - added node 4568 from ./datasets/other/politician_edges.edges, size: 4571/5908
+2024-11-21 08:24:06,815 - INFO - added node 4569 from ./datasets/other/politician_edges.edges, size: 4572/5908
+2024-11-21 08:26:27,137 - INFO - added node 4570 from ./datasets/other/politician_edges.edges, size: 4573/5908
+2024-11-21 08:26:58,112 - INFO - added node 4571 from ./datasets/other/politician_edges.edges, size: 4574/5908
+2024-11-21 08:28:46,660 - INFO - added node 4572 from ./datasets/other/politician_edges.edges, size: 4575/5908
+2024-11-21 08:29:18,380 - INFO - added node 4573 from ./datasets/other/politician_edges.edges, size: 4576/5908
+2024-11-21 08:29:48,435 - INFO - added node 4574 from ./datasets/other/politician_edges.edges, size: 4577/5908
+2024-11-21 08:30:17,077 - INFO - added node 4575 from ./datasets/other/politician_edges.edges, size: 4578/5908
+2024-11-21 08:31:04,706 - INFO - added node 4576 from ./datasets/other/politician_edges.edges, size: 4579/5908
+2024-11-21 08:31:33,450 - INFO - added node 4577 from ./datasets/other/politician_edges.edges, size: 4580/5908
+2024-11-21 08:32:10,140 - INFO - added node 4578 from ./datasets/other/politician_edges.edges, size: 4581/5908
+2024-11-21 08:33:35,052 - INFO - added node 4579 from ./datasets/other/politician_edges.edges, size: 4582/5908
+2024-11-21 08:34:03,787 - INFO - added node 4580 from ./datasets/other/politician_edges.edges, size: 4583/5908
+2024-11-21 08:34:52,890 - INFO - added node 4581 from ./datasets/other/politician_edges.edges, size: 4584/5908
+2024-11-21 08:35:49,145 - INFO - added node 4582 from ./datasets/other/politician_edges.edges, size: 4585/5908
+2024-11-21 08:37:21,396 - INFO - added node 4583 from ./datasets/other/politician_edges.edges, size: 4586/5908
+2024-11-21 08:37:48,819 - INFO - added node 4584 from ./datasets/other/politician_edges.edges, size: 4587/5908
+2024-11-21 08:40:01,624 - INFO - added node 4585 from ./datasets/other/politician_edges.edges, size: 4588/5908
+2024-11-21 08:40:32,352 - INFO - added node 4586 from ./datasets/other/politician_edges.edges, size: 4589/5908
+2024-11-21 08:42:10,936 - INFO - added node 4587 from ./datasets/other/politician_edges.edges, size: 4590/5908
+2024-11-21 08:42:40,203 - INFO - added node 4588 from ./datasets/other/politician_edges.edges, size: 4591/5908
+2024-11-21 08:44:21,755 - INFO - added node 4589 from ./datasets/other/politician_edges.edges, size: 4592/5908
+2024-11-21 08:45:01,036 - INFO - added node 4590 from ./datasets/other/politician_edges.edges, size: 4593/5908
+2024-11-21 08:45:47,207 - INFO - added node 4591 from ./datasets/other/politician_edges.edges, size: 4594/5908
+2024-11-21 08:46:16,879 - INFO - added node 4592 from ./datasets/other/politician_edges.edges, size: 4595/5908
+2024-11-21 08:47:03,839 - INFO - added node 4593 from ./datasets/other/politician_edges.edges, size: 4596/5908
+2024-11-21 08:48:31,719 - INFO - added node 4594 from ./datasets/other/politician_edges.edges, size: 4597/5908
+2024-11-21 08:51:14,926 - INFO - added node 4595 from ./datasets/other/politician_edges.edges, size: 4598/5908
+2024-11-21 08:51:43,875 - INFO - added node 4596 from ./datasets/other/politician_edges.edges, size: 4599/5908
+2024-11-21 08:52:15,353 - INFO - added node 4597 from ./datasets/other/politician_edges.edges, size: 4600/5908
+2024-11-21 08:57:00,191 - INFO - added node 4598 from ./datasets/other/politician_edges.edges, size: 4601/5908
+2024-11-21 08:57:35,915 - INFO - added node 4599 from ./datasets/other/politician_edges.edges, size: 4602/5908
+2024-11-21 08:58:04,105 - INFO - added node 4600 from ./datasets/other/politician_edges.edges, size: 4603/5908
+2024-11-21 09:00:20,046 - INFO - added node 4601 from ./datasets/other/politician_edges.edges, size: 4604/5908
+2024-11-21 09:05:28,466 - INFO - added node 4602 from ./datasets/other/politician_edges.edges, size: 4605/5908
+2024-11-21 09:06:10,776 - INFO - added node 4603 from ./datasets/other/politician_edges.edges, size: 4606/5908
+2024-11-21 09:06:42,692 - INFO - added node 4604 from ./datasets/other/politician_edges.edges, size: 4607/5908
+2024-11-21 09:07:09,857 - INFO - added node 4605 from ./datasets/other/politician_edges.edges, size: 4608/5908
+2024-11-21 09:08:22,542 - INFO - added node 4606 from ./datasets/other/politician_edges.edges, size: 4609/5908
+2024-11-21 09:09:03,913 - INFO - added node 4607 from ./datasets/other/politician_edges.edges, size: 4610/5908
+2024-11-21 09:10:15,753 - INFO - added node 4608 from ./datasets/other/politician_edges.edges, size: 4611/5908
+2024-11-21 09:10:47,358 - INFO - added node 4609 from ./datasets/other/politician_edges.edges, size: 4612/5908
+2024-11-21 09:11:18,381 - INFO - added node 4610 from ./datasets/other/politician_edges.edges, size: 4613/5908
+2024-11-21 09:11:50,501 - INFO - added node 4611 from ./datasets/other/politician_edges.edges, size: 4614/5908
+2024-11-21 09:12:22,633 - INFO - added node 4612 from ./datasets/other/politician_edges.edges, size: 4615/5908
+2024-11-21 09:12:53,403 - INFO - added node 4613 from ./datasets/other/politician_edges.edges, size: 4616/5908
+2024-11-21 09:13:44,007 - INFO - added node 4614 from ./datasets/other/politician_edges.edges, size: 4617/5908
+2024-11-21 09:14:13,534 - INFO - added node 4615 from ./datasets/other/politician_edges.edges, size: 4618/5908
+2024-11-21 09:14:53,128 - INFO - added node 4616 from ./datasets/other/politician_edges.edges, size: 4619/5908
+2024-11-21 09:18:04,058 - INFO - added node 4617 from ./datasets/other/politician_edges.edges, size: 4620/5908
+2024-11-21 09:21:47,702 - INFO - added node 4618 from ./datasets/other/politician_edges.edges, size: 4621/5908
+2024-11-21 09:22:33,639 - INFO - added node 4619 from ./datasets/other/politician_edges.edges, size: 4622/5908
+2024-11-21 09:23:07,591 - INFO - added node 4620 from ./datasets/other/politician_edges.edges, size: 4623/5908
+2024-11-21 09:24:05,223 - INFO - added node 4621 from ./datasets/other/politician_edges.edges, size: 4624/5908
+2024-11-21 09:29:02,040 - INFO - added node 4622 from ./datasets/other/politician_edges.edges, size: 4625/5908
+2024-11-21 09:31:25,069 - INFO - added node 4623 from ./datasets/other/politician_edges.edges, size: 4626/5908
+2024-11-21 09:31:56,522 - INFO - added node 4624 from ./datasets/other/politician_edges.edges, size: 4627/5908
+2024-11-21 09:32:59,116 - INFO - added node 4625 from ./datasets/other/politician_edges.edges, size: 4628/5908
+2024-11-21 09:33:32,516 - INFO - added node 4626 from ./datasets/other/politician_edges.edges, size: 4629/5908
+2024-11-21 09:35:34,680 - INFO - added node 4627 from ./datasets/other/politician_edges.edges, size: 4630/5908
+2024-11-21 09:36:07,312 - INFO - added node 4628 from ./datasets/other/politician_edges.edges, size: 4631/5908
+2024-11-21 09:36:42,560 - INFO - added node 4629 from ./datasets/other/politician_edges.edges, size: 4632/5908
+2024-11-21 09:40:14,277 - INFO - added node 4630 from ./datasets/other/politician_edges.edges, size: 4633/5908
+2024-11-21 09:40:47,487 - INFO - added node 4631 from ./datasets/other/politician_edges.edges, size: 4634/5908
+2024-11-21 09:41:57,145 - INFO - added node 4632 from ./datasets/other/politician_edges.edges, size: 4635/5908
+2024-11-21 09:42:39,185 - INFO - added node 4633 from ./datasets/other/politician_edges.edges, size: 4636/5908
+2024-11-21 09:43:47,351 - INFO - added node 4634 from ./datasets/other/politician_edges.edges, size: 4637/5908
+2024-11-21 09:45:03,532 - INFO - added node 4635 from ./datasets/other/politician_edges.edges, size: 4638/5908
+2024-11-21 09:45:40,665 - INFO - added node 4636 from ./datasets/other/politician_edges.edges, size: 4639/5908
+2024-11-21 09:46:32,369 - INFO - added node 4637 from ./datasets/other/politician_edges.edges, size: 4640/5908
+2024-11-21 09:47:04,414 - INFO - added node 4638 from ./datasets/other/politician_edges.edges, size: 4641/5908
+2024-11-21 09:47:41,905 - INFO - added node 4639 from ./datasets/other/politician_edges.edges, size: 4642/5908
+2024-11-21 09:48:17,254 - INFO - added node 4640 from ./datasets/other/politician_edges.edges, size: 4643/5908
+2024-11-21 09:49:41,596 - INFO - added node 4641 from ./datasets/other/politician_edges.edges, size: 4644/5908
+2024-11-21 09:51:39,461 - INFO - added node 4642 from ./datasets/other/politician_edges.edges, size: 4645/5908
+2024-11-21 09:55:46,695 - INFO - added node 4643 from ./datasets/other/politician_edges.edges, size: 4646/5908
+2024-11-21 09:56:13,541 - INFO - added node 4644 from ./datasets/other/politician_edges.edges, size: 4647/5908
+2024-11-21 09:57:18,933 - INFO - added node 4645 from ./datasets/other/politician_edges.edges, size: 4648/5908
+2024-11-21 09:57:50,300 - INFO - added node 4646 from ./datasets/other/politician_edges.edges, size: 4649/5908
+2024-11-21 09:58:21,920 - INFO - added node 4647 from ./datasets/other/politician_edges.edges, size: 4650/5908
+2024-11-21 09:58:54,551 - INFO - added node 4648 from ./datasets/other/politician_edges.edges, size: 4651/5908
+2024-11-21 09:59:33,661 - INFO - added node 4649 from ./datasets/other/politician_edges.edges, size: 4652/5908
+2024-11-21 10:00:16,053 - INFO - added node 4650 from ./datasets/other/politician_edges.edges, size: 4653/5908
+2024-11-21 10:01:05,354 - INFO - added node 4651 from ./datasets/other/politician_edges.edges, size: 4654/5908
+2024-11-21 10:01:56,275 - INFO - added node 4652 from ./datasets/other/politician_edges.edges, size: 4655/5908
+2024-11-21 10:02:42,556 - INFO - added node 4653 from ./datasets/other/politician_edges.edges, size: 4656/5908
+2024-11-21 10:03:13,563 - INFO - added node 4654 from ./datasets/other/politician_edges.edges, size: 4657/5908
+2024-11-21 10:03:54,825 - INFO - added node 4655 from ./datasets/other/politician_edges.edges, size: 4658/5908
+2024-11-21 10:05:26,581 - INFO - added node 4656 from ./datasets/other/politician_edges.edges, size: 4659/5908
+2024-11-21 10:06:03,505 - INFO - added node 4657 from ./datasets/other/politician_edges.edges, size: 4660/5908
+2024-11-21 10:06:44,395 - INFO - added node 4658 from ./datasets/other/politician_edges.edges, size: 4661/5908
+2024-11-21 10:07:28,329 - INFO - added node 4659 from ./datasets/other/politician_edges.edges, size: 4662/5908
+2024-11-21 10:11:42,164 - INFO - added node 4660 from ./datasets/other/politician_edges.edges, size: 4663/5908
+2024-11-21 10:13:06,560 - INFO - added node 4661 from ./datasets/other/politician_edges.edges, size: 4664/5908
+2024-11-21 10:13:43,379 - INFO - added node 4662 from ./datasets/other/politician_edges.edges, size: 4665/5908
+2024-11-21 10:14:56,793 - INFO - added node 4663 from ./datasets/other/politician_edges.edges, size: 4666/5908
+2024-11-21 10:15:24,023 - INFO - added node 4664 from ./datasets/other/politician_edges.edges, size: 4667/5908
+2024-11-21 10:16:50,506 - INFO - added node 4665 from ./datasets/other/politician_edges.edges, size: 4668/5908
+2024-11-21 10:17:21,728 - INFO - added node 4666 from ./datasets/other/politician_edges.edges, size: 4669/5908
+2024-11-21 10:19:33,885 - INFO - added node 4667 from ./datasets/other/politician_edges.edges, size: 4670/5908
+2024-11-21 10:20:33,132 - INFO - added node 4668 from ./datasets/other/politician_edges.edges, size: 4671/5908
+2024-11-21 10:21:19,644 - INFO - added node 4669 from ./datasets/other/politician_edges.edges, size: 4672/5908
+2024-11-21 10:22:36,093 - INFO - added node 4670 from ./datasets/other/politician_edges.edges, size: 4673/5908
+2024-11-21 10:23:06,239 - INFO - added node 4671 from ./datasets/other/politician_edges.edges, size: 4674/5908
+2024-11-21 10:24:07,860 - INFO - added node 4672 from ./datasets/other/politician_edges.edges, size: 4675/5908
+2024-11-21 10:25:02,960 - INFO - added node 4673 from ./datasets/other/politician_edges.edges, size: 4676/5908
+2024-11-21 10:28:25,005 - INFO - added node 4674 from ./datasets/other/politician_edges.edges, size: 4677/5908
+2024-11-21 10:29:52,596 - INFO - added node 4675 from ./datasets/other/politician_edges.edges, size: 4678/5908
+2024-11-21 10:31:23,636 - INFO - added node 4676 from ./datasets/other/politician_edges.edges, size: 4679/5908
+2024-11-21 10:32:05,851 - INFO - added node 4677 from ./datasets/other/politician_edges.edges, size: 4680/5908
+2024-11-21 10:32:51,485 - INFO - added node 4678 from ./datasets/other/politician_edges.edges, size: 4681/5908
+2024-11-21 10:33:56,272 - INFO - added node 4679 from ./datasets/other/politician_edges.edges, size: 4682/5908
+2024-11-21 10:37:25,207 - INFO - added node 4680 from ./datasets/other/politician_edges.edges, size: 4683/5908
+2024-11-21 10:37:56,567 - INFO - added node 4681 from ./datasets/other/politician_edges.edges, size: 4684/5908
+2024-11-21 10:38:31,604 - INFO - added node 4682 from ./datasets/other/politician_edges.edges, size: 4685/5908
+2024-11-21 10:39:08,411 - INFO - added node 4683 from ./datasets/other/politician_edges.edges, size: 4686/5908
+2024-11-21 10:39:35,568 - INFO - added node 4684 from ./datasets/other/politician_edges.edges, size: 4687/5908
+2024-11-21 10:40:03,947 - INFO - added node 4685 from ./datasets/other/politician_edges.edges, size: 4688/5908
+2024-11-21 10:40:58,449 - INFO - added node 4686 from ./datasets/other/politician_edges.edges, size: 4689/5908
+2024-11-21 10:41:38,722 - INFO - added node 4687 from ./datasets/other/politician_edges.edges, size: 4690/5908
+2024-11-21 10:42:13,114 - INFO - added node 4688 from ./datasets/other/politician_edges.edges, size: 4691/5908
+2024-11-21 10:42:42,879 - INFO - added node 4689 from ./datasets/other/politician_edges.edges, size: 4692/5908
+2024-11-21 10:43:52,199 - INFO - added node 4690 from ./datasets/other/politician_edges.edges, size: 4693/5908
+2024-11-21 10:44:41,948 - INFO - added node 4691 from ./datasets/other/politician_edges.edges, size: 4694/5908
+2024-11-21 10:46:46,825 - INFO - added node 4692 from ./datasets/other/politician_edges.edges, size: 4695/5908
+2024-11-21 10:47:53,910 - INFO - added node 4693 from ./datasets/other/politician_edges.edges, size: 4696/5908
+2024-11-21 10:50:31,553 - INFO - added node 4694 from ./datasets/other/politician_edges.edges, size: 4697/5908
+2024-11-21 10:51:18,639 - INFO - added node 4695 from ./datasets/other/politician_edges.edges, size: 4698/5908
+2024-11-21 10:51:52,456 - INFO - added node 4696 from ./datasets/other/politician_edges.edges, size: 4699/5908
+2024-11-21 10:52:40,740 - INFO - added node 4697 from ./datasets/other/politician_edges.edges, size: 4700/5908
+2024-11-21 10:53:50,791 - INFO - added node 4698 from ./datasets/other/politician_edges.edges, size: 4701/5908
+2024-11-21 10:54:46,776 - INFO - added node 4699 from ./datasets/other/politician_edges.edges, size: 4702/5908
+2024-11-21 10:58:00,210 - INFO - added node 4700 from ./datasets/other/politician_edges.edges, size: 4703/5908
+2024-11-21 10:58:34,837 - INFO - added node 4701 from ./datasets/other/politician_edges.edges, size: 4704/5908
+2024-11-21 10:59:13,607 - INFO - added node 4702 from ./datasets/other/politician_edges.edges, size: 4705/5908
+2024-11-21 11:00:29,446 - INFO - added node 4703 from ./datasets/other/politician_edges.edges, size: 4706/5908
+2024-11-21 11:01:01,678 - INFO - added node 4704 from ./datasets/other/politician_edges.edges, size: 4707/5908
+2024-11-21 11:01:38,007 - INFO - added node 4705 from ./datasets/other/politician_edges.edges, size: 4708/5908
+2024-11-21 11:02:21,255 - INFO - added node 4706 from ./datasets/other/politician_edges.edges, size: 4709/5908
+2024-11-21 11:03:36,283 - INFO - added node 4707 from ./datasets/other/politician_edges.edges, size: 4710/5908
+2024-11-21 11:04:13,963 - INFO - added node 4708 from ./datasets/other/politician_edges.edges, size: 4711/5908
+2024-11-21 11:04:43,897 - INFO - added node 4709 from ./datasets/other/politician_edges.edges, size: 4712/5908
+2024-11-21 11:05:16,764 - INFO - added node 4710 from ./datasets/other/politician_edges.edges, size: 4713/5908
+2024-11-21 11:06:18,681 - INFO - added node 4711 from ./datasets/other/politician_edges.edges, size: 4714/5908
+2024-11-21 11:07:15,257 - INFO - added node 4712 from ./datasets/other/politician_edges.edges, size: 4715/5908
+2024-11-21 11:09:43,687 - INFO - added node 4713 from ./datasets/other/politician_edges.edges, size: 4716/5908
+2024-11-21 11:10:18,849 - INFO - added node 4714 from ./datasets/other/politician_edges.edges, size: 4717/5908
+2024-11-21 11:10:51,427 - INFO - added node 4715 from ./datasets/other/politician_edges.edges, size: 4718/5908
+2024-11-21 11:11:20,322 - INFO - added node 4716 from ./datasets/other/politician_edges.edges, size: 4719/5908
+2024-11-21 11:11:49,312 - INFO - added node 4717 from ./datasets/other/politician_edges.edges, size: 4720/5908
+2024-11-21 11:14:25,039 - INFO - added node 4718 from ./datasets/other/politician_edges.edges, size: 4721/5908
+2024-11-21 11:14:55,583 - INFO - added node 4719 from ./datasets/other/politician_edges.edges, size: 4722/5908
+2024-11-21 11:15:52,479 - INFO - added node 4720 from ./datasets/other/politician_edges.edges, size: 4723/5908
+2024-11-21 11:18:19,411 - INFO - added node 4721 from ./datasets/other/politician_edges.edges, size: 4724/5908
+2024-11-21 11:18:48,548 - INFO - added node 4722 from ./datasets/other/politician_edges.edges, size: 4725/5908
+2024-11-21 11:19:46,435 - INFO - added node 4723 from ./datasets/other/politician_edges.edges, size: 4726/5908
+2024-11-21 11:20:27,604 - INFO - added node 4724 from ./datasets/other/politician_edges.edges, size: 4727/5908
+2024-11-21 11:21:11,578 - INFO - added node 4725 from ./datasets/other/politician_edges.edges, size: 4728/5908
+2024-11-21 11:21:54,669 - INFO - added node 4726 from ./datasets/other/politician_edges.edges, size: 4729/5908
+2024-11-21 11:24:20,068 - INFO - added node 4727 from ./datasets/other/politician_edges.edges, size: 4730/5908
+2024-11-21 11:25:05,871 - INFO - added node 4728 from ./datasets/other/politician_edges.edges, size: 4731/5908
+2024-11-21 11:26:04,374 - INFO - added node 4729 from ./datasets/other/politician_edges.edges, size: 4732/5908
+2024-11-21 11:26:38,574 - INFO - added node 4730 from ./datasets/other/politician_edges.edges, size: 4733/5908
+2024-11-21 11:27:39,197 - INFO - added node 4731 from ./datasets/other/politician_edges.edges, size: 4734/5908
+2024-11-21 11:28:17,127 - INFO - added node 4732 from ./datasets/other/politician_edges.edges, size: 4735/5908
+2024-11-21 11:29:03,632 - INFO - added node 4733 from ./datasets/other/politician_edges.edges, size: 4736/5908
+2024-11-21 11:29:50,557 - INFO - added node 4734 from ./datasets/other/politician_edges.edges, size: 4737/5908
+2024-11-21 11:31:33,996 - INFO - added node 4735 from ./datasets/other/politician_edges.edges, size: 4738/5908
+2024-11-21 11:32:00,724 - INFO - added node 4736 from ./datasets/other/politician_edges.edges, size: 4739/5908
+2024-11-21 11:32:41,712 - INFO - added node 4737 from ./datasets/other/politician_edges.edges, size: 4740/5908
+2024-11-21 11:33:09,665 - INFO - added node 4738 from ./datasets/other/politician_edges.edges, size: 4741/5908
+2024-11-21 11:34:12,374 - INFO - added node 4739 from ./datasets/other/politician_edges.edges, size: 4742/5908
+2024-11-21 11:36:52,434 - INFO - added node 4740 from ./datasets/other/politician_edges.edges, size: 4743/5908
+2024-11-21 11:38:14,413 - INFO - added node 4741 from ./datasets/other/politician_edges.edges, size: 4744/5908
+2024-11-21 11:38:45,852 - INFO - added node 4742 from ./datasets/other/politician_edges.edges, size: 4745/5908
+2024-11-21 11:39:18,089 - INFO - added node 4743 from ./datasets/other/politician_edges.edges, size: 4746/5908
+2024-11-21 11:40:01,659 - INFO - added node 4744 from ./datasets/other/politician_edges.edges, size: 4747/5908
+2024-11-21 11:41:42,567 - INFO - added node 4745 from ./datasets/other/politician_edges.edges, size: 4748/5908
+2024-11-21 11:42:29,214 - INFO - added node 4746 from ./datasets/other/politician_edges.edges, size: 4749/5908
+2024-11-21 11:44:30,669 - INFO - added node 4747 from ./datasets/other/politician_edges.edges, size: 4750/5908
+2024-11-21 11:44:59,173 - INFO - added node 4748 from ./datasets/other/politician_edges.edges, size: 4751/5908
+2024-11-21 11:49:16,859 - INFO - added node 4749 from ./datasets/other/politician_edges.edges, size: 4752/5908
+2024-11-21 11:50:23,892 - INFO - added node 4750 from ./datasets/other/politician_edges.edges, size: 4753/5908
+2024-11-21 11:50:57,214 - INFO - added node 4751 from ./datasets/other/politician_edges.edges, size: 4754/5908
+2024-11-21 11:53:36,225 - INFO - added node 4752 from ./datasets/other/politician_edges.edges, size: 4755/5908
+2024-11-21 11:55:17,167 - INFO - added node 4753 from ./datasets/other/politician_edges.edges, size: 4756/5908
+2024-11-21 11:57:10,282 - INFO - added node 4754 from ./datasets/other/politician_edges.edges, size: 4757/5908
+2024-11-21 11:57:50,068 - INFO - added node 4755 from ./datasets/other/politician_edges.edges, size: 4758/5908
+2024-11-21 11:58:43,260 - INFO - added node 4756 from ./datasets/other/politician_edges.edges, size: 4759/5908
+2024-11-21 11:59:16,014 - INFO - added node 4757 from ./datasets/other/politician_edges.edges, size: 4760/5908
+2024-11-21 11:59:47,847 - INFO - added node 4758 from ./datasets/other/politician_edges.edges, size: 4761/5908
+2024-11-21 12:03:55,232 - INFO - added node 4759 from ./datasets/other/politician_edges.edges, size: 4762/5908
+2024-11-21 12:04:26,668 - INFO - added node 4760 from ./datasets/other/politician_edges.edges, size: 4763/5908
+2024-11-21 12:09:11,490 - INFO - added node 4761 from ./datasets/other/politician_edges.edges, size: 4764/5908
+2024-11-21 12:09:51,656 - INFO - added node 4762 from ./datasets/other/politician_edges.edges, size: 4765/5908
+2024-11-21 12:11:14,852 - INFO - added node 4763 from ./datasets/other/politician_edges.edges, size: 4766/5908
+2024-11-21 12:11:51,508 - INFO - added node 4764 from ./datasets/other/politician_edges.edges, size: 4767/5908
+2024-11-21 12:12:22,197 - INFO - added node 4765 from ./datasets/other/politician_edges.edges, size: 4768/5908
+2024-11-21 12:14:35,235 - INFO - added node 4766 from ./datasets/other/politician_edges.edges, size: 4769/5908
+2024-11-21 12:17:57,405 - INFO - added node 4767 from ./datasets/other/politician_edges.edges, size: 4770/5908
+2024-11-21 12:18:53,317 - INFO - added node 4768 from ./datasets/other/politician_edges.edges, size: 4771/5908
+2024-11-21 12:19:25,452 - INFO - added node 4769 from ./datasets/other/politician_edges.edges, size: 4772/5908
+2024-11-21 12:19:58,302 - INFO - added node 4770 from ./datasets/other/politician_edges.edges, size: 4773/5908
+2024-11-21 12:20:31,714 - INFO - added node 4771 from ./datasets/other/politician_edges.edges, size: 4774/5908
+2024-11-21 12:21:27,607 - INFO - added node 4772 from ./datasets/other/politician_edges.edges, size: 4775/5908
+2024-11-21 12:21:57,901 - INFO - added node 4773 from ./datasets/other/politician_edges.edges, size: 4776/5908
+2024-11-21 12:23:14,942 - INFO - added node 4774 from ./datasets/other/politician_edges.edges, size: 4777/5908
+2024-11-21 12:25:23,433 - INFO - added node 4775 from ./datasets/other/politician_edges.edges, size: 4778/5908
+2024-11-21 12:26:06,778 - INFO - added node 4776 from ./datasets/other/politician_edges.edges, size: 4779/5908
+2024-11-21 12:26:38,681 - INFO - added node 4777 from ./datasets/other/politician_edges.edges, size: 4780/5908
+2024-11-21 12:27:15,351 - INFO - added node 4778 from ./datasets/other/politician_edges.edges, size: 4781/5908
+2024-11-21 12:27:45,817 - INFO - added node 4779 from ./datasets/other/politician_edges.edges, size: 4782/5908
+2024-11-21 12:28:25,701 - INFO - added node 4780 from ./datasets/other/politician_edges.edges, size: 4783/5908
+2024-11-21 12:28:58,832 - INFO - added node 4781 from ./datasets/other/politician_edges.edges, size: 4784/5908
+2024-11-21 12:29:31,223 - INFO - added node 4782 from ./datasets/other/politician_edges.edges, size: 4785/5908
+2024-11-21 12:30:30,210 - INFO - added node 4783 from ./datasets/other/politician_edges.edges, size: 4786/5908
+2024-11-21 12:31:03,228 - INFO - added node 4784 from ./datasets/other/politician_edges.edges, size: 4787/5908
+2024-11-21 12:34:38,724 - INFO - added node 4785 from ./datasets/other/politician_edges.edges, size: 4788/5908
+2024-11-21 12:35:24,771 - INFO - added node 4786 from ./datasets/other/politician_edges.edges, size: 4789/5908
+2024-11-21 12:35:57,307 - INFO - added node 4787 from ./datasets/other/politician_edges.edges, size: 4790/5908
+2024-11-21 12:37:02,117 - INFO - added node 4788 from ./datasets/other/politician_edges.edges, size: 4791/5908
+2024-11-21 12:40:41,450 - INFO - added node 4789 from ./datasets/other/politician_edges.edges, size: 4792/5908
+2024-11-21 12:41:20,296 - INFO - added node 4790 from ./datasets/other/politician_edges.edges, size: 4793/5908
+2024-11-21 12:42:18,797 - INFO - added node 4791 from ./datasets/other/politician_edges.edges, size: 4794/5908
+2024-11-21 12:44:02,365 - INFO - added node 4792 from ./datasets/other/politician_edges.edges, size: 4795/5908
+2024-11-21 12:44:37,887 - INFO - added node 4793 from ./datasets/other/politician_edges.edges, size: 4796/5908
+2024-11-21 12:45:23,899 - INFO - added node 4794 from ./datasets/other/politician_edges.edges, size: 4797/5908
+2024-11-21 12:46:16,387 - INFO - added node 4795 from ./datasets/other/politician_edges.edges, size: 4798/5908
+2024-11-21 12:49:22,768 - INFO - added node 4796 from ./datasets/other/politician_edges.edges, size: 4799/5908
+2024-11-21 12:49:55,100 - INFO - added node 4797 from ./datasets/other/politician_edges.edges, size: 4800/5908
+2024-11-21 12:50:26,749 - INFO - added node 4798 from ./datasets/other/politician_edges.edges, size: 4801/5908
+2024-11-21 12:52:12,902 - INFO - added node 4799 from ./datasets/other/politician_edges.edges, size: 4802/5908
+2024-11-21 12:52:46,011 - INFO - added node 4800 from ./datasets/other/politician_edges.edges, size: 4803/5908
+2024-11-21 12:55:34,532 - INFO - added node 4801 from ./datasets/other/politician_edges.edges, size: 4804/5908
+2024-11-21 12:56:06,355 - INFO - added node 4802 from ./datasets/other/politician_edges.edges, size: 4805/5908
+2024-11-21 12:56:35,897 - INFO - added node 4803 from ./datasets/other/politician_edges.edges, size: 4806/5908
+2024-11-21 13:00:29,869 - INFO - added node 4804 from ./datasets/other/politician_edges.edges, size: 4807/5908
+2024-11-21 13:01:09,780 - INFO - added node 4805 from ./datasets/other/politician_edges.edges, size: 4808/5908
+2024-11-21 13:02:02,741 - INFO - added node 4806 from ./datasets/other/politician_edges.edges, size: 4809/5908
+2024-11-21 13:02:38,600 - INFO - added node 4807 from ./datasets/other/politician_edges.edges, size: 4810/5908
+2024-11-21 13:03:18,402 - INFO - added node 4808 from ./datasets/other/politician_edges.edges, size: 4811/5908
+2024-11-21 13:03:50,836 - INFO - added node 4809 from ./datasets/other/politician_edges.edges, size: 4812/5908
+2024-11-21 13:06:38,026 - INFO - added node 4810 from ./datasets/other/politician_edges.edges, size: 4813/5908
+2024-11-21 13:07:33,705 - INFO - added node 4811 from ./datasets/other/politician_edges.edges, size: 4814/5908
+2024-11-21 13:08:29,051 - INFO - added node 4812 from ./datasets/other/politician_edges.edges, size: 4815/5908
+2024-11-21 13:10:15,427 - INFO - added node 4813 from ./datasets/other/politician_edges.edges, size: 4816/5908
+2024-11-21 13:11:14,204 - INFO - added node 4814 from ./datasets/other/politician_edges.edges, size: 4817/5908
+2024-11-21 13:14:19,819 - INFO - added node 4815 from ./datasets/other/politician_edges.edges, size: 4818/5908
+2024-11-21 13:14:45,970 - INFO - added node 4816 from ./datasets/other/politician_edges.edges, size: 4819/5908
+2024-11-21 13:15:17,403 - INFO - added node 4817 from ./datasets/other/politician_edges.edges, size: 4820/5908
+2024-11-21 13:16:28,304 - INFO - added node 4818 from ./datasets/other/politician_edges.edges, size: 4821/5908
+2024-11-21 13:17:08,795 - INFO - added node 4819 from ./datasets/other/politician_edges.edges, size: 4822/5908
+2024-11-21 13:17:44,603 - INFO - added node 4820 from ./datasets/other/politician_edges.edges, size: 4823/5908
+2024-11-21 13:20:02,230 - INFO - added node 4821 from ./datasets/other/politician_edges.edges, size: 4824/5908
+2024-11-21 13:20:35,805 - INFO - added node 4822 from ./datasets/other/politician_edges.edges, size: 4825/5908
+2024-11-21 13:22:00,100 - INFO - added node 4823 from ./datasets/other/politician_edges.edges, size: 4826/5908
+2024-11-21 13:22:35,903 - INFO - added node 4824 from ./datasets/other/politician_edges.edges, size: 4827/5908
+2024-11-21 13:23:27,194 - INFO - added node 4825 from ./datasets/other/politician_edges.edges, size: 4828/5908
+2024-11-21 13:23:54,910 - INFO - added node 4826 from ./datasets/other/politician_edges.edges, size: 4829/5908
+2024-11-21 13:24:29,090 - INFO - added node 4827 from ./datasets/other/politician_edges.edges, size: 4830/5908
+2024-11-21 13:25:00,583 - INFO - added node 4828 from ./datasets/other/politician_edges.edges, size: 4831/5908
+2024-11-21 13:26:48,321 - INFO - added node 4829 from ./datasets/other/politician_edges.edges, size: 4832/5908
+2024-11-21 13:27:18,906 - INFO - added node 4830 from ./datasets/other/politician_edges.edges, size: 4833/5908
+2024-11-21 13:29:17,955 - INFO - added node 4831 from ./datasets/other/politician_edges.edges, size: 4834/5908
+2024-11-21 13:29:49,185 - INFO - added node 4832 from ./datasets/other/politician_edges.edges, size: 4835/5908
+2024-11-21 13:30:23,979 - INFO - added node 4833 from ./datasets/other/politician_edges.edges, size: 4836/5908
+2024-11-21 13:30:59,042 - INFO - added node 4834 from ./datasets/other/politician_edges.edges, size: 4837/5908
+2024-11-21 13:35:21,111 - INFO - added node 4835 from ./datasets/other/politician_edges.edges, size: 4838/5908
+2024-11-21 13:36:34,249 - INFO - added node 4836 from ./datasets/other/politician_edges.edges, size: 4839/5908
+2024-11-21 13:37:07,747 - INFO - added node 4837 from ./datasets/other/politician_edges.edges, size: 4840/5908
+2024-11-21 13:41:48,832 - INFO - added node 4838 from ./datasets/other/politician_edges.edges, size: 4841/5908
+2024-11-21 13:42:25,127 - INFO - added node 4839 from ./datasets/other/politician_edges.edges, size: 4842/5908
+2024-11-21 13:43:01,822 - INFO - added node 4840 from ./datasets/other/politician_edges.edges, size: 4843/5908
+2024-11-21 13:43:38,206 - INFO - added node 4841 from ./datasets/other/politician_edges.edges, size: 4844/5908
+2024-11-21 13:44:07,799 - INFO - added node 4842 from ./datasets/other/politician_edges.edges, size: 4845/5908
+2024-11-21 13:44:39,108 - INFO - added node 4843 from ./datasets/other/politician_edges.edges, size: 4846/5908
+2024-11-21 13:46:17,240 - INFO - added node 4844 from ./datasets/other/politician_edges.edges, size: 4847/5908
+2024-11-21 13:46:58,002 - INFO - added node 4845 from ./datasets/other/politician_edges.edges, size: 4848/5908
+2024-11-21 13:47:47,837 - INFO - added node 4846 from ./datasets/other/politician_edges.edges, size: 4849/5908
+2024-11-21 13:48:17,459 - INFO - added node 4847 from ./datasets/other/politician_edges.edges, size: 4850/5908
+2024-11-21 13:48:47,822 - INFO - added node 4848 from ./datasets/other/politician_edges.edges, size: 4851/5908
+2024-11-21 13:50:57,962 - INFO - added node 4849 from ./datasets/other/politician_edges.edges, size: 4852/5908
+2024-11-21 13:51:33,428 - INFO - added node 4850 from ./datasets/other/politician_edges.edges, size: 4853/5908
+2024-11-21 13:52:18,505 - INFO - added node 4851 from ./datasets/other/politician_edges.edges, size: 4854/5908
+2024-11-21 13:53:36,370 - INFO - added node 4852 from ./datasets/other/politician_edges.edges, size: 4855/5908
+2024-11-21 13:54:16,517 - INFO - added node 4853 from ./datasets/other/politician_edges.edges, size: 4856/5908
+2024-11-21 13:54:47,886 - INFO - added node 4854 from ./datasets/other/politician_edges.edges, size: 4857/5908
+2024-11-21 13:55:34,028 - INFO - added node 4855 from ./datasets/other/politician_edges.edges, size: 4858/5908
+2024-11-21 13:57:26,014 - INFO - added node 4856 from ./datasets/other/politician_edges.edges, size: 4859/5908
+2024-11-21 14:02:18,889 - INFO - added node 4857 from ./datasets/other/politician_edges.edges, size: 4860/5908
+2024-11-21 14:02:54,631 - INFO - added node 4858 from ./datasets/other/politician_edges.edges, size: 4861/5908
+2024-11-21 14:03:29,449 - INFO - added node 4859 from ./datasets/other/politician_edges.edges, size: 4862/5908
+2024-11-21 14:04:08,185 - INFO - added node 4860 from ./datasets/other/politician_edges.edges, size: 4863/5908
+2024-11-21 14:05:23,151 - INFO - added node 4861 from ./datasets/other/politician_edges.edges, size: 4864/5908
+2024-11-21 14:05:50,854 - INFO - added node 4862 from ./datasets/other/politician_edges.edges, size: 4865/5908
+2024-11-21 14:06:33,362 - INFO - added node 4863 from ./datasets/other/politician_edges.edges, size: 4866/5908
+2024-11-21 14:07:04,547 - INFO - added node 4864 from ./datasets/other/politician_edges.edges, size: 4867/5908
+2024-11-21 14:07:31,175 - INFO - added node 4865 from ./datasets/other/politician_edges.edges, size: 4868/5908
+2024-11-21 14:08:07,455 - INFO - added node 4866 from ./datasets/other/politician_edges.edges, size: 4869/5908
+2024-11-21 14:08:33,379 - INFO - added node 4867 from ./datasets/other/politician_edges.edges, size: 4870/5908
+2024-11-21 14:09:04,269 - INFO - added node 4868 from ./datasets/other/politician_edges.edges, size: 4871/5908
+2024-11-21 14:09:42,566 - INFO - added node 4869 from ./datasets/other/politician_edges.edges, size: 4872/5908
+2024-11-21 14:11:48,761 - INFO - added node 4870 from ./datasets/other/politician_edges.edges, size: 4873/5908
+2024-11-21 14:12:16,523 - INFO - added node 4871 from ./datasets/other/politician_edges.edges, size: 4874/5908
+2024-11-21 14:15:44,960 - INFO - added node 4872 from ./datasets/other/politician_edges.edges, size: 4875/5908
+2024-11-21 14:16:40,247 - INFO - added node 4873 from ./datasets/other/politician_edges.edges, size: 4876/5908
+2024-11-21 14:21:40,744 - INFO - added node 4874 from ./datasets/other/politician_edges.edges, size: 4877/5908
+2024-11-21 14:22:25,449 - INFO - added node 4875 from ./datasets/other/politician_edges.edges, size: 4878/5908
+2024-11-21 14:23:05,380 - INFO - added node 4876 from ./datasets/other/politician_edges.edges, size: 4879/5908
+2024-11-21 14:24:45,641 - INFO - added node 4877 from ./datasets/other/politician_edges.edges, size: 4880/5908
+2024-11-21 14:29:59,368 - INFO - added node 4878 from ./datasets/other/politician_edges.edges, size: 4881/5908
+2024-11-21 14:30:31,079 - INFO - added node 4879 from ./datasets/other/politician_edges.edges, size: 4882/5908
+2024-11-21 14:31:21,443 - INFO - added node 4880 from ./datasets/other/politician_edges.edges, size: 4883/5908
+2024-11-21 14:31:52,357 - INFO - added node 4881 from ./datasets/other/politician_edges.edges, size: 4884/5908
+2024-11-21 14:32:36,344 - INFO - added node 4882 from ./datasets/other/politician_edges.edges, size: 4885/5908
+2024-11-21 14:36:06,580 - INFO - added node 4883 from ./datasets/other/politician_edges.edges, size: 4886/5908
+2024-11-21 14:36:45,369 - INFO - added node 4884 from ./datasets/other/politician_edges.edges, size: 4887/5908
+2024-11-21 14:37:36,347 - INFO - added node 4885 from ./datasets/other/politician_edges.edges, size: 4888/5908
+2024-11-21 14:38:24,156 - INFO - added node 4886 from ./datasets/other/politician_edges.edges, size: 4889/5908
+2024-11-21 14:39:09,686 - INFO - added node 4887 from ./datasets/other/politician_edges.edges, size: 4890/5908
+2024-11-21 14:39:40,700 - INFO - added node 4888 from ./datasets/other/politician_edges.edges, size: 4891/5908
+2024-11-21 14:40:53,458 - INFO - added node 4889 from ./datasets/other/politician_edges.edges, size: 4892/5908
+2024-11-21 14:41:23,691 - INFO - added node 4890 from ./datasets/other/politician_edges.edges, size: 4893/5908
+2024-11-21 14:42:00,218 - INFO - added node 4891 from ./datasets/other/politician_edges.edges, size: 4894/5908
+2024-11-21 14:42:38,587 - INFO - added node 4892 from ./datasets/other/politician_edges.edges, size: 4895/5908
+2024-11-21 14:43:33,285 - INFO - added node 4893 from ./datasets/other/politician_edges.edges, size: 4896/5908
+2024-11-21 14:45:10,480 - INFO - added node 4894 from ./datasets/other/politician_edges.edges, size: 4897/5908
+2024-11-21 14:45:42,539 - INFO - added node 4895 from ./datasets/other/politician_edges.edges, size: 4898/5908
+2024-11-21 14:46:47,154 - INFO - added node 4896 from ./datasets/other/politician_edges.edges, size: 4899/5908
+2024-11-21 14:47:17,105 - INFO - added node 4897 from ./datasets/other/politician_edges.edges, size: 4900/5908
+2024-11-21 14:47:53,216 - INFO - added node 4898 from ./datasets/other/politician_edges.edges, size: 4901/5908
+2024-11-21 14:48:28,439 - INFO - added node 4899 from ./datasets/other/politician_edges.edges, size: 4902/5908
+2024-11-21 14:49:46,151 - INFO - added node 4900 from ./datasets/other/politician_edges.edges, size: 4903/5908
+2024-11-21 14:54:32,124 - INFO - added node 4901 from ./datasets/other/politician_edges.edges, size: 4904/5908
+2024-11-21 14:55:09,293 - INFO - added node 4902 from ./datasets/other/politician_edges.edges, size: 4905/5908
+2024-11-21 14:56:29,723 - INFO - added node 4903 from ./datasets/other/politician_edges.edges, size: 4906/5908
+2024-11-21 14:57:14,358 - INFO - added node 4904 from ./datasets/other/politician_edges.edges, size: 4907/5908
+2024-11-21 14:57:44,900 - INFO - added node 4905 from ./datasets/other/politician_edges.edges, size: 4908/5908
+2024-11-21 15:00:50,786 - INFO - added node 4906 from ./datasets/other/politician_edges.edges, size: 4909/5908
+2024-11-21 15:01:27,670 - INFO - added node 4907 from ./datasets/other/politician_edges.edges, size: 4910/5908
+2024-11-21 15:02:03,530 - INFO - added node 4908 from ./datasets/other/politician_edges.edges, size: 4911/5908
+2024-11-21 15:02:48,402 - INFO - added node 4909 from ./datasets/other/politician_edges.edges, size: 4912/5908
+2024-11-21 15:03:25,400 - INFO - added node 4910 from ./datasets/other/politician_edges.edges, size: 4913/5908
+2024-11-21 15:07:48,482 - INFO - added node 4911 from ./datasets/other/politician_edges.edges, size: 4914/5908
+2024-11-21 15:08:44,020 - INFO - added node 4912 from ./datasets/other/politician_edges.edges, size: 4915/5908
+2024-11-21 15:09:40,940 - INFO - added node 4913 from ./datasets/other/politician_edges.edges, size: 4916/5908
+2024-11-21 15:13:12,494 - INFO - added node 4914 from ./datasets/other/politician_edges.edges, size: 4917/5908
+2024-11-21 15:15:44,594 - INFO - added node 4915 from ./datasets/other/politician_edges.edges, size: 4918/5908
+2024-11-21 15:17:46,245 - INFO - added node 4916 from ./datasets/other/politician_edges.edges, size: 4919/5908
+2024-11-21 15:20:23,558 - INFO - added node 4917 from ./datasets/other/politician_edges.edges, size: 4920/5908
+2024-11-21 15:24:21,506 - INFO - added node 4918 from ./datasets/other/politician_edges.edges, size: 4921/5908
+2024-11-21 15:25:09,004 - INFO - added node 4919 from ./datasets/other/politician_edges.edges, size: 4922/5908
+2024-11-21 15:29:18,139 - INFO - added node 4920 from ./datasets/other/politician_edges.edges, size: 4923/5908
+2024-11-21 15:30:20,536 - INFO - added node 4921 from ./datasets/other/politician_edges.edges, size: 4924/5908
+2024-11-21 15:30:58,348 - INFO - added node 4922 from ./datasets/other/politician_edges.edges, size: 4925/5908
+2024-11-21 15:31:33,619 - INFO - added node 4923 from ./datasets/other/politician_edges.edges, size: 4926/5908
+2024-11-21 15:35:50,467 - INFO - added node 4924 from ./datasets/other/politician_edges.edges, size: 4927/5908
+2024-11-21 15:36:21,893 - INFO - added node 4925 from ./datasets/other/politician_edges.edges, size: 4928/5908
+2024-11-21 15:36:53,259 - INFO - added node 4926 from ./datasets/other/politician_edges.edges, size: 4929/5908
+2024-11-21 15:37:30,676 - INFO - added node 4927 from ./datasets/other/politician_edges.edges, size: 4930/5908
+2024-11-21 15:39:23,388 - INFO - added node 4928 from ./datasets/other/politician_edges.edges, size: 4931/5908
+2024-11-21 15:40:08,145 - INFO - added node 4929 from ./datasets/other/politician_edges.edges, size: 4932/5908
+2024-11-21 15:40:51,204 - INFO - added node 4930 from ./datasets/other/politician_edges.edges, size: 4933/5908
+2024-11-21 15:41:33,646 - INFO - added node 4931 from ./datasets/other/politician_edges.edges, size: 4934/5908
+2024-11-21 15:45:02,547 - INFO - added node 4932 from ./datasets/other/politician_edges.edges, size: 4935/5908
+2024-11-21 15:45:35,057 - INFO - added node 4933 from ./datasets/other/politician_edges.edges, size: 4936/5908
+2024-11-21 15:46:24,934 - INFO - added node 4934 from ./datasets/other/politician_edges.edges, size: 4937/5908
+2024-11-21 15:47:05,946 - INFO - added node 4935 from ./datasets/other/politician_edges.edges, size: 4938/5908
+2024-11-21 15:47:42,083 - INFO - added node 4936 from ./datasets/other/politician_edges.edges, size: 4939/5908
+2024-11-21 15:48:09,693 - INFO - added node 4937 from ./datasets/other/politician_edges.edges, size: 4940/5908
+2024-11-21 15:49:45,624 - INFO - added node 4938 from ./datasets/other/politician_edges.edges, size: 4941/5908
+2024-11-21 15:50:14,571 - INFO - added node 4939 from ./datasets/other/politician_edges.edges, size: 4942/5908
+2024-11-21 15:50:56,473 - INFO - added node 4940 from ./datasets/other/politician_edges.edges, size: 4943/5908
+2024-11-21 15:51:24,987 - INFO - added node 4941 from ./datasets/other/politician_edges.edges, size: 4944/5908
+2024-11-21 15:52:18,729 - INFO - added node 4942 from ./datasets/other/politician_edges.edges, size: 4945/5908
+2024-11-21 15:53:29,507 - INFO - added node 4943 from ./datasets/other/politician_edges.edges, size: 4946/5908
+2024-11-21 15:54:17,106 - INFO - added node 4944 from ./datasets/other/politician_edges.edges, size: 4947/5908
+2024-11-21 15:54:55,197 - INFO - added node 4945 from ./datasets/other/politician_edges.edges, size: 4948/5908
+2024-11-21 15:55:27,951 - INFO - added node 4946 from ./datasets/other/politician_edges.edges, size: 4949/5908
+2024-11-21 15:55:58,850 - INFO - added node 4947 from ./datasets/other/politician_edges.edges, size: 4950/5908
+2024-11-21 15:56:30,259 - INFO - added node 4948 from ./datasets/other/politician_edges.edges, size: 4951/5908
+2024-11-21 15:57:14,886 - INFO - added node 4949 from ./datasets/other/politician_edges.edges, size: 4952/5908
+2024-11-21 15:58:18,238 - INFO - added node 4950 from ./datasets/other/politician_edges.edges, size: 4953/5908
+2024-11-21 15:59:32,275 - INFO - added node 4951 from ./datasets/other/politician_edges.edges, size: 4954/5908
+2024-11-21 16:01:53,277 - INFO - added node 4952 from ./datasets/other/politician_edges.edges, size: 4955/5908
+2024-11-21 16:03:54,808 - INFO - added node 4953 from ./datasets/other/politician_edges.edges, size: 4956/5908
+2024-11-21 16:05:14,007 - INFO - added node 4954 from ./datasets/other/politician_edges.edges, size: 4957/5908
+2024-11-21 16:05:53,142 - INFO - added node 4955 from ./datasets/other/politician_edges.edges, size: 4958/5908
+2024-11-21 16:07:22,871 - INFO - added node 4956 from ./datasets/other/politician_edges.edges, size: 4959/5908
+2024-11-21 16:07:51,865 - INFO - added node 4957 from ./datasets/other/politician_edges.edges, size: 4960/5908
+2024-11-21 16:08:24,481 - INFO - added node 4958 from ./datasets/other/politician_edges.edges, size: 4961/5908
+2024-11-21 16:09:19,949 - INFO - added node 4959 from ./datasets/other/politician_edges.edges, size: 4962/5908
+2024-11-21 16:09:58,453 - INFO - added node 4960 from ./datasets/other/politician_edges.edges, size: 4963/5908
+2024-11-21 16:10:53,643 - INFO - added node 4961 from ./datasets/other/politician_edges.edges, size: 4964/5908
+2024-11-21 16:14:17,209 - INFO - added node 4962 from ./datasets/other/politician_edges.edges, size: 4965/5908
+2024-11-21 16:14:47,308 - INFO - added node 4963 from ./datasets/other/politician_edges.edges, size: 4966/5908
+2024-11-21 16:17:54,540 - INFO - added node 4964 from ./datasets/other/politician_edges.edges, size: 4967/5908
+2024-11-21 16:19:00,324 - INFO - added node 4965 from ./datasets/other/politician_edges.edges, size: 4968/5908
+2024-11-21 16:19:38,597 - INFO - added node 4966 from ./datasets/other/politician_edges.edges, size: 4969/5908
+2024-11-21 16:21:29,568 - INFO - added node 4967 from ./datasets/other/politician_edges.edges, size: 4970/5908
+2024-11-21 16:22:41,370 - INFO - added node 4968 from ./datasets/other/politician_edges.edges, size: 4971/5908
+2024-11-21 16:23:14,676 - INFO - added node 4969 from ./datasets/other/politician_edges.edges, size: 4972/5908
+2024-11-21 16:24:18,511 - INFO - added node 4970 from ./datasets/other/politician_edges.edges, size: 4973/5908
+2024-11-21 16:24:56,107 - INFO - added node 4971 from ./datasets/other/politician_edges.edges, size: 4974/5908
+2024-11-21 16:30:25,287 - INFO - added node 4972 from ./datasets/other/politician_edges.edges, size: 4975/5908
+2024-11-21 16:30:58,227 - INFO - added node 4973 from ./datasets/other/politician_edges.edges, size: 4976/5908
+2024-11-21 16:32:33,161 - INFO - added node 4974 from ./datasets/other/politician_edges.edges, size: 4977/5908
+2024-11-21 16:33:06,705 - INFO - added node 4975 from ./datasets/other/politician_edges.edges, size: 4978/5908
+2024-11-21 16:33:39,418 - INFO - added node 4976 from ./datasets/other/politician_edges.edges, size: 4979/5908
+2024-11-21 16:34:11,740 - INFO - added node 4977 from ./datasets/other/politician_edges.edges, size: 4980/5908
+2024-11-21 16:37:23,682 - INFO - added node 4978 from ./datasets/other/politician_edges.edges, size: 4981/5908
+2024-11-21 16:38:01,515 - INFO - added node 4979 from ./datasets/other/politician_edges.edges, size: 4982/5908
+2024-11-21 16:38:31,899 - INFO - added node 4980 from ./datasets/other/politician_edges.edges, size: 4983/5908
+2024-11-21 16:39:03,546 - INFO - added node 4981 from ./datasets/other/politician_edges.edges, size: 4984/5908
+2024-11-21 16:39:46,153 - INFO - added node 4982 from ./datasets/other/politician_edges.edges, size: 4985/5908
+2024-11-21 16:40:14,357 - INFO - added node 4983 from ./datasets/other/politician_edges.edges, size: 4986/5908
+2024-11-21 16:40:58,393 - INFO - added node 4984 from ./datasets/other/politician_edges.edges, size: 4987/5908
+2024-11-21 16:42:06,143 - INFO - added node 4985 from ./datasets/other/politician_edges.edges, size: 4988/5908
+2024-11-21 16:42:39,068 - INFO - added node 4986 from ./datasets/other/politician_edges.edges, size: 4989/5908
+2024-11-21 16:45:15,730 - INFO - added node 4987 from ./datasets/other/politician_edges.edges, size: 4990/5908
+2024-11-21 16:46:11,191 - INFO - added node 4988 from ./datasets/other/politician_edges.edges, size: 4991/5908
+2024-11-21 16:46:42,016 - INFO - added node 4989 from ./datasets/other/politician_edges.edges, size: 4992/5908
+2024-11-21 16:47:27,145 - INFO - added node 4990 from ./datasets/other/politician_edges.edges, size: 4993/5908
+2024-11-21 16:47:57,824 - INFO - added node 4991 from ./datasets/other/politician_edges.edges, size: 4994/5908
+2024-11-21 16:51:25,173 - INFO - added node 4992 from ./datasets/other/politician_edges.edges, size: 4995/5908
+2024-11-21 16:52:16,759 - INFO - added node 4993 from ./datasets/other/politician_edges.edges, size: 4996/5908
+2024-11-21 16:52:53,535 - INFO - added node 4994 from ./datasets/other/politician_edges.edges, size: 4997/5908
+2024-11-21 16:53:47,412 - INFO - added node 4995 from ./datasets/other/politician_edges.edges, size: 4998/5908
+2024-11-21 16:54:25,824 - INFO - added node 4996 from ./datasets/other/politician_edges.edges, size: 4999/5908
+2024-11-21 16:54:57,271 - INFO - added node 4997 from ./datasets/other/politician_edges.edges, size: 5000/5908
+2024-11-21 16:55:25,496 - INFO - added node 4998 from ./datasets/other/politician_edges.edges, size: 5001/5908
+2024-11-21 16:55:54,472 - INFO - added node 4999 from ./datasets/other/politician_edges.edges, size: 5002/5908
+2024-11-21 16:56:25,999 - INFO - added node 5000 from ./datasets/other/politician_edges.edges, size: 5003/5908
+2024-11-21 16:58:01,710 - INFO - added node 5001 from ./datasets/other/politician_edges.edges, size: 5004/5908
+2024-11-21 16:58:53,726 - INFO - added node 5002 from ./datasets/other/politician_edges.edges, size: 5005/5908
+2024-11-21 16:59:33,245 - INFO - added node 5003 from ./datasets/other/politician_edges.edges, size: 5006/5908
+2024-11-21 17:00:10,401 - INFO - added node 5004 from ./datasets/other/politician_edges.edges, size: 5007/5908
+2024-11-21 17:00:40,485 - INFO - added node 5005 from ./datasets/other/politician_edges.edges, size: 5008/5908
+2024-11-21 17:01:08,696 - INFO - added node 5006 from ./datasets/other/politician_edges.edges, size: 5009/5908
+2024-11-21 17:01:54,837 - INFO - added node 5007 from ./datasets/other/politician_edges.edges, size: 5010/5908
+2024-11-21 17:02:27,481 - INFO - added node 5008 from ./datasets/other/politician_edges.edges, size: 5011/5908
+2024-11-21 17:03:14,370 - INFO - added node 5009 from ./datasets/other/politician_edges.edges, size: 5012/5908
+2024-11-21 17:03:46,590 - INFO - added node 5010 from ./datasets/other/politician_edges.edges, size: 5013/5908
+2024-11-21 17:04:46,820 - INFO - added node 5011 from ./datasets/other/politician_edges.edges, size: 5014/5908
+2024-11-21 17:05:19,836 - INFO - added node 5012 from ./datasets/other/politician_edges.edges, size: 5015/5908
+2024-11-21 17:05:50,550 - INFO - added node 5013 from ./datasets/other/politician_edges.edges, size: 5016/5908
+2024-11-21 17:07:07,908 - INFO - added node 5014 from ./datasets/other/politician_edges.edges, size: 5017/5908
+2024-11-21 17:08:40,401 - INFO - added node 5015 from ./datasets/other/politician_edges.edges, size: 5018/5908
+2024-11-21 17:10:13,125 - INFO - added node 5016 from ./datasets/other/politician_edges.edges, size: 5019/5908
+2024-11-21 17:10:58,636 - INFO - added node 5017 from ./datasets/other/politician_edges.edges, size: 5020/5908
+2024-11-21 17:12:26,399 - INFO - added node 5018 from ./datasets/other/politician_edges.edges, size: 5021/5908
+2024-11-21 17:13:36,069 - INFO - added node 5019 from ./datasets/other/politician_edges.edges, size: 5022/5908
+2024-11-21 17:14:09,421 - INFO - added node 5020 from ./datasets/other/politician_edges.edges, size: 5023/5908
+2024-11-21 17:15:14,640 - INFO - added node 5021 from ./datasets/other/politician_edges.edges, size: 5024/5908
+2024-11-21 17:15:51,165 - INFO - added node 5022 from ./datasets/other/politician_edges.edges, size: 5025/5908
+2024-11-21 17:16:19,554 - INFO - added node 5023 from ./datasets/other/politician_edges.edges, size: 5026/5908
+2024-11-21 17:17:30,176 - INFO - added node 5024 from ./datasets/other/politician_edges.edges, size: 5027/5908
+2024-11-21 17:18:06,490 - INFO - added node 5025 from ./datasets/other/politician_edges.edges, size: 5028/5908
+2024-11-21 17:19:09,047 - INFO - added node 5026 from ./datasets/other/politician_edges.edges, size: 5029/5908
+2024-11-21 17:19:46,784 - INFO - added node 5027 from ./datasets/other/politician_edges.edges, size: 5030/5908
+2024-11-21 17:20:17,733 - INFO - added node 5028 from ./datasets/other/politician_edges.edges, size: 5031/5908
+2024-11-21 17:22:15,911 - INFO - added node 5029 from ./datasets/other/politician_edges.edges, size: 5032/5908
+2024-11-21 17:22:47,059 - INFO - added node 5030 from ./datasets/other/politician_edges.edges, size: 5033/5908
+2024-11-21 17:23:17,269 - INFO - added node 5031 from ./datasets/other/politician_edges.edges, size: 5034/5908
+2024-11-21 17:24:02,152 - INFO - added node 5032 from ./datasets/other/politician_edges.edges, size: 5035/5908
+2024-11-21 17:25:21,745 - INFO - added node 5033 from ./datasets/other/politician_edges.edges, size: 5036/5908
+2024-11-21 17:26:01,281 - INFO - added node 5034 from ./datasets/other/politician_edges.edges, size: 5037/5908
+2024-11-21 17:26:39,599 - INFO - added node 5035 from ./datasets/other/politician_edges.edges, size: 5038/5908
+2024-11-21 17:28:13,122 - INFO - added node 5036 from ./datasets/other/politician_edges.edges, size: 5039/5908
+2024-11-21 17:28:43,423 - INFO - added node 5037 from ./datasets/other/politician_edges.edges, size: 5040/5908
+2024-11-21 17:29:31,606 - INFO - added node 5038 from ./datasets/other/politician_edges.edges, size: 5041/5908
+2024-11-21 17:30:04,904 - INFO - added node 5039 from ./datasets/other/politician_edges.edges, size: 5042/5908
+2024-11-21 17:30:34,145 - INFO - added node 5040 from ./datasets/other/politician_edges.edges, size: 5043/5908
+2024-11-21 17:32:29,640 - INFO - added node 5041 from ./datasets/other/politician_edges.edges, size: 5044/5908
+2024-11-21 17:35:11,022 - INFO - added node 5042 from ./datasets/other/politician_edges.edges, size: 5045/5908
+2024-11-21 17:35:51,538 - INFO - added node 5043 from ./datasets/other/politician_edges.edges, size: 5046/5908
+2024-11-21 17:36:19,571 - INFO - added node 5044 from ./datasets/other/politician_edges.edges, size: 5047/5908
+2024-11-21 17:36:56,434 - INFO - added node 5045 from ./datasets/other/politician_edges.edges, size: 5048/5908
+2024-11-21 17:39:58,391 - INFO - added node 5046 from ./datasets/other/politician_edges.edges, size: 5049/5908
+2024-11-21 17:40:31,706 - INFO - added node 5047 from ./datasets/other/politician_edges.edges, size: 5050/5908
+2024-11-21 17:41:12,025 - INFO - added node 5048 from ./datasets/other/politician_edges.edges, size: 5051/5908
+2024-11-21 17:44:14,110 - INFO - added node 5049 from ./datasets/other/politician_edges.edges, size: 5052/5908
+2024-11-21 17:44:43,425 - INFO - added node 5050 from ./datasets/other/politician_edges.edges, size: 5053/5908
+2024-11-21 17:46:27,967 - INFO - added node 5051 from ./datasets/other/politician_edges.edges, size: 5054/5908
+2024-11-21 17:49:00,753 - INFO - added node 5052 from ./datasets/other/politician_edges.edges, size: 5055/5908
+2024-11-21 17:49:29,723 - INFO - added node 5053 from ./datasets/other/politician_edges.edges, size: 5056/5908
+2024-11-21 17:50:05,836 - INFO - added node 5054 from ./datasets/other/politician_edges.edges, size: 5057/5908
+2024-11-21 17:53:36,410 - INFO - added node 5055 from ./datasets/other/politician_edges.edges, size: 5058/5908
+2024-11-21 17:54:16,535 - INFO - added node 5056 from ./datasets/other/politician_edges.edges, size: 5059/5908
+2024-11-21 17:55:36,081 - INFO - added node 5057 from ./datasets/other/politician_edges.edges, size: 5060/5908
+2024-11-21 17:56:07,375 - INFO - added node 5058 from ./datasets/other/politician_edges.edges, size: 5061/5908
+2024-11-21 17:56:53,627 - INFO - added node 5059 from ./datasets/other/politician_edges.edges, size: 5062/5908
+2024-11-21 17:57:43,796 - INFO - added node 5060 from ./datasets/other/politician_edges.edges, size: 5063/5908
+2024-11-21 17:59:27,384 - INFO - added node 5061 from ./datasets/other/politician_edges.edges, size: 5064/5908
+2024-11-21 18:00:00,548 - INFO - added node 5062 from ./datasets/other/politician_edges.edges, size: 5065/5908
+2024-11-21 18:00:49,855 - INFO - added node 5063 from ./datasets/other/politician_edges.edges, size: 5066/5908
+2024-11-21 18:01:32,804 - INFO - added node 5064 from ./datasets/other/politician_edges.edges, size: 5067/5908
+2024-11-21 18:05:02,023 - INFO - added node 5065 from ./datasets/other/politician_edges.edges, size: 5068/5908
+2024-11-21 18:08:15,699 - INFO - added node 5066 from ./datasets/other/politician_edges.edges, size: 5069/5908
+2024-11-21 18:09:01,374 - INFO - added node 5067 from ./datasets/other/politician_edges.edges, size: 5070/5908
+2024-11-21 18:10:29,139 - INFO - added node 5068 from ./datasets/other/politician_edges.edges, size: 5071/5908
+2024-11-21 18:13:43,718 - INFO - added node 5069 from ./datasets/other/politician_edges.edges, size: 5072/5908
+2024-11-21 18:14:30,072 - INFO - added node 5070 from ./datasets/other/politician_edges.edges, size: 5073/5908
+2024-11-21 18:16:58,641 - INFO - added node 5071 from ./datasets/other/politician_edges.edges, size: 5074/5908
+2024-11-21 18:22:02,006 - INFO - added node 5072 from ./datasets/other/politician_edges.edges, size: 5075/5908
+2024-11-21 18:22:40,500 - INFO - added node 5073 from ./datasets/other/politician_edges.edges, size: 5076/5908
+2024-11-21 18:23:32,118 - INFO - added node 5074 from ./datasets/other/politician_edges.edges, size: 5077/5908
+2024-11-21 18:24:50,004 - INFO - added node 5075 from ./datasets/other/politician_edges.edges, size: 5078/5908
+2024-11-21 18:29:36,649 - INFO - added node 5076 from ./datasets/other/politician_edges.edges, size: 5079/5908
+2024-11-21 18:30:08,482 - INFO - added node 5077 from ./datasets/other/politician_edges.edges, size: 5080/5908
+2024-11-21 18:30:45,836 - INFO - added node 5078 from ./datasets/other/politician_edges.edges, size: 5081/5908
+2024-11-21 18:34:27,521 - INFO - added node 5079 from ./datasets/other/politician_edges.edges, size: 5082/5908
+2024-11-21 18:34:57,599 - INFO - added node 5080 from ./datasets/other/politician_edges.edges, size: 5083/5908
+2024-11-21 18:36:41,921 - INFO - added node 5081 from ./datasets/other/politician_edges.edges, size: 5084/5908
+2024-11-21 18:38:23,212 - INFO - added node 5082 from ./datasets/other/politician_edges.edges, size: 5085/5908
+2024-11-21 18:38:51,447 - INFO - added node 5083 from ./datasets/other/politician_edges.edges, size: 5086/5908
+2024-11-21 18:39:40,518 - INFO - added node 5084 from ./datasets/other/politician_edges.edges, size: 5087/5908
+2024-11-21 18:41:27,210 - INFO - added node 5085 from ./datasets/other/politician_edges.edges, size: 5088/5908
+2024-11-21 18:44:39,999 - INFO - added node 5086 from ./datasets/other/politician_edges.edges, size: 5089/5908
+2024-11-21 18:45:15,873 - INFO - added node 5087 from ./datasets/other/politician_edges.edges, size: 5090/5908
+2024-11-21 18:47:30,746 - INFO - added node 5088 from ./datasets/other/politician_edges.edges, size: 5091/5908
+2024-11-21 18:50:53,400 - INFO - added node 5089 from ./datasets/other/politician_edges.edges, size: 5092/5908
+2024-11-21 18:52:15,760 - INFO - added node 5090 from ./datasets/other/politician_edges.edges, size: 5093/5908
+2024-11-21 18:52:54,984 - INFO - added node 5091 from ./datasets/other/politician_edges.edges, size: 5094/5908
+2024-11-21 18:53:43,244 - INFO - added node 5092 from ./datasets/other/politician_edges.edges, size: 5095/5908
+2024-11-21 18:58:21,539 - INFO - added node 5093 from ./datasets/other/politician_edges.edges, size: 5096/5908
+2024-11-21 18:59:02,388 - INFO - added node 5094 from ./datasets/other/politician_edges.edges, size: 5097/5908
+2024-11-21 18:59:52,891 - INFO - added node 5095 from ./datasets/other/politician_edges.edges, size: 5098/5908
+2024-11-21 19:00:22,485 - INFO - added node 5096 from ./datasets/other/politician_edges.edges, size: 5099/5908
+2024-11-21 19:01:05,399 - INFO - added node 5097 from ./datasets/other/politician_edges.edges, size: 5100/5908
+2024-11-21 19:02:00,743 - INFO - added node 5098 from ./datasets/other/politician_edges.edges, size: 5101/5908
+2024-11-21 19:03:43,952 - INFO - added node 5099 from ./datasets/other/politician_edges.edges, size: 5102/5908
+2024-11-21 19:04:17,524 - INFO - added node 5100 from ./datasets/other/politician_edges.edges, size: 5103/5908
+2024-11-21 19:04:49,195 - INFO - added node 5101 from ./datasets/other/politician_edges.edges, size: 5104/5908
+2024-11-21 19:06:30,260 - INFO - added node 5102 from ./datasets/other/politician_edges.edges, size: 5105/5908
+2024-11-21 19:07:04,383 - INFO - added node 5103 from ./datasets/other/politician_edges.edges, size: 5106/5908
+2024-11-21 19:10:48,803 - INFO - added node 5104 from ./datasets/other/politician_edges.edges, size: 5107/5908
+2024-11-21 19:11:40,008 - INFO - added node 5105 from ./datasets/other/politician_edges.edges, size: 5108/5908
+2024-11-21 19:12:21,267 - INFO - added node 5106 from ./datasets/other/politician_edges.edges, size: 5109/5908
+2024-11-21 19:13:40,992 - INFO - added node 5107 from ./datasets/other/politician_edges.edges, size: 5110/5908
+2024-11-21 19:16:01,428 - INFO - added node 5108 from ./datasets/other/politician_edges.edges, size: 5111/5908
+2024-11-21 19:16:46,471 - INFO - added node 5109 from ./datasets/other/politician_edges.edges, size: 5112/5908
+2024-11-21 19:18:18,378 - INFO - added node 5110 from ./datasets/other/politician_edges.edges, size: 5113/5908
+2024-11-21 19:22:03,396 - INFO - added node 5111 from ./datasets/other/politician_edges.edges, size: 5114/5908
+2024-11-21 19:22:34,535 - INFO - added node 5112 from ./datasets/other/politician_edges.edges, size: 5115/5908
+2024-11-21 19:23:19,052 - INFO - added node 5113 from ./datasets/other/politician_edges.edges, size: 5116/5908
+2024-11-21 19:24:43,977 - INFO - added node 5114 from ./datasets/other/politician_edges.edges, size: 5117/5908
+2024-11-21 19:25:23,466 - INFO - added node 5115 from ./datasets/other/politician_edges.edges, size: 5118/5908
+2024-11-21 19:26:26,501 - INFO - added node 5116 from ./datasets/other/politician_edges.edges, size: 5119/5908
+2024-11-21 19:27:58,986 - INFO - added node 5117 from ./datasets/other/politician_edges.edges, size: 5120/5908
+2024-11-21 19:30:47,732 - INFO - added node 5118 from ./datasets/other/politician_edges.edges, size: 5121/5908
+2024-11-21 19:34:05,956 - INFO - added node 5119 from ./datasets/other/politician_edges.edges, size: 5122/5908
+2024-11-21 19:34:49,417 - INFO - added node 5120 from ./datasets/other/politician_edges.edges, size: 5123/5908
+2024-11-21 19:35:26,987 - INFO - added node 5121 from ./datasets/other/politician_edges.edges, size: 5124/5908
+2024-11-21 19:36:07,646 - INFO - added node 5122 from ./datasets/other/politician_edges.edges, size: 5125/5908
+2024-11-21 19:36:40,124 - INFO - added node 5123 from ./datasets/other/politician_edges.edges, size: 5126/5908
+2024-11-21 19:40:37,394 - INFO - added node 5124 from ./datasets/other/politician_edges.edges, size: 5127/5908
+2024-11-21 19:42:50,073 - INFO - added node 5125 from ./datasets/other/politician_edges.edges, size: 5128/5908
+2024-11-21 19:43:32,840 - INFO - added node 5126 from ./datasets/other/politician_edges.edges, size: 5129/5908
+2024-11-21 19:44:43,619 - INFO - added node 5127 from ./datasets/other/politician_edges.edges, size: 5130/5908
+2024-11-21 19:45:44,626 - INFO - added node 5128 from ./datasets/other/politician_edges.edges, size: 5131/5908
+2024-11-21 19:46:11,726 - INFO - added node 5129 from ./datasets/other/politician_edges.edges, size: 5132/5908
+2024-11-21 19:47:11,373 - INFO - added node 5130 from ./datasets/other/politician_edges.edges, size: 5133/5908
+2024-11-21 19:47:37,053 - INFO - added node 5131 from ./datasets/other/politician_edges.edges, size: 5134/5908
+2024-11-21 19:48:12,783 - INFO - added node 5132 from ./datasets/other/politician_edges.edges, size: 5135/5908
+2024-11-21 19:48:41,465 - INFO - added node 5133 from ./datasets/other/politician_edges.edges, size: 5136/5908
+2024-11-21 19:49:23,422 - INFO - added node 5134 from ./datasets/other/politician_edges.edges, size: 5137/5908
+2024-11-21 19:50:01,887 - INFO - added node 5135 from ./datasets/other/politician_edges.edges, size: 5138/5908
+2024-11-21 19:50:31,148 - INFO - added node 5136 from ./datasets/other/politician_edges.edges, size: 5139/5908
+2024-11-21 19:55:00,640 - INFO - added node 5137 from ./datasets/other/politician_edges.edges, size: 5140/5908
+2024-11-21 19:55:31,156 - INFO - added node 5138 from ./datasets/other/politician_edges.edges, size: 5141/5908
+2024-11-21 19:56:14,675 - INFO - added node 5139 from ./datasets/other/politician_edges.edges, size: 5142/5908
+2024-11-21 19:56:53,361 - INFO - added node 5140 from ./datasets/other/politician_edges.edges, size: 5143/5908
+2024-11-21 19:57:22,025 - INFO - added node 5141 from ./datasets/other/politician_edges.edges, size: 5144/5908
+2024-11-21 19:58:32,137 - INFO - added node 5142 from ./datasets/other/politician_edges.edges, size: 5145/5908
+2024-11-21 19:59:04,614 - INFO - added node 5143 from ./datasets/other/politician_edges.edges, size: 5146/5908
+2024-11-21 19:59:47,714 - INFO - added node 5144 from ./datasets/other/politician_edges.edges, size: 5147/5908
+2024-11-21 20:00:59,377 - INFO - added node 5145 from ./datasets/other/politician_edges.edges, size: 5148/5908
+2024-11-21 20:01:25,863 - INFO - added node 5146 from ./datasets/other/politician_edges.edges, size: 5149/5908
+2024-11-21 20:02:06,798 - INFO - added node 5147 from ./datasets/other/politician_edges.edges, size: 5150/5908
+2024-11-21 20:04:04,098 - INFO - added node 5148 from ./datasets/other/politician_edges.edges, size: 5151/5908
+2024-11-21 20:05:40,519 - INFO - added node 5149 from ./datasets/other/politician_edges.edges, size: 5152/5908
+2024-11-21 20:06:59,019 - INFO - added node 5150 from ./datasets/other/politician_edges.edges, size: 5153/5908
+2024-11-21 20:08:27,642 - INFO - added node 5151 from ./datasets/other/politician_edges.edges, size: 5154/5908
+2024-11-21 20:08:57,128 - INFO - added node 5152 from ./datasets/other/politician_edges.edges, size: 5155/5908
+2024-11-21 20:09:52,572 - INFO - added node 5153 from ./datasets/other/politician_edges.edges, size: 5156/5908
+2024-11-21 20:13:29,702 - INFO - added node 5154 from ./datasets/other/politician_edges.edges, size: 5157/5908
+2024-11-21 20:13:58,737 - INFO - added node 5155 from ./datasets/other/politician_edges.edges, size: 5158/5908
+2024-11-21 20:15:07,367 - INFO - added node 5156 from ./datasets/other/politician_edges.edges, size: 5159/5908
+2024-11-21 20:17:18,213 - INFO - added node 5157 from ./datasets/other/politician_edges.edges, size: 5160/5908
+2024-11-21 20:19:29,630 - INFO - added node 5158 from ./datasets/other/politician_edges.edges, size: 5161/5908
+2024-11-21 20:20:50,171 - INFO - added node 5159 from ./datasets/other/politician_edges.edges, size: 5162/5908
+2024-11-21 20:21:24,196 - INFO - added node 5160 from ./datasets/other/politician_edges.edges, size: 5163/5908
+2024-11-21 20:21:54,743 - INFO - added node 5161 from ./datasets/other/politician_edges.edges, size: 5164/5908
+2024-11-21 20:22:33,669 - INFO - added node 5162 from ./datasets/other/politician_edges.edges, size: 5165/5908
+2024-11-21 20:24:59,801 - INFO - added node 5163 from ./datasets/other/politician_edges.edges, size: 5166/5908
+2024-11-21 20:25:40,940 - INFO - added node 5164 from ./datasets/other/politician_edges.edges, size: 5167/5908
+2024-11-21 20:26:07,886 - INFO - added node 5165 from ./datasets/other/politician_edges.edges, size: 5168/5908
+2024-11-21 20:27:53,879 - INFO - added node 5166 from ./datasets/other/politician_edges.edges, size: 5169/5908
+2024-11-21 20:28:49,281 - INFO - added node 5167 from ./datasets/other/politician_edges.edges, size: 5170/5908
+2024-11-21 20:30:44,990 - INFO - added node 5168 from ./datasets/other/politician_edges.edges, size: 5171/5908
+2024-11-21 20:31:21,146 - INFO - added node 5169 from ./datasets/other/politician_edges.edges, size: 5172/5908
+2024-11-21 20:32:03,190 - INFO - added node 5170 from ./datasets/other/politician_edges.edges, size: 5173/5908
+2024-11-21 20:32:34,750 - INFO - added node 5171 from ./datasets/other/politician_edges.edges, size: 5174/5908
+2024-11-21 20:33:07,469 - INFO - added node 5172 from ./datasets/other/politician_edges.edges, size: 5175/5908
+2024-11-21 20:33:38,822 - INFO - added node 5173 from ./datasets/other/politician_edges.edges, size: 5176/5908
+2024-11-21 20:34:12,628 - INFO - added node 5174 from ./datasets/other/politician_edges.edges, size: 5177/5908
+2024-11-21 20:34:53,468 - INFO - added node 5175 from ./datasets/other/politician_edges.edges, size: 5178/5908
+2024-11-21 20:38:51,955 - INFO - added node 5176 from ./datasets/other/politician_edges.edges, size: 5179/5908
+2024-11-21 20:39:24,713 - INFO - added node 5177 from ./datasets/other/politician_edges.edges, size: 5180/5908
+2024-11-21 20:42:35,758 - INFO - added node 5178 from ./datasets/other/politician_edges.edges, size: 5181/5908
+2024-11-21 20:43:12,421 - INFO - added node 5179 from ./datasets/other/politician_edges.edges, size: 5182/5908
+2024-11-21 20:45:11,873 - INFO - added node 5180 from ./datasets/other/politician_edges.edges, size: 5183/5908
+2024-11-21 20:46:36,551 - INFO - added node 5181 from ./datasets/other/politician_edges.edges, size: 5184/5908
+2024-11-21 20:47:04,444 - INFO - added node 5182 from ./datasets/other/politician_edges.edges, size: 5185/5908
+2024-11-21 20:47:53,632 - INFO - added node 5183 from ./datasets/other/politician_edges.edges, size: 5186/5908
+2024-11-21 20:49:50,486 - INFO - added node 5184 from ./datasets/other/politician_edges.edges, size: 5187/5908
+2024-11-21 20:50:37,433 - INFO - added node 5185 from ./datasets/other/politician_edges.edges, size: 5188/5908
+2024-11-21 20:51:43,822 - INFO - added node 5186 from ./datasets/other/politician_edges.edges, size: 5189/5908
+2024-11-21 20:52:30,152 - INFO - added node 5187 from ./datasets/other/politician_edges.edges, size: 5190/5908
+2024-11-21 20:54:32,639 - INFO - added node 5188 from ./datasets/other/politician_edges.edges, size: 5191/5908
+2024-11-21 20:55:24,748 - INFO - added node 5189 from ./datasets/other/politician_edges.edges, size: 5192/5908
+2024-11-21 20:56:09,462 - INFO - added node 5190 from ./datasets/other/politician_edges.edges, size: 5193/5908
+2024-11-21 20:58:10,722 - INFO - added node 5191 from ./datasets/other/politician_edges.edges, size: 5194/5908
+2024-11-21 20:58:43,654 - INFO - added node 5192 from ./datasets/other/politician_edges.edges, size: 5195/5908
+2024-11-21 20:59:11,256 - INFO - added node 5193 from ./datasets/other/politician_edges.edges, size: 5196/5908
+2024-11-21 21:00:15,590 - INFO - added node 5194 from ./datasets/other/politician_edges.edges, size: 5197/5908
+2024-11-21 21:01:14,478 - INFO - added node 5195 from ./datasets/other/politician_edges.edges, size: 5198/5908
+2024-11-21 21:01:57,705 - INFO - added node 5196 from ./datasets/other/politician_edges.edges, size: 5199/5908
+2024-11-21 21:02:54,851 - INFO - added node 5197 from ./datasets/other/politician_edges.edges, size: 5200/5908
+2024-11-21 21:03:41,499 - INFO - added node 5198 from ./datasets/other/politician_edges.edges, size: 5201/5908
+2024-11-21 21:04:18,178 - INFO - added node 5199 from ./datasets/other/politician_edges.edges, size: 5202/5908
+2024-11-21 21:04:51,781 - INFO - added node 5200 from ./datasets/other/politician_edges.edges, size: 5203/5908
+2024-11-21 21:05:49,920 - INFO - added node 5201 from ./datasets/other/politician_edges.edges, size: 5204/5908
+2024-11-21 21:08:30,977 - INFO - added node 5202 from ./datasets/other/politician_edges.edges, size: 5205/5908
+2024-11-21 21:09:21,178 - INFO - added node 5203 from ./datasets/other/politician_edges.edges, size: 5206/5908
+2024-11-21 21:09:55,111 - INFO - added node 5204 from ./datasets/other/politician_edges.edges, size: 5207/5908
+2024-11-21 21:10:33,593 - INFO - added node 5205 from ./datasets/other/politician_edges.edges, size: 5208/5908
+2024-11-21 21:11:23,774 - INFO - added node 5206 from ./datasets/other/politician_edges.edges, size: 5209/5908
+2024-11-21 21:11:51,810 - INFO - added node 5207 from ./datasets/other/politician_edges.edges, size: 5210/5908
+2024-11-21 21:12:19,374 - INFO - added node 5208 from ./datasets/other/politician_edges.edges, size: 5211/5908
+2024-11-21 21:13:38,861 - INFO - added node 5209 from ./datasets/other/politician_edges.edges, size: 5212/5908
+2024-11-21 21:14:09,327 - INFO - added node 5210 from ./datasets/other/politician_edges.edges, size: 5213/5908
+2024-11-21 21:14:41,329 - INFO - added node 5211 from ./datasets/other/politician_edges.edges, size: 5214/5908
+2024-11-21 21:18:36,147 - INFO - added node 5212 from ./datasets/other/politician_edges.edges, size: 5215/5908
+2024-11-21 21:21:12,982 - INFO - added node 5213 from ./datasets/other/politician_edges.edges, size: 5216/5908
+2024-11-21 21:21:58,505 - INFO - added node 5214 from ./datasets/other/politician_edges.edges, size: 5217/5908
+2024-11-21 21:22:56,544 - INFO - added node 5215 from ./datasets/other/politician_edges.edges, size: 5218/5908
+2024-11-21 21:23:30,237 - INFO - added node 5216 from ./datasets/other/politician_edges.edges, size: 5219/5908
+2024-11-21 21:24:09,820 - INFO - added node 5217 from ./datasets/other/politician_edges.edges, size: 5220/5908
+2024-11-21 21:24:51,076 - INFO - added node 5218 from ./datasets/other/politician_edges.edges, size: 5221/5908
+2024-11-21 21:25:19,590 - INFO - added node 5219 from ./datasets/other/politician_edges.edges, size: 5222/5908
+2024-11-21 21:25:47,244 - INFO - added node 5220 from ./datasets/other/politician_edges.edges, size: 5223/5908
+2024-11-21 21:26:16,100 - INFO - added node 5221 from ./datasets/other/politician_edges.edges, size: 5224/5908
+2024-11-21 21:26:51,969 - INFO - added node 5222 from ./datasets/other/politician_edges.edges, size: 5225/5908
+2024-11-21 21:27:27,577 - INFO - added node 5223 from ./datasets/other/politician_edges.edges, size: 5226/5908
+2024-11-21 21:28:06,039 - INFO - added node 5224 from ./datasets/other/politician_edges.edges, size: 5227/5908
+2024-11-21 21:29:24,391 - INFO - added node 5225 from ./datasets/other/politician_edges.edges, size: 5228/5908
+2024-11-21 21:30:06,873 - INFO - added node 5226 from ./datasets/other/politician_edges.edges, size: 5229/5908
+2024-11-21 21:31:31,629 - INFO - added node 5227 from ./datasets/other/politician_edges.edges, size: 5230/5908
+2024-11-21 21:33:06,464 - INFO - added node 5228 from ./datasets/other/politician_edges.edges, size: 5231/5908
+2024-11-21 21:33:55,414 - INFO - added node 5229 from ./datasets/other/politician_edges.edges, size: 5232/5908
+2024-11-21 21:34:28,092 - INFO - added node 5230 from ./datasets/other/politician_edges.edges, size: 5233/5908
+2024-11-21 21:34:56,681 - INFO - added node 5231 from ./datasets/other/politician_edges.edges, size: 5234/5908
+2024-11-21 21:35:36,602 - INFO - added node 5232 from ./datasets/other/politician_edges.edges, size: 5235/5908
+2024-11-21 21:36:11,126 - INFO - added node 5233 from ./datasets/other/politician_edges.edges, size: 5236/5908
+2024-11-21 21:37:29,314 - INFO - added node 5234 from ./datasets/other/politician_edges.edges, size: 5237/5908
+2024-11-21 21:38:17,450 - INFO - added node 5235 from ./datasets/other/politician_edges.edges, size: 5238/5908
+2024-11-21 21:39:21,317 - INFO - added node 5236 from ./datasets/other/politician_edges.edges, size: 5239/5908
+2024-11-21 21:40:08,154 - INFO - added node 5237 from ./datasets/other/politician_edges.edges, size: 5240/5908
+2024-11-21 21:40:41,875 - INFO - added node 5238 from ./datasets/other/politician_edges.edges, size: 5241/5908
+2024-11-21 21:41:16,164 - INFO - added node 5239 from ./datasets/other/politician_edges.edges, size: 5242/5908
+2024-11-21 21:43:03,761 - INFO - added node 5240 from ./datasets/other/politician_edges.edges, size: 5243/5908
+2024-11-21 21:44:19,595 - INFO - added node 5241 from ./datasets/other/politician_edges.edges, size: 5244/5908
+2024-11-21 21:44:49,560 - INFO - added node 5242 from ./datasets/other/politician_edges.edges, size: 5245/5908
+2024-11-21 21:46:26,097 - INFO - added node 5243 from ./datasets/other/politician_edges.edges, size: 5246/5908
+2024-11-21 21:46:57,419 - INFO - added node 5244 from ./datasets/other/politician_edges.edges, size: 5247/5908
+2024-11-21 21:47:37,888 - INFO - added node 5245 from ./datasets/other/politician_edges.edges, size: 5248/5908
+2024-11-21 21:49:25,732 - INFO - added node 5246 from ./datasets/other/politician_edges.edges, size: 5249/5908
+2024-11-21 21:50:00,720 - INFO - added node 5247 from ./datasets/other/politician_edges.edges, size: 5250/5908
+2024-11-21 21:50:40,028 - INFO - added node 5248 from ./datasets/other/politician_edges.edges, size: 5251/5908
+2024-11-21 21:51:34,848 - INFO - added node 5249 from ./datasets/other/politician_edges.edges, size: 5252/5908
+2024-11-21 21:52:08,897 - INFO - added node 5250 from ./datasets/other/politician_edges.edges, size: 5253/5908
+2024-11-21 21:52:54,787 - INFO - added node 5251 from ./datasets/other/politician_edges.edges, size: 5254/5908
+2024-11-21 21:54:07,392 - INFO - added node 5252 from ./datasets/other/politician_edges.edges, size: 5255/5908
+2024-11-21 21:54:39,797 - INFO - added node 5253 from ./datasets/other/politician_edges.edges, size: 5256/5908
+2024-11-21 21:55:16,234 - INFO - added node 5254 from ./datasets/other/politician_edges.edges, size: 5257/5908
+2024-11-21 21:55:49,744 - INFO - added node 5255 from ./datasets/other/politician_edges.edges, size: 5258/5908
+2024-11-21 21:56:17,794 - INFO - added node 5256 from ./datasets/other/politician_edges.edges, size: 5259/5908
+2024-11-21 21:57:05,173 - INFO - added node 5257 from ./datasets/other/politician_edges.edges, size: 5260/5908
+2024-11-21 21:57:39,206 - INFO - added node 5258 from ./datasets/other/politician_edges.edges, size: 5261/5908
+2024-11-21 21:58:07,997 - INFO - added node 5259 from ./datasets/other/politician_edges.edges, size: 5262/5908
+2024-11-21 21:58:37,571 - INFO - added node 5260 from ./datasets/other/politician_edges.edges, size: 5263/5908
+2024-11-21 21:59:18,254 - INFO - added node 5261 from ./datasets/other/politician_edges.edges, size: 5264/5908
+2024-11-21 22:00:25,646 - INFO - added node 5262 from ./datasets/other/politician_edges.edges, size: 5265/5908
+2024-11-21 22:02:25,518 - INFO - added node 5263 from ./datasets/other/politician_edges.edges, size: 5266/5908
+2024-11-21 22:03:46,043 - INFO - added node 5264 from ./datasets/other/politician_edges.edges, size: 5267/5908
+2024-11-21 22:04:13,581 - INFO - added node 5265 from ./datasets/other/politician_edges.edges, size: 5268/5908
+2024-11-21 22:05:07,192 - INFO - added node 5266 from ./datasets/other/politician_edges.edges, size: 5269/5908
+2024-11-21 22:05:49,542 - INFO - added node 5267 from ./datasets/other/politician_edges.edges, size: 5270/5908
+2024-11-21 22:06:22,274 - INFO - added node 5268 from ./datasets/other/politician_edges.edges, size: 5271/5908
+2024-11-21 22:06:49,377 - INFO - added node 5269 from ./datasets/other/politician_edges.edges, size: 5272/5908
+2024-11-21 22:07:21,675 - INFO - added node 5270 from ./datasets/other/politician_edges.edges, size: 5273/5908
+2024-11-21 22:07:54,670 - INFO - added node 5271 from ./datasets/other/politician_edges.edges, size: 5274/5908
+2024-11-21 22:09:01,210 - INFO - added node 5272 from ./datasets/other/politician_edges.edges, size: 5275/5908
+2024-11-21 22:09:31,437 - INFO - added node 5273 from ./datasets/other/politician_edges.edges, size: 5276/5908
+2024-11-21 22:10:41,580 - INFO - added node 5274 from ./datasets/other/politician_edges.edges, size: 5277/5908
+2024-11-21 22:11:07,528 - INFO - added node 5275 from ./datasets/other/politician_edges.edges, size: 5278/5908
+2024-11-21 22:11:53,160 - INFO - added node 5276 from ./datasets/other/politician_edges.edges, size: 5279/5908
+2024-11-21 22:14:57,775 - INFO - added node 5277 from ./datasets/other/politician_edges.edges, size: 5280/5908
+2024-11-21 22:15:38,291 - INFO - added node 5278 from ./datasets/other/politician_edges.edges, size: 5281/5908
+2024-11-21 22:17:10,914 - INFO - added node 5279 from ./datasets/other/politician_edges.edges, size: 5282/5908
+2024-11-21 22:18:19,205 - INFO - added node 5280 from ./datasets/other/politician_edges.edges, size: 5283/5908
+2024-11-21 22:18:51,925 - INFO - added node 5281 from ./datasets/other/politician_edges.edges, size: 5284/5908
+2024-11-21 22:19:35,625 - INFO - added node 5282 from ./datasets/other/politician_edges.edges, size: 5285/5908
+2024-11-21 22:20:05,236 - INFO - added node 5283 from ./datasets/other/politician_edges.edges, size: 5286/5908
+2024-11-21 22:20:52,552 - INFO - added node 5284 from ./datasets/other/politician_edges.edges, size: 5287/5908
+2024-11-21 22:23:42,135 - INFO - added node 5285 from ./datasets/other/politician_edges.edges, size: 5288/5908
+2024-11-21 22:24:20,697 - INFO - added node 5286 from ./datasets/other/politician_edges.edges, size: 5289/5908
+2024-11-21 22:24:51,720 - INFO - added node 5287 from ./datasets/other/politician_edges.edges, size: 5290/5908
+2024-11-21 22:25:59,906 - INFO - added node 5288 from ./datasets/other/politician_edges.edges, size: 5291/5908
+2024-11-21 22:27:19,234 - INFO - added node 5289 from ./datasets/other/politician_edges.edges, size: 5292/5908
+2024-11-21 22:28:17,640 - INFO - added node 5290 from ./datasets/other/politician_edges.edges, size: 5293/5908
+2024-11-21 22:29:19,497 - INFO - added node 5291 from ./datasets/other/politician_edges.edges, size: 5294/5908
+2024-11-21 22:32:25,153 - INFO - added node 5292 from ./datasets/other/politician_edges.edges, size: 5295/5908
+2024-11-21 22:32:56,253 - INFO - added node 5293 from ./datasets/other/politician_edges.edges, size: 5296/5908
+2024-11-21 22:34:03,824 - INFO - added node 5294 from ./datasets/other/politician_edges.edges, size: 5297/5908
+2024-11-21 22:34:56,534 - INFO - added node 5295 from ./datasets/other/politician_edges.edges, size: 5298/5908
+2024-11-21 22:35:33,139 - INFO - added node 5296 from ./datasets/other/politician_edges.edges, size: 5299/5908
+2024-11-21 22:36:39,114 - INFO - added node 5297 from ./datasets/other/politician_edges.edges, size: 5300/5908
+2024-11-21 22:37:06,931 - INFO - added node 5298 from ./datasets/other/politician_edges.edges, size: 5301/5908
+2024-11-21 22:37:37,232 - INFO - added node 5299 from ./datasets/other/politician_edges.edges, size: 5302/5908
+2024-11-21 22:39:07,806 - INFO - added node 5300 from ./datasets/other/politician_edges.edges, size: 5303/5908
+2024-11-21 22:39:40,340 - INFO - added node 5301 from ./datasets/other/politician_edges.edges, size: 5304/5908
+2024-11-21 22:40:06,965 - INFO - added node 5302 from ./datasets/other/politician_edges.edges, size: 5305/5908
+2024-11-21 22:40:34,935 - INFO - added node 5303 from ./datasets/other/politician_edges.edges, size: 5306/5908
+2024-11-21 22:41:00,981 - INFO - added node 5304 from ./datasets/other/politician_edges.edges, size: 5307/5908
+2024-11-21 22:44:54,310 - INFO - added node 5305 from ./datasets/other/politician_edges.edges, size: 5308/5908
+2024-11-21 22:45:41,411 - INFO - added node 5306 from ./datasets/other/politician_edges.edges, size: 5309/5908
+2024-11-21 22:47:51,932 - INFO - added node 5307 from ./datasets/other/politician_edges.edges, size: 5310/5908
+2024-11-21 22:50:08,675 - INFO - added node 5308 from ./datasets/other/politician_edges.edges, size: 5311/5908
+2024-11-21 22:50:47,951 - INFO - added node 5309 from ./datasets/other/politician_edges.edges, size: 5312/5908
+2024-11-21 22:54:10,510 - INFO - added node 5310 from ./datasets/other/politician_edges.edges, size: 5313/5908
+2024-11-21 22:55:02,895 - INFO - added node 5311 from ./datasets/other/politician_edges.edges, size: 5314/5908
+2024-11-21 22:57:04,924 - INFO - added node 5312 from ./datasets/other/politician_edges.edges, size: 5315/5908
+2024-11-21 22:57:48,330 - INFO - added node 5313 from ./datasets/other/politician_edges.edges, size: 5316/5908
+2024-11-21 22:59:04,703 - INFO - added node 5314 from ./datasets/other/politician_edges.edges, size: 5317/5908
+2024-11-21 22:59:45,297 - INFO - added node 5315 from ./datasets/other/politician_edges.edges, size: 5318/5908
+2024-11-21 23:00:13,374 - INFO - added node 5316 from ./datasets/other/politician_edges.edges, size: 5319/5908
+2024-11-21 23:01:27,067 - INFO - added node 5317 from ./datasets/other/politician_edges.edges, size: 5320/5908
+2024-11-21 23:02:01,345 - INFO - added node 5318 from ./datasets/other/politician_edges.edges, size: 5321/5908
+2024-11-21 23:02:34,492 - INFO - added node 5319 from ./datasets/other/politician_edges.edges, size: 5322/5908
+2024-11-21 23:03:03,904 - INFO - added node 5320 from ./datasets/other/politician_edges.edges, size: 5323/5908
+2024-11-21 23:06:23,679 - INFO - added node 5321 from ./datasets/other/politician_edges.edges, size: 5324/5908
+2024-11-21 23:06:59,239 - INFO - added node 5322 from ./datasets/other/politician_edges.edges, size: 5325/5908
+2024-11-21 23:07:53,603 - INFO - added node 5323 from ./datasets/other/politician_edges.edges, size: 5326/5908
+2024-11-21 23:09:17,047 - INFO - added node 5324 from ./datasets/other/politician_edges.edges, size: 5327/5908
+2024-11-21 23:10:27,766 - INFO - added node 5325 from ./datasets/other/politician_edges.edges, size: 5328/5908
+2024-11-21 23:12:30,647 - INFO - added node 5326 from ./datasets/other/politician_edges.edges, size: 5329/5908
+2024-11-21 23:13:18,071 - INFO - added node 5327 from ./datasets/other/politician_edges.edges, size: 5330/5908
+2024-11-21 23:13:56,947 - INFO - added node 5328 from ./datasets/other/politician_edges.edges, size: 5331/5908
+2024-11-21 23:15:32,093 - INFO - added node 5329 from ./datasets/other/politician_edges.edges, size: 5332/5908
+2024-11-21 23:16:00,986 - INFO - added node 5330 from ./datasets/other/politician_edges.edges, size: 5333/5908
+2024-11-21 23:16:29,937 - INFO - added node 5331 from ./datasets/other/politician_edges.edges, size: 5334/5908
+2024-11-21 23:16:59,533 - INFO - added node 5332 from ./datasets/other/politician_edges.edges, size: 5335/5908
+2024-11-21 23:19:37,527 - INFO - added node 5333 from ./datasets/other/politician_edges.edges, size: 5336/5908
+2024-11-21 23:20:07,942 - INFO - added node 5334 from ./datasets/other/politician_edges.edges, size: 5337/5908
+2024-11-21 23:20:39,340 - INFO - added node 5335 from ./datasets/other/politician_edges.edges, size: 5338/5908
+2024-11-21 23:21:08,786 - INFO - added node 5336 from ./datasets/other/politician_edges.edges, size: 5339/5908
+2024-11-21 23:22:04,950 - INFO - added node 5337 from ./datasets/other/politician_edges.edges, size: 5340/5908
+2024-11-21 23:22:41,098 - INFO - added node 5338 from ./datasets/other/politician_edges.edges, size: 5341/5908
+2024-11-21 23:23:08,598 - INFO - added node 5339 from ./datasets/other/politician_edges.edges, size: 5342/5908
+2024-11-21 23:23:39,493 - INFO - added node 5340 from ./datasets/other/politician_edges.edges, size: 5343/5908
+2024-11-21 23:24:08,969 - INFO - added node 5341 from ./datasets/other/politician_edges.edges, size: 5344/5908
+2024-11-21 23:24:43,836 - INFO - added node 5342 from ./datasets/other/politician_edges.edges, size: 5345/5908
+2024-11-21 23:25:46,267 - INFO - added node 5343 from ./datasets/other/politician_edges.edges, size: 5346/5908
+2024-11-21 23:27:29,074 - INFO - added node 5344 from ./datasets/other/politician_edges.edges, size: 5347/5908
+2024-11-21 23:28:52,182 - INFO - added node 5345 from ./datasets/other/politician_edges.edges, size: 5348/5908
+2024-11-21 23:32:20,153 - INFO - added node 5346 from ./datasets/other/politician_edges.edges, size: 5349/5908
+2024-11-21 23:32:58,776 - INFO - added node 5347 from ./datasets/other/politician_edges.edges, size: 5350/5908
+2024-11-21 23:33:32,032 - INFO - added node 5348 from ./datasets/other/politician_edges.edges, size: 5351/5908
+2024-11-21 23:34:16,445 - INFO - added node 5349 from ./datasets/other/politician_edges.edges, size: 5352/5908
+2024-11-21 23:34:50,002 - INFO - added node 5350 from ./datasets/other/politician_edges.edges, size: 5353/5908
+2024-11-21 23:35:18,542 - INFO - added node 5351 from ./datasets/other/politician_edges.edges, size: 5354/5908
+2024-11-21 23:35:47,479 - INFO - added node 5352 from ./datasets/other/politician_edges.edges, size: 5355/5908
+2024-11-21 23:36:19,284 - INFO - added node 5353 from ./datasets/other/politician_edges.edges, size: 5356/5908
+2024-11-21 23:36:58,819 - INFO - added node 5354 from ./datasets/other/politician_edges.edges, size: 5357/5908
+2024-11-21 23:40:18,913 - INFO - added node 5355 from ./datasets/other/politician_edges.edges, size: 5358/5908
+2024-11-21 23:40:52,321 - INFO - added node 5356 from ./datasets/other/politician_edges.edges, size: 5359/5908
+2024-11-21 23:44:08,447 - INFO - added node 5357 from ./datasets/other/politician_edges.edges, size: 5360/5908
+2024-11-21 23:44:40,479 - INFO - added node 5358 from ./datasets/other/politician_edges.edges, size: 5361/5908
+2024-11-21 23:45:12,882 - INFO - added node 5359 from ./datasets/other/politician_edges.edges, size: 5362/5908
+2024-11-21 23:45:39,849 - INFO - added node 5360 from ./datasets/other/politician_edges.edges, size: 5363/5908
+2024-11-21 23:46:25,773 - INFO - added node 5361 from ./datasets/other/politician_edges.edges, size: 5364/5908
+2024-11-21 23:46:58,187 - INFO - added node 5362 from ./datasets/other/politician_edges.edges, size: 5365/5908
+2024-11-21 23:47:27,732 - INFO - added node 5363 from ./datasets/other/politician_edges.edges, size: 5366/5908
+2024-11-21 23:48:05,740 - INFO - added node 5364 from ./datasets/other/politician_edges.edges, size: 5367/5908
+2024-11-21 23:48:42,019 - INFO - added node 5365 from ./datasets/other/politician_edges.edges, size: 5368/5908
+2024-11-21 23:50:12,499 - INFO - added node 5366 from ./datasets/other/politician_edges.edges, size: 5369/5908
+2024-11-21 23:50:40,862 - INFO - added node 5367 from ./datasets/other/politician_edges.edges, size: 5370/5908
+2024-11-21 23:51:13,790 - INFO - added node 5368 from ./datasets/other/politician_edges.edges, size: 5371/5908
+2024-11-21 23:52:12,951 - INFO - added node 5369 from ./datasets/other/politician_edges.edges, size: 5372/5908
+2024-11-21 23:52:43,951 - INFO - added node 5370 from ./datasets/other/politician_edges.edges, size: 5373/5908
+2024-11-21 23:53:20,332 - INFO - added node 5371 from ./datasets/other/politician_edges.edges, size: 5374/5908
+2024-11-21 23:53:54,823 - INFO - added node 5372 from ./datasets/other/politician_edges.edges, size: 5375/5908
+2024-11-21 23:54:22,949 - INFO - added node 5373 from ./datasets/other/politician_edges.edges, size: 5376/5908
+2024-11-21 23:54:52,863 - INFO - added node 5374 from ./datasets/other/politician_edges.edges, size: 5377/5908
+2024-11-21 23:55:19,959 - INFO - added node 5375 from ./datasets/other/politician_edges.edges, size: 5378/5908
+2024-11-21 23:56:27,501 - INFO - added node 5376 from ./datasets/other/politician_edges.edges, size: 5379/5908
+2024-11-21 23:56:55,111 - INFO - added node 5377 from ./datasets/other/politician_edges.edges, size: 5380/5908
+2024-11-21 23:57:58,266 - INFO - added node 5378 from ./datasets/other/politician_edges.edges, size: 5381/5908
+2024-11-21 23:58:41,135 - INFO - added node 5379 from ./datasets/other/politician_edges.edges, size: 5382/5908
+2024-11-21 23:59:28,014 - INFO - added node 5380 from ./datasets/other/politician_edges.edges, size: 5383/5908
+2024-11-22 00:00:03,240 - INFO - added node 5381 from ./datasets/other/politician_edges.edges, size: 5384/5908
+2024-11-22 00:00:36,959 - INFO - added node 5382 from ./datasets/other/politician_edges.edges, size: 5385/5908
+2024-11-22 00:01:04,192 - INFO - added node 5383 from ./datasets/other/politician_edges.edges, size: 5386/5908
+2024-11-22 00:01:33,623 - INFO - added node 5384 from ./datasets/other/politician_edges.edges, size: 5387/5908
+2024-11-22 00:02:05,521 - INFO - added node 5385 from ./datasets/other/politician_edges.edges, size: 5388/5908
+2024-11-22 00:02:31,453 - INFO - added node 5386 from ./datasets/other/politician_edges.edges, size: 5389/5908
+2024-11-22 00:03:31,168 - INFO - added node 5387 from ./datasets/other/politician_edges.edges, size: 5390/5908
+2024-11-22 00:06:00,411 - INFO - added node 5388 from ./datasets/other/politician_edges.edges, size: 5391/5908
+2024-11-22 00:06:34,494 - INFO - added node 5389 from ./datasets/other/politician_edges.edges, size: 5392/5908
+2024-11-22 00:07:18,850 - INFO - added node 5390 from ./datasets/other/politician_edges.edges, size: 5393/5908
+2024-11-22 00:08:21,468 - INFO - added node 5391 from ./datasets/other/politician_edges.edges, size: 5394/5908
+2024-11-22 00:08:57,949 - INFO - added node 5392 from ./datasets/other/politician_edges.edges, size: 5395/5908
+2024-11-22 00:11:00,098 - INFO - added node 5393 from ./datasets/other/politician_edges.edges, size: 5396/5908
+2024-11-22 00:11:32,548 - INFO - added node 5394 from ./datasets/other/politician_edges.edges, size: 5397/5908
+2024-11-22 00:12:00,050 - INFO - added node 5395 from ./datasets/other/politician_edges.edges, size: 5398/5908
+2024-11-22 00:14:27,205 - INFO - added node 5396 from ./datasets/other/politician_edges.edges, size: 5399/5908
+2024-11-22 00:14:54,629 - INFO - added node 5397 from ./datasets/other/politician_edges.edges, size: 5400/5908
+2024-11-22 00:15:27,281 - INFO - added node 5398 from ./datasets/other/politician_edges.edges, size: 5401/5908
+2024-11-22 00:15:53,372 - INFO - added node 5399 from ./datasets/other/politician_edges.edges, size: 5402/5908
+2024-11-22 00:16:29,264 - INFO - added node 5400 from ./datasets/other/politician_edges.edges, size: 5403/5908
+2024-11-22 00:17:13,165 - INFO - added node 5401 from ./datasets/other/politician_edges.edges, size: 5404/5908
+2024-11-22 00:18:22,029 - INFO - added node 5402 from ./datasets/other/politician_edges.edges, size: 5405/5908
+2024-11-22 00:18:49,686 - INFO - added node 5403 from ./datasets/other/politician_edges.edges, size: 5406/5908
+2024-11-22 00:19:18,208 - INFO - added node 5404 from ./datasets/other/politician_edges.edges, size: 5407/5908
+2024-11-22 00:19:49,741 - INFO - added node 5405 from ./datasets/other/politician_edges.edges, size: 5408/5908
+2024-11-22 00:20:16,120 - INFO - added node 5406 from ./datasets/other/politician_edges.edges, size: 5409/5908
+2024-11-22 00:20:42,472 - INFO - added node 5407 from ./datasets/other/politician_edges.edges, size: 5410/5908
+2024-11-22 00:21:12,089 - INFO - added node 5408 from ./datasets/other/politician_edges.edges, size: 5411/5908
+2024-11-22 00:21:41,545 - INFO - added node 5409 from ./datasets/other/politician_edges.edges, size: 5412/5908
+2024-11-22 00:22:29,097 - INFO - added node 5410 from ./datasets/other/politician_edges.edges, size: 5413/5908
+2024-11-22 00:22:57,312 - INFO - added node 5411 from ./datasets/other/politician_edges.edges, size: 5414/5908
+2024-11-22 00:23:44,762 - INFO - added node 5412 from ./datasets/other/politician_edges.edges, size: 5415/5908
+2024-11-22 00:24:24,198 - INFO - added node 5413 from ./datasets/other/politician_edges.edges, size: 5416/5908
+2024-11-22 00:27:49,014 - INFO - added node 5414 from ./datasets/other/politician_edges.edges, size: 5417/5908
+2024-11-22 00:28:57,437 - INFO - added node 5415 from ./datasets/other/politician_edges.edges, size: 5418/5908
+2024-11-22 00:33:40,466 - INFO - added node 5416 from ./datasets/other/politician_edges.edges, size: 5419/5908
+2024-11-22 00:36:01,407 - INFO - added node 5417 from ./datasets/other/politician_edges.edges, size: 5420/5908
+2024-11-22 00:36:56,146 - INFO - added node 5418 from ./datasets/other/politician_edges.edges, size: 5421/5908
+2024-11-22 00:38:16,368 - INFO - added node 5419 from ./datasets/other/politician_edges.edges, size: 5422/5908
+2024-11-22 00:41:07,229 - INFO - added node 5420 from ./datasets/other/politician_edges.edges, size: 5423/5908
+2024-11-22 00:44:24,725 - INFO - added node 5421 from ./datasets/other/politician_edges.edges, size: 5424/5908
+2024-11-22 00:45:59,163 - INFO - added node 5422 from ./datasets/other/politician_edges.edges, size: 5425/5908
+2024-11-22 00:46:45,254 - INFO - added node 5423 from ./datasets/other/politician_edges.edges, size: 5426/5908
+2024-11-22 00:47:44,769 - INFO - added node 5424 from ./datasets/other/politician_edges.edges, size: 5427/5908
+2024-11-22 00:48:26,414 - INFO - added node 5425 from ./datasets/other/politician_edges.edges, size: 5428/5908
+2024-11-22 00:49:51,646 - INFO - added node 5426 from ./datasets/other/politician_edges.edges, size: 5429/5908
+2024-11-22 00:50:41,742 - INFO - added node 5427 from ./datasets/other/politician_edges.edges, size: 5430/5908
+2024-11-22 00:51:45,196 - INFO - added node 5428 from ./datasets/other/politician_edges.edges, size: 5431/5908
+2024-11-22 00:52:17,001 - INFO - added node 5429 from ./datasets/other/politician_edges.edges, size: 5432/5908
+2024-11-22 00:53:06,178 - INFO - added node 5430 from ./datasets/other/politician_edges.edges, size: 5433/5908
+2024-11-22 00:54:25,655 - INFO - added node 5431 from ./datasets/other/politician_edges.edges, size: 5434/5908
+2024-11-22 00:55:12,233 - INFO - added node 5432 from ./datasets/other/politician_edges.edges, size: 5435/5908
+2024-11-22 00:55:43,671 - INFO - added node 5433 from ./datasets/other/politician_edges.edges, size: 5436/5908
+2024-11-22 00:58:23,360 - INFO - added node 5434 from ./datasets/other/politician_edges.edges, size: 5437/5908
+2024-11-22 00:58:50,386 - INFO - added node 5435 from ./datasets/other/politician_edges.edges, size: 5438/5908
+2024-11-22 00:59:24,698 - INFO - added node 5436 from ./datasets/other/politician_edges.edges, size: 5439/5908
+2024-11-22 00:59:52,412 - INFO - added node 5437 from ./datasets/other/politician_edges.edges, size: 5440/5908
+2024-11-22 01:01:57,303 - INFO - added node 5438 from ./datasets/other/politician_edges.edges, size: 5441/5908
+2024-11-22 01:03:12,995 - INFO - added node 5439 from ./datasets/other/politician_edges.edges, size: 5442/5908
+2024-11-22 01:03:40,895 - INFO - added node 5440 from ./datasets/other/politician_edges.edges, size: 5443/5908
+2024-11-22 01:06:58,359 - INFO - added node 5441 from ./datasets/other/politician_edges.edges, size: 5444/5908
+2024-11-22 01:08:21,499 - INFO - added node 5442 from ./datasets/other/politician_edges.edges, size: 5445/5908
+2024-11-22 01:08:51,895 - INFO - added node 5443 from ./datasets/other/politician_edges.edges, size: 5446/5908
+2024-11-22 01:10:33,027 - INFO - added node 5444 from ./datasets/other/politician_edges.edges, size: 5447/5908
+2024-11-22 01:11:04,746 - INFO - added node 5445 from ./datasets/other/politician_edges.edges, size: 5448/5908
+2024-11-22 01:14:16,239 - INFO - added node 5446 from ./datasets/other/politician_edges.edges, size: 5449/5908
+2024-11-22 01:14:51,891 - INFO - added node 5447 from ./datasets/other/politician_edges.edges, size: 5450/5908
+2024-11-22 01:15:20,829 - INFO - added node 5448 from ./datasets/other/politician_edges.edges, size: 5451/5908
+2024-11-22 01:16:57,661 - INFO - added node 5449 from ./datasets/other/politician_edges.edges, size: 5452/5908
+2024-11-22 01:17:28,988 - INFO - added node 5450 from ./datasets/other/politician_edges.edges, size: 5453/5908
+2024-11-22 01:18:25,015 - INFO - added node 5451 from ./datasets/other/politician_edges.edges, size: 5454/5908
+2024-11-22 01:18:57,623 - INFO - added node 5452 from ./datasets/other/politician_edges.edges, size: 5455/5908
+2024-11-22 01:19:54,455 - INFO - added node 5453 from ./datasets/other/politician_edges.edges, size: 5456/5908
+2024-11-22 01:20:21,516 - INFO - added node 5454 from ./datasets/other/politician_edges.edges, size: 5457/5908
+2024-11-22 01:22:53,615 - INFO - added node 5455 from ./datasets/other/politician_edges.edges, size: 5458/5908
+2024-11-22 01:23:24,219 - INFO - added node 5456 from ./datasets/other/politician_edges.edges, size: 5459/5908
+2024-11-22 01:24:04,497 - INFO - added node 5457 from ./datasets/other/politician_edges.edges, size: 5460/5908
+2024-11-22 01:24:31,679 - INFO - added node 5458 from ./datasets/other/politician_edges.edges, size: 5461/5908
+2024-11-22 01:25:34,127 - INFO - added node 5459 from ./datasets/other/politician_edges.edges, size: 5462/5908
+2024-11-22 01:26:14,506 - INFO - added node 5460 from ./datasets/other/politician_edges.edges, size: 5463/5908
+2024-11-22 01:27:07,765 - INFO - added node 5461 from ./datasets/other/politician_edges.edges, size: 5464/5908
+2024-11-22 01:27:35,286 - INFO - added node 5462 from ./datasets/other/politician_edges.edges, size: 5465/5908
+2024-11-22 01:28:04,638 - INFO - added node 5463 from ./datasets/other/politician_edges.edges, size: 5466/5908
+2024-11-22 01:28:34,510 - INFO - added node 5464 from ./datasets/other/politician_edges.edges, size: 5467/5908
+2024-11-22 01:29:05,169 - INFO - added node 5465 from ./datasets/other/politician_edges.edges, size: 5468/5908
+2024-11-22 01:30:03,828 - INFO - added node 5466 from ./datasets/other/politician_edges.edges, size: 5469/5908
+2024-11-22 01:30:32,806 - INFO - added node 5467 from ./datasets/other/politician_edges.edges, size: 5470/5908
+2024-11-22 01:31:14,168 - INFO - added node 5468 from ./datasets/other/politician_edges.edges, size: 5471/5908
+2024-11-22 01:31:49,183 - INFO - added node 5469 from ./datasets/other/politician_edges.edges, size: 5472/5908
+2024-11-22 01:32:19,907 - INFO - added node 5470 from ./datasets/other/politician_edges.edges, size: 5473/5908
+2024-11-22 01:33:50,146 - INFO - added node 5471 from ./datasets/other/politician_edges.edges, size: 5474/5908
+2024-11-22 01:34:15,989 - INFO - added node 5472 from ./datasets/other/politician_edges.edges, size: 5475/5908
+2024-11-22 01:34:46,747 - INFO - added node 5473 from ./datasets/other/politician_edges.edges, size: 5476/5908
+2024-11-22 01:35:33,303 - INFO - added node 5474 from ./datasets/other/politician_edges.edges, size: 5477/5908
+2024-11-22 01:36:11,061 - INFO - added node 5475 from ./datasets/other/politician_edges.edges, size: 5478/5908
+2024-11-22 01:36:40,147 - INFO - added node 5476 from ./datasets/other/politician_edges.edges, size: 5479/5908
+2024-11-22 01:39:32,139 - INFO - added node 5477 from ./datasets/other/politician_edges.edges, size: 5480/5908
+2024-11-22 01:39:59,657 - INFO - added node 5478 from ./datasets/other/politician_edges.edges, size: 5481/5908
+2024-11-22 01:43:05,617 - INFO - added node 5479 from ./datasets/other/politician_edges.edges, size: 5482/5908
+2024-11-22 01:45:28,881 - INFO - added node 5480 from ./datasets/other/politician_edges.edges, size: 5483/5908
+2024-11-22 01:46:48,076 - INFO - added node 5481 from ./datasets/other/politician_edges.edges, size: 5484/5908
+2024-11-22 01:48:40,160 - INFO - added node 5482 from ./datasets/other/politician_edges.edges, size: 5485/5908
+2024-11-22 01:51:39,550 - INFO - added node 5483 from ./datasets/other/politician_edges.edges, size: 5486/5908
+2024-11-22 01:52:09,202 - INFO - added node 5484 from ./datasets/other/politician_edges.edges, size: 5487/5908
+2024-11-22 01:53:32,854 - INFO - added node 5485 from ./datasets/other/politician_edges.edges, size: 5488/5908
+2024-11-22 01:54:27,223 - INFO - added node 5486 from ./datasets/other/politician_edges.edges, size: 5489/5908
+2024-11-22 01:54:56,138 - INFO - added node 5487 from ./datasets/other/politician_edges.edges, size: 5490/5908
+2024-11-22 01:55:23,662 - INFO - added node 5488 from ./datasets/other/politician_edges.edges, size: 5491/5908
+2024-11-22 01:58:41,944 - INFO - added node 5489 from ./datasets/other/politician_edges.edges, size: 5492/5908
+2024-11-22 01:59:54,862 - INFO - added node 5490 from ./datasets/other/politician_edges.edges, size: 5493/5908
+2024-11-22 02:00:47,380 - INFO - added node 5491 from ./datasets/other/politician_edges.edges, size: 5494/5908
+2024-11-22 02:02:26,073 - INFO - added node 5492 from ./datasets/other/politician_edges.edges, size: 5495/5908
+2024-11-22 02:02:54,661 - INFO - added node 5493 from ./datasets/other/politician_edges.edges, size: 5496/5908
+2024-11-22 02:05:31,990 - INFO - added node 5494 from ./datasets/other/politician_edges.edges, size: 5497/5908
+2024-11-22 02:07:56,707 - INFO - added node 5495 from ./datasets/other/politician_edges.edges, size: 5498/5908
+2024-11-22 02:08:32,080 - INFO - added node 5496 from ./datasets/other/politician_edges.edges, size: 5499/5908
+2024-11-22 02:09:03,473 - INFO - added node 5497 from ./datasets/other/politician_edges.edges, size: 5500/5908
+2024-11-22 02:09:39,364 - INFO - added node 5498 from ./datasets/other/politician_edges.edges, size: 5501/5908
+2024-11-22 02:10:06,203 - INFO - added node 5499 from ./datasets/other/politician_edges.edges, size: 5502/5908
+2024-11-22 02:10:33,126 - INFO - added node 5500 from ./datasets/other/politician_edges.edges, size: 5503/5908
+2024-11-22 02:11:04,442 - INFO - added node 5501 from ./datasets/other/politician_edges.edges, size: 5504/5908
+2024-11-22 02:11:40,041 - INFO - added node 5502 from ./datasets/other/politician_edges.edges, size: 5505/5908
+2024-11-22 02:13:40,279 - INFO - added node 5503 from ./datasets/other/politician_edges.edges, size: 5506/5908
+2024-11-22 02:14:08,926 - INFO - added node 5504 from ./datasets/other/politician_edges.edges, size: 5507/5908
+2024-11-22 02:15:11,042 - INFO - added node 5505 from ./datasets/other/politician_edges.edges, size: 5508/5908
+2024-11-22 02:15:57,330 - INFO - added node 5506 from ./datasets/other/politician_edges.edges, size: 5509/5908
+2024-11-22 02:16:29,375 - INFO - added node 5507 from ./datasets/other/politician_edges.edges, size: 5510/5908
+2024-11-22 02:20:21,602 - INFO - added node 5508 from ./datasets/other/politician_edges.edges, size: 5511/5908
+2024-11-22 02:20:53,953 - INFO - added node 5509 from ./datasets/other/politician_edges.edges, size: 5512/5908
+2024-11-22 02:23:04,392 - INFO - added node 5510 from ./datasets/other/politician_edges.edges, size: 5513/5908
+2024-11-22 02:23:45,411 - INFO - added node 5511 from ./datasets/other/politician_edges.edges, size: 5514/5908
+2024-11-22 02:24:12,698 - INFO - added node 5512 from ./datasets/other/politician_edges.edges, size: 5515/5908
+2024-11-22 02:24:42,278 - INFO - added node 5513 from ./datasets/other/politician_edges.edges, size: 5516/5908
+2024-11-22 02:25:23,981 - INFO - added node 5514 from ./datasets/other/politician_edges.edges, size: 5517/5908
+2024-11-22 02:25:50,894 - INFO - added node 5515 from ./datasets/other/politician_edges.edges, size: 5518/5908
+2024-11-22 02:26:18,464 - INFO - added node 5516 from ./datasets/other/politician_edges.edges, size: 5519/5908
+2024-11-22 02:27:11,058 - INFO - added node 5517 from ./datasets/other/politician_edges.edges, size: 5520/5908
+2024-11-22 02:27:51,497 - INFO - added node 5518 from ./datasets/other/politician_edges.edges, size: 5521/5908
+2024-11-22 02:28:35,521 - INFO - added node 5519 from ./datasets/other/politician_edges.edges, size: 5522/5908
+2024-11-22 02:31:46,264 - INFO - added node 5520 from ./datasets/other/politician_edges.edges, size: 5523/5908
+2024-11-22 02:32:21,753 - INFO - added node 5521 from ./datasets/other/politician_edges.edges, size: 5524/5908
+2024-11-22 02:33:13,067 - INFO - added node 5522 from ./datasets/other/politician_edges.edges, size: 5525/5908
+2024-11-22 02:33:48,791 - INFO - added node 5523 from ./datasets/other/politician_edges.edges, size: 5526/5908
+2024-11-22 02:37:11,643 - INFO - added node 5524 from ./datasets/other/politician_edges.edges, size: 5527/5908
+2024-11-22 02:40:10,466 - INFO - added node 5525 from ./datasets/other/politician_edges.edges, size: 5528/5908
+2024-11-22 02:40:51,228 - INFO - added node 5526 from ./datasets/other/politician_edges.edges, size: 5529/5908
+2024-11-22 02:41:31,068 - INFO - added node 5527 from ./datasets/other/politician_edges.edges, size: 5530/5908
+2024-11-22 02:42:01,085 - INFO - added node 5528 from ./datasets/other/politician_edges.edges, size: 5531/5908
+2024-11-22 02:42:31,412 - INFO - added node 5529 from ./datasets/other/politician_edges.edges, size: 5532/5908
+2024-11-22 02:42:57,796 - INFO - added node 5530 from ./datasets/other/politician_edges.edges, size: 5533/5908
+2024-11-22 02:43:25,993 - INFO - added node 5531 from ./datasets/other/politician_edges.edges, size: 5534/5908
+2024-11-22 02:44:09,460 - INFO - added node 5532 from ./datasets/other/politician_edges.edges, size: 5535/5908
+2024-11-22 02:45:51,913 - INFO - added node 5533 from ./datasets/other/politician_edges.edges, size: 5536/5908
+2024-11-22 02:46:22,730 - INFO - added node 5534 from ./datasets/other/politician_edges.edges, size: 5537/5908
+2024-11-22 02:46:51,777 - INFO - added node 5535 from ./datasets/other/politician_edges.edges, size: 5538/5908
+2024-11-22 02:48:22,362 - INFO - added node 5536 from ./datasets/other/politician_edges.edges, size: 5539/5908
+2024-11-22 02:49:02,446 - INFO - added node 5537 from ./datasets/other/politician_edges.edges, size: 5540/5908
+2024-11-22 02:52:52,785 - INFO - added node 5538 from ./datasets/other/politician_edges.edges, size: 5541/5908
+2024-11-22 02:53:44,284 - INFO - added node 5539 from ./datasets/other/politician_edges.edges, size: 5542/5908
+2024-11-22 02:54:13,840 - INFO - added node 5540 from ./datasets/other/politician_edges.edges, size: 5543/5908
+2024-11-22 02:54:46,475 - INFO - added node 5541 from ./datasets/other/politician_edges.edges, size: 5544/5908
+2024-11-22 02:55:22,910 - INFO - added node 5542 from ./datasets/other/politician_edges.edges, size: 5545/5908
+2024-11-22 02:59:03,411 - INFO - added node 5543 from ./datasets/other/politician_edges.edges, size: 5546/5908
+2024-11-22 03:00:12,520 - INFO - added node 5544 from ./datasets/other/politician_edges.edges, size: 5547/5908
+2024-11-22 03:02:11,081 - INFO - added node 5545 from ./datasets/other/politician_edges.edges, size: 5548/5908
+2024-11-22 03:02:45,246 - INFO - added node 5546 from ./datasets/other/politician_edges.edges, size: 5549/5908
+2024-11-22 03:03:12,214 - INFO - added node 5547 from ./datasets/other/politician_edges.edges, size: 5550/5908
+2024-11-22 03:03:38,438 - INFO - added node 5548 from ./datasets/other/politician_edges.edges, size: 5551/5908
+2024-11-22 03:04:12,809 - INFO - added node 5549 from ./datasets/other/politician_edges.edges, size: 5552/5908
+2024-11-22 03:04:45,510 - INFO - added node 5550 from ./datasets/other/politician_edges.edges, size: 5553/5908
+2024-11-22 03:05:17,031 - INFO - added node 5551 from ./datasets/other/politician_edges.edges, size: 5554/5908
+2024-11-22 03:05:50,658 - INFO - added node 5552 from ./datasets/other/politician_edges.edges, size: 5555/5908
+2024-11-22 03:07:05,371 - INFO - added node 5553 from ./datasets/other/politician_edges.edges, size: 5556/5908
+2024-11-22 03:09:37,826 - INFO - added node 5554 from ./datasets/other/politician_edges.edges, size: 5557/5908
+2024-11-22 03:10:04,409 - INFO - added node 5555 from ./datasets/other/politician_edges.edges, size: 5558/5908
+2024-11-22 03:10:36,111 - INFO - added node 5556 from ./datasets/other/politician_edges.edges, size: 5559/5908
+2024-11-22 03:12:57,705 - INFO - added node 5557 from ./datasets/other/politician_edges.edges, size: 5560/5908
+2024-11-22 03:13:47,649 - INFO - added node 5558 from ./datasets/other/politician_edges.edges, size: 5561/5908
+2024-11-22 03:14:30,969 - INFO - added node 5559 from ./datasets/other/politician_edges.edges, size: 5562/5908
+2024-11-22 03:18:15,698 - INFO - added node 5560 from ./datasets/other/politician_edges.edges, size: 5563/5908
+2024-11-22 03:20:09,258 - INFO - added node 5561 from ./datasets/other/politician_edges.edges, size: 5564/5908
+2024-11-22 03:22:10,888 - INFO - added node 5562 from ./datasets/other/politician_edges.edges, size: 5565/5908
+2024-11-22 03:22:56,509 - INFO - added node 5563 from ./datasets/other/politician_edges.edges, size: 5566/5908
+2024-11-22 03:23:35,319 - INFO - added node 5564 from ./datasets/other/politician_edges.edges, size: 5567/5908
+2024-11-22 03:24:29,062 - INFO - added node 5565 from ./datasets/other/politician_edges.edges, size: 5568/5908
+2024-11-22 03:27:54,652 - INFO - added node 5566 from ./datasets/other/politician_edges.edges, size: 5569/5908
+2024-11-22 03:29:10,946 - INFO - added node 5567 from ./datasets/other/politician_edges.edges, size: 5570/5908
+2024-11-22 03:30:30,943 - INFO - added node 5568 from ./datasets/other/politician_edges.edges, size: 5571/5908
+2024-11-22 03:31:04,095 - INFO - added node 5569 from ./datasets/other/politician_edges.edges, size: 5572/5908
+2024-11-22 03:31:46,265 - INFO - added node 5570 from ./datasets/other/politician_edges.edges, size: 5573/5908
+2024-11-22 03:32:44,007 - INFO - added node 5571 from ./datasets/other/politician_edges.edges, size: 5574/5908
+2024-11-22 03:35:02,164 - INFO - added node 5572 from ./datasets/other/politician_edges.edges, size: 5575/5908
+2024-11-22 03:35:50,930 - INFO - added node 5573 from ./datasets/other/politician_edges.edges, size: 5576/5908
+2024-11-22 03:39:22,703 - INFO - added node 5574 from ./datasets/other/politician_edges.edges, size: 5577/5908
+2024-11-22 03:39:49,891 - INFO - added node 5575 from ./datasets/other/politician_edges.edges, size: 5578/5908
+2024-11-22 03:40:18,294 - INFO - added node 5576 from ./datasets/other/politician_edges.edges, size: 5579/5908
+2024-11-22 03:40:48,206 - INFO - added node 5577 from ./datasets/other/politician_edges.edges, size: 5580/5908
+2024-11-22 03:42:07,935 - INFO - added node 5578 from ./datasets/other/politician_edges.edges, size: 5581/5908
+2024-11-22 03:42:46,694 - INFO - added node 5579 from ./datasets/other/politician_edges.edges, size: 5582/5908
+2024-11-22 03:43:15,097 - INFO - added node 5580 from ./datasets/other/politician_edges.edges, size: 5583/5908
+2024-11-22 03:43:43,027 - INFO - added node 5581 from ./datasets/other/politician_edges.edges, size: 5584/5908
+2024-11-22 03:47:17,025 - INFO - added node 5582 from ./datasets/other/politician_edges.edges, size: 5585/5908
+2024-11-22 03:48:48,770 - INFO - added node 5583 from ./datasets/other/politician_edges.edges, size: 5586/5908
+2024-11-22 03:52:40,108 - INFO - added node 5584 from ./datasets/other/politician_edges.edges, size: 5587/5908
+2024-11-22 03:53:12,234 - INFO - added node 5585 from ./datasets/other/politician_edges.edges, size: 5588/5908
+2024-11-22 03:53:45,153 - INFO - added node 5586 from ./datasets/other/politician_edges.edges, size: 5589/5908
+2024-11-22 03:54:12,812 - INFO - added node 5587 from ./datasets/other/politician_edges.edges, size: 5590/5908
+2024-11-22 03:54:43,663 - INFO - added node 5588 from ./datasets/other/politician_edges.edges, size: 5591/5908
+2024-11-22 03:55:32,243 - INFO - added node 5589 from ./datasets/other/politician_edges.edges, size: 5592/5908
+2024-11-22 03:57:58,826 - INFO - added node 5590 from ./datasets/other/politician_edges.edges, size: 5593/5908
+2024-11-22 03:58:55,995 - INFO - added node 5591 from ./datasets/other/politician_edges.edges, size: 5594/5908
+2024-11-22 04:00:31,183 - INFO - added node 5592 from ./datasets/other/politician_edges.edges, size: 5595/5908
+2024-11-22 04:00:58,755 - INFO - added node 5593 from ./datasets/other/politician_edges.edges, size: 5596/5908
+2024-11-22 04:01:28,067 - INFO - added node 5594 from ./datasets/other/politician_edges.edges, size: 5597/5908
+2024-11-22 04:02:02,943 - INFO - added node 5595 from ./datasets/other/politician_edges.edges, size: 5598/5908
+2024-11-22 04:02:31,674 - INFO - added node 5596 from ./datasets/other/politician_edges.edges, size: 5599/5908
+2024-11-22 04:03:01,597 - INFO - added node 5597 from ./datasets/other/politician_edges.edges, size: 5600/5908
+2024-11-22 04:03:47,963 - INFO - added node 5598 from ./datasets/other/politician_edges.edges, size: 5601/5908
+2024-11-22 04:06:51,338 - INFO - added node 5599 from ./datasets/other/politician_edges.edges, size: 5602/5908
+2024-11-22 04:07:18,860 - INFO - added node 5600 from ./datasets/other/politician_edges.edges, size: 5603/5908
+2024-11-22 04:07:55,468 - INFO - added node 5601 from ./datasets/other/politician_edges.edges, size: 5604/5908
+2024-11-22 04:08:32,358 - INFO - added node 5602 from ./datasets/other/politician_edges.edges, size: 5605/5908
+2024-11-22 04:09:01,169 - INFO - added node 5603 from ./datasets/other/politician_edges.edges, size: 5606/5908
+2024-11-22 04:09:28,399 - INFO - added node 5604 from ./datasets/other/politician_edges.edges, size: 5607/5908
+2024-11-22 04:10:05,375 - INFO - added node 5605 from ./datasets/other/politician_edges.edges, size: 5608/5908
+2024-11-22 04:10:36,445 - INFO - added node 5606 from ./datasets/other/politician_edges.edges, size: 5609/5908
+2024-11-22 04:11:03,379 - INFO - added node 5607 from ./datasets/other/politician_edges.edges, size: 5610/5908
+2024-11-22 04:13:54,014 - INFO - added node 5608 from ./datasets/other/politician_edges.edges, size: 5611/5908
+2024-11-22 04:14:28,928 - INFO - added node 5609 from ./datasets/other/politician_edges.edges, size: 5612/5908
+2024-11-22 04:14:54,961 - INFO - added node 5610 from ./datasets/other/politician_edges.edges, size: 5613/5908
+2024-11-22 04:16:12,132 - INFO - added node 5611 from ./datasets/other/politician_edges.edges, size: 5614/5908
+2024-11-22 04:16:52,500 - INFO - added node 5612 from ./datasets/other/politician_edges.edges, size: 5615/5908
+2024-11-22 04:17:46,227 - INFO - added node 5613 from ./datasets/other/politician_edges.edges, size: 5616/5908
+2024-11-22 04:18:12,639 - INFO - added node 5614 from ./datasets/other/politician_edges.edges, size: 5617/5908
+2024-11-22 04:21:39,108 - INFO - added node 5615 from ./datasets/other/politician_edges.edges, size: 5618/5908
+2024-11-22 04:22:37,339 - INFO - added node 5616 from ./datasets/other/politician_edges.edges, size: 5619/5908
+2024-11-22 04:23:05,955 - INFO - added node 5617 from ./datasets/other/politician_edges.edges, size: 5620/5908
+2024-11-22 04:24:04,752 - INFO - added node 5618 from ./datasets/other/politician_edges.edges, size: 5621/5908
+2024-11-22 04:24:36,856 - INFO - added node 5619 from ./datasets/other/politician_edges.edges, size: 5622/5908
+2024-11-22 04:25:07,131 - INFO - added node 5620 from ./datasets/other/politician_edges.edges, size: 5623/5908
+2024-11-22 04:28:13,576 - INFO - added node 5621 from ./datasets/other/politician_edges.edges, size: 5624/5908
+2024-11-22 04:28:42,079 - INFO - added node 5622 from ./datasets/other/politician_edges.edges, size: 5625/5908
+2024-11-22 04:29:17,498 - INFO - added node 5623 from ./datasets/other/politician_edges.edges, size: 5626/5908
+2024-11-22 04:29:51,465 - INFO - added node 5624 from ./datasets/other/politician_edges.edges, size: 5627/5908
+2024-11-22 04:32:48,216 - INFO - added node 5625 from ./datasets/other/politician_edges.edges, size: 5628/5908
+2024-11-22 04:33:18,513 - INFO - added node 5626 from ./datasets/other/politician_edges.edges, size: 5629/5908
+2024-11-22 04:33:53,427 - INFO - added node 5627 from ./datasets/other/politician_edges.edges, size: 5630/5908
+2024-11-22 04:34:47,993 - INFO - added node 5628 from ./datasets/other/politician_edges.edges, size: 5631/5908
+2024-11-22 04:35:15,769 - INFO - added node 5629 from ./datasets/other/politician_edges.edges, size: 5632/5908
+2024-11-22 04:35:43,110 - INFO - added node 5630 from ./datasets/other/politician_edges.edges, size: 5633/5908
+2024-11-22 04:36:11,980 - INFO - added node 5631 from ./datasets/other/politician_edges.edges, size: 5634/5908
+2024-11-22 04:36:41,725 - INFO - added node 5632 from ./datasets/other/politician_edges.edges, size: 5635/5908
+2024-11-22 04:39:27,122 - INFO - added node 5633 from ./datasets/other/politician_edges.edges, size: 5636/5908
+2024-11-22 04:40:08,889 - INFO - added node 5634 from ./datasets/other/politician_edges.edges, size: 5637/5908
+2024-11-22 04:42:28,799 - INFO - added node 5635 from ./datasets/other/politician_edges.edges, size: 5638/5908
+2024-11-22 04:44:41,591 - INFO - added node 5636 from ./datasets/other/politician_edges.edges, size: 5639/5908
+2024-11-22 04:45:13,519 - INFO - added node 5637 from ./datasets/other/politician_edges.edges, size: 5640/5908
+2024-11-22 04:49:43,710 - INFO - added node 5638 from ./datasets/other/politician_edges.edges, size: 5641/5908
+2024-11-22 04:50:25,314 - INFO - added node 5639 from ./datasets/other/politician_edges.edges, size: 5642/5908
+2024-11-22 04:50:53,537 - INFO - added node 5640 from ./datasets/other/politician_edges.edges, size: 5643/5908
+2024-11-22 04:51:21,046 - INFO - added node 5641 from ./datasets/other/politician_edges.edges, size: 5644/5908
+2024-11-22 04:51:47,925 - INFO - added node 5642 from ./datasets/other/politician_edges.edges, size: 5645/5908
+2024-11-22 04:55:37,170 - INFO - added node 5643 from ./datasets/other/politician_edges.edges, size: 5646/5908
+2024-11-22 04:57:13,529 - INFO - added node 5644 from ./datasets/other/politician_edges.edges, size: 5647/5908
+2024-11-22 04:58:07,109 - INFO - added node 5645 from ./datasets/other/politician_edges.edges, size: 5648/5908
+2024-11-22 04:58:43,560 - INFO - added node 5646 from ./datasets/other/politician_edges.edges, size: 5649/5908
+2024-11-22 04:59:30,671 - INFO - added node 5647 from ./datasets/other/politician_edges.edges, size: 5650/5908
+2024-11-22 05:00:40,259 - INFO - added node 5648 from ./datasets/other/politician_edges.edges, size: 5651/5908
+2024-11-22 05:01:08,665 - INFO - added node 5649 from ./datasets/other/politician_edges.edges, size: 5652/5908
+2024-11-22 05:01:55,557 - INFO - added node 5650 from ./datasets/other/politician_edges.edges, size: 5653/5908
+2024-11-22 05:02:23,163 - INFO - added node 5651 from ./datasets/other/politician_edges.edges, size: 5654/5908
+2024-11-22 05:02:52,332 - INFO - added node 5652 from ./datasets/other/politician_edges.edges, size: 5655/5908
+2024-11-22 05:03:19,032 - INFO - added node 5653 from ./datasets/other/politician_edges.edges, size: 5656/5908
+2024-11-22 05:03:45,329 - INFO - added node 5654 from ./datasets/other/politician_edges.edges, size: 5657/5908
+2024-11-22 05:04:24,526 - INFO - added node 5655 from ./datasets/other/politician_edges.edges, size: 5658/5908
+2024-11-22 05:04:53,061 - INFO - added node 5656 from ./datasets/other/politician_edges.edges, size: 5659/5908
+2024-11-22 05:08:55,923 - INFO - added node 5657 from ./datasets/other/politician_edges.edges, size: 5660/5908
+2024-11-22 05:09:32,384 - INFO - added node 5658 from ./datasets/other/politician_edges.edges, size: 5661/5908
+2024-11-22 05:10:08,055 - INFO - added node 5659 from ./datasets/other/politician_edges.edges, size: 5662/5908
+2024-11-22 05:10:40,771 - INFO - added node 5660 from ./datasets/other/politician_edges.edges, size: 5663/5908
+2024-11-22 05:12:29,722 - INFO - added node 5661 from ./datasets/other/politician_edges.edges, size: 5664/5908
+2024-11-22 05:13:16,235 - INFO - added node 5662 from ./datasets/other/politician_edges.edges, size: 5665/5908
+2024-11-22 05:13:48,431 - INFO - added node 5663 from ./datasets/other/politician_edges.edges, size: 5666/5908
+2024-11-22 05:14:16,164 - INFO - added node 5664 from ./datasets/other/politician_edges.edges, size: 5667/5908
+2024-11-22 05:15:32,617 - INFO - added node 5665 from ./datasets/other/politician_edges.edges, size: 5668/5908
+2024-11-22 05:16:18,355 - INFO - added node 5666 from ./datasets/other/politician_edges.edges, size: 5669/5908
+2024-11-22 05:16:55,889 - INFO - added node 5667 from ./datasets/other/politician_edges.edges, size: 5670/5908
+2024-11-22 05:17:26,321 - INFO - added node 5668 from ./datasets/other/politician_edges.edges, size: 5671/5908
+2024-11-22 05:17:56,477 - INFO - added node 5669 from ./datasets/other/politician_edges.edges, size: 5672/5908
+2024-11-22 05:18:34,870 - INFO - added node 5670 from ./datasets/other/politician_edges.edges, size: 5673/5908
+2024-11-22 05:19:02,991 - INFO - added node 5671 from ./datasets/other/politician_edges.edges, size: 5674/5908
+2024-11-22 05:19:32,714 - INFO - added node 5672 from ./datasets/other/politician_edges.edges, size: 5675/5908
+2024-11-22 05:20:01,531 - INFO - added node 5673 from ./datasets/other/politician_edges.edges, size: 5676/5908
+2024-11-22 05:20:28,721 - INFO - added node 5674 from ./datasets/other/politician_edges.edges, size: 5677/5908
+2024-11-22 05:21:27,666 - INFO - added node 5675 from ./datasets/other/politician_edges.edges, size: 5678/5908
+2024-11-22 05:21:55,684 - INFO - added node 5676 from ./datasets/other/politician_edges.edges, size: 5679/5908
+2024-11-22 05:23:09,845 - INFO - added node 5677 from ./datasets/other/politician_edges.edges, size: 5680/5908
+2024-11-22 05:25:46,534 - INFO - added node 5678 from ./datasets/other/politician_edges.edges, size: 5681/5908
+2024-11-22 05:27:06,153 - INFO - added node 5679 from ./datasets/other/politician_edges.edges, size: 5682/5908
+2024-11-22 05:27:45,125 - INFO - added node 5680 from ./datasets/other/politician_edges.edges, size: 5683/5908
+2024-11-22 05:29:49,179 - INFO - added node 5681 from ./datasets/other/politician_edges.edges, size: 5684/5908
+2024-11-22 05:30:43,690 - INFO - added node 5682 from ./datasets/other/politician_edges.edges, size: 5685/5908
+2024-11-22 05:32:12,953 - INFO - added node 5683 from ./datasets/other/politician_edges.edges, size: 5686/5908
+2024-11-22 05:34:09,497 - INFO - added node 5684 from ./datasets/other/politician_edges.edges, size: 5687/5908
+2024-11-22 05:34:45,145 - INFO - added node 5685 from ./datasets/other/politician_edges.edges, size: 5688/5908
+2024-11-22 05:35:25,218 - INFO - added node 5686 from ./datasets/other/politician_edges.edges, size: 5689/5908
+2024-11-22 05:36:08,162 - INFO - added node 5687 from ./datasets/other/politician_edges.edges, size: 5690/5908
+2024-11-22 05:36:56,055 - INFO - added node 5688 from ./datasets/other/politician_edges.edges, size: 5691/5908
+2024-11-22 05:37:23,576 - INFO - added node 5689 from ./datasets/other/politician_edges.edges, size: 5692/5908
+2024-11-22 05:38:13,977 - INFO - added node 5690 from ./datasets/other/politician_edges.edges, size: 5693/5908
+2024-11-22 05:41:28,709 - INFO - added node 5691 from ./datasets/other/politician_edges.edges, size: 5694/5908
+2024-11-22 05:44:20,863 - INFO - added node 5692 from ./datasets/other/politician_edges.edges, size: 5695/5908
+2024-11-22 05:45:37,255 - INFO - added node 5693 from ./datasets/other/politician_edges.edges, size: 5696/5908
+2024-11-22 05:47:43,867 - INFO - added node 5694 from ./datasets/other/politician_edges.edges, size: 5697/5908
+2024-11-22 05:51:08,162 - INFO - added node 5695 from ./datasets/other/politician_edges.edges, size: 5698/5908
+2024-11-22 05:51:53,087 - INFO - added node 5696 from ./datasets/other/politician_edges.edges, size: 5699/5908
+2024-11-22 05:53:20,386 - INFO - added node 5697 from ./datasets/other/politician_edges.edges, size: 5700/5908
+2024-11-22 05:54:21,655 - INFO - added node 5698 from ./datasets/other/politician_edges.edges, size: 5701/5908
+2024-11-22 05:54:55,689 - INFO - added node 5699 from ./datasets/other/politician_edges.edges, size: 5702/5908
+2024-11-22 05:55:26,327 - INFO - added node 5700 from ./datasets/other/politician_edges.edges, size: 5703/5908
+2024-11-22 05:59:57,754 - INFO - added node 5701 from ./datasets/other/politician_edges.edges, size: 5704/5908
+2024-11-22 06:00:29,032 - INFO - added node 5702 from ./datasets/other/politician_edges.edges, size: 5705/5908
+2024-11-22 06:00:59,748 - INFO - added node 5703 from ./datasets/other/politician_edges.edges, size: 5706/5908
+2024-11-22 06:02:34,322 - INFO - added node 5704 from ./datasets/other/politician_edges.edges, size: 5707/5908
+2024-11-22 06:06:03,875 - INFO - added node 5705 from ./datasets/other/politician_edges.edges, size: 5708/5908
+2024-11-22 06:06:31,367 - INFO - added node 5706 from ./datasets/other/politician_edges.edges, size: 5709/5908
+2024-11-22 06:06:59,964 - INFO - added node 5707 from ./datasets/other/politician_edges.edges, size: 5710/5908
+2024-11-22 06:07:41,027 - INFO - added node 5708 from ./datasets/other/politician_edges.edges, size: 5711/5908
+2024-11-22 06:09:09,663 - INFO - added node 5709 from ./datasets/other/politician_edges.edges, size: 5712/5908
+2024-11-22 06:10:17,856 - INFO - added node 5710 from ./datasets/other/politician_edges.edges, size: 5713/5908
+2024-11-22 06:10:51,945 - INFO - added node 5711 from ./datasets/other/politician_edges.edges, size: 5714/5908
+2024-11-22 06:11:25,389 - INFO - added node 5712 from ./datasets/other/politician_edges.edges, size: 5715/5908
+2024-11-22 06:13:47,977 - INFO - added node 5713 from ./datasets/other/politician_edges.edges, size: 5716/5908
+2024-11-22 06:14:53,756 - INFO - added node 5714 from ./datasets/other/politician_edges.edges, size: 5717/5908
+2024-11-22 06:15:34,927 - INFO - added node 5715 from ./datasets/other/politician_edges.edges, size: 5718/5908
+2024-11-22 06:16:17,643 - INFO - added node 5716 from ./datasets/other/politician_edges.edges, size: 5719/5908
+2024-11-22 06:16:54,678 - INFO - added node 5717 from ./datasets/other/politician_edges.edges, size: 5720/5908
+2024-11-22 06:19:28,880 - INFO - added node 5718 from ./datasets/other/politician_edges.edges, size: 5721/5908
+2024-11-22 06:20:26,069 - INFO - added node 5719 from ./datasets/other/politician_edges.edges, size: 5722/5908
+2024-11-22 06:20:55,700 - INFO - added node 5720 from ./datasets/other/politician_edges.edges, size: 5723/5908
+2024-11-22 06:21:29,827 - INFO - added node 5721 from ./datasets/other/politician_edges.edges, size: 5724/5908
+2024-11-22 06:22:22,357 - INFO - added node 5722 from ./datasets/other/politician_edges.edges, size: 5725/5908
+2024-11-22 06:22:53,407 - INFO - added node 5723 from ./datasets/other/politician_edges.edges, size: 5726/5908
+2024-11-22 06:23:39,996 - INFO - added node 5724 from ./datasets/other/politician_edges.edges, size: 5727/5908
+2024-11-22 06:24:26,105 - INFO - added node 5725 from ./datasets/other/politician_edges.edges, size: 5728/5908
+2024-11-22 06:29:27,431 - INFO - added node 5726 from ./datasets/other/politician_edges.edges, size: 5729/5908
+2024-11-22 06:30:05,858 - INFO - added node 5727 from ./datasets/other/politician_edges.edges, size: 5730/5908
+2024-11-22 06:30:41,322 - INFO - added node 5728 from ./datasets/other/politician_edges.edges, size: 5731/5908
+2024-11-22 06:34:10,529 - INFO - added node 5729 from ./datasets/other/politician_edges.edges, size: 5732/5908
+2024-11-22 06:35:35,747 - INFO - added node 5730 from ./datasets/other/politician_edges.edges, size: 5733/5908
+2024-11-22 06:36:04,154 - INFO - added node 5731 from ./datasets/other/politician_edges.edges, size: 5734/5908
+2024-11-22 06:37:17,270 - INFO - added node 5732 from ./datasets/other/politician_edges.edges, size: 5735/5908
+2024-11-22 06:38:38,577 - INFO - added node 5733 from ./datasets/other/politician_edges.edges, size: 5736/5908
+2024-11-22 06:39:47,828 - INFO - added node 5734 from ./datasets/other/politician_edges.edges, size: 5737/5908
+2024-11-22 06:40:52,394 - INFO - added node 5735 from ./datasets/other/politician_edges.edges, size: 5738/5908
+2024-11-22 06:41:28,767 - INFO - added node 5736 from ./datasets/other/politician_edges.edges, size: 5739/5908
+2024-11-22 06:42:36,393 - INFO - added node 5737 from ./datasets/other/politician_edges.edges, size: 5740/5908
+2024-11-22 06:43:08,497 - INFO - added node 5738 from ./datasets/other/politician_edges.edges, size: 5741/5908
+2024-11-22 06:44:13,656 - INFO - added node 5739 from ./datasets/other/politician_edges.edges, size: 5742/5908
+2024-11-22 06:44:49,012 - INFO - added node 5740 from ./datasets/other/politician_edges.edges, size: 5743/5908
+2024-11-22 06:45:31,059 - INFO - added node 5741 from ./datasets/other/politician_edges.edges, size: 5744/5908
+2024-11-22 06:46:03,284 - INFO - added node 5742 from ./datasets/other/politician_edges.edges, size: 5745/5908
+2024-11-22 06:47:45,111 - INFO - added node 5743 from ./datasets/other/politician_edges.edges, size: 5746/5908
+2024-11-22 06:48:18,926 - INFO - added node 5744 from ./datasets/other/politician_edges.edges, size: 5747/5908
+2024-11-22 06:49:01,896 - INFO - added node 5745 from ./datasets/other/politician_edges.edges, size: 5748/5908
+2024-11-22 06:49:30,639 - INFO - added node 5746 from ./datasets/other/politician_edges.edges, size: 5749/5908
+2024-11-22 06:51:04,943 - INFO - added node 5747 from ./datasets/other/politician_edges.edges, size: 5750/5908
+2024-11-22 06:51:50,373 - INFO - added node 5748 from ./datasets/other/politician_edges.edges, size: 5751/5908
+2024-11-22 06:52:21,630 - INFO - added node 5749 from ./datasets/other/politician_edges.edges, size: 5752/5908
+2024-11-22 06:54:55,699 - INFO - added node 5750 from ./datasets/other/politician_edges.edges, size: 5753/5908
+2024-11-22 06:56:05,722 - INFO - added node 5751 from ./datasets/other/politician_edges.edges, size: 5754/5908
+2024-11-22 06:56:39,635 - INFO - added node 5752 from ./datasets/other/politician_edges.edges, size: 5755/5908
+2024-11-22 06:57:52,840 - INFO - added node 5753 from ./datasets/other/politician_edges.edges, size: 5756/5908
+2024-11-22 06:58:56,711 - INFO - added node 5754 from ./datasets/other/politician_edges.edges, size: 5757/5908
+2024-11-22 06:59:26,315 - INFO - added node 5755 from ./datasets/other/politician_edges.edges, size: 5758/5908
+2024-11-22 07:00:09,501 - INFO - added node 5756 from ./datasets/other/politician_edges.edges, size: 5759/5908
+2024-11-22 07:01:16,420 - INFO - added node 5757 from ./datasets/other/politician_edges.edges, size: 5760/5908
+2024-11-22 07:04:01,807 - INFO - added node 5758 from ./datasets/other/politician_edges.edges, size: 5761/5908
+2024-11-22 07:04:35,196 - INFO - added node 5759 from ./datasets/other/politician_edges.edges, size: 5762/5908
+2024-11-22 07:05:22,844 - INFO - added node 5760 from ./datasets/other/politician_edges.edges, size: 5763/5908
+2024-11-22 07:05:54,578 - INFO - added node 5761 from ./datasets/other/politician_edges.edges, size: 5764/5908
+2024-11-22 07:06:35,637 - INFO - added node 5762 from ./datasets/other/politician_edges.edges, size: 5765/5908
+2024-11-22 07:10:21,859 - INFO - added node 5763 from ./datasets/other/politician_edges.edges, size: 5766/5908
+2024-11-22 07:10:50,920 - INFO - added node 5764 from ./datasets/other/politician_edges.edges, size: 5767/5908
+2024-11-22 07:11:21,685 - INFO - added node 5765 from ./datasets/other/politician_edges.edges, size: 5768/5908
+2024-11-22 07:11:52,283 - INFO - added node 5766 from ./datasets/other/politician_edges.edges, size: 5769/5908
+2024-11-22 07:12:28,610 - INFO - added node 5767 from ./datasets/other/politician_edges.edges, size: 5770/5908
+2024-11-22 07:13:13,690 - INFO - added node 5768 from ./datasets/other/politician_edges.edges, size: 5771/5908
+2024-11-22 07:13:49,744 - INFO - added node 5769 from ./datasets/other/politician_edges.edges, size: 5772/5908
+2024-11-22 07:15:31,457 - INFO - added node 5770 from ./datasets/other/politician_edges.edges, size: 5773/5908
+2024-11-22 07:16:03,106 - INFO - added node 5771 from ./datasets/other/politician_edges.edges, size: 5774/5908
+2024-11-22 07:18:57,873 - INFO - added node 5772 from ./datasets/other/politician_edges.edges, size: 5775/5908
+2024-11-22 07:19:36,738 - INFO - added node 5773 from ./datasets/other/politician_edges.edges, size: 5776/5908
+2024-11-22 07:20:37,877 - INFO - added node 5774 from ./datasets/other/politician_edges.edges, size: 5777/5908
+2024-11-22 07:21:46,959 - INFO - added node 5775 from ./datasets/other/politician_edges.edges, size: 5778/5908
+2024-11-22 07:22:17,267 - INFO - added node 5776 from ./datasets/other/politician_edges.edges, size: 5779/5908
+2024-11-22 07:23:21,213 - INFO - added node 5777 from ./datasets/other/politician_edges.edges, size: 5780/5908
+2024-11-22 07:24:24,142 - INFO - added node 5778 from ./datasets/other/politician_edges.edges, size: 5781/5908
+2024-11-22 07:27:52,017 - INFO - added node 5779 from ./datasets/other/politician_edges.edges, size: 5782/5908
+2024-11-22 07:28:34,888 - INFO - added node 5780 from ./datasets/other/politician_edges.edges, size: 5783/5908
+2024-11-22 07:31:12,265 - INFO - added node 5781 from ./datasets/other/politician_edges.edges, size: 5784/5908
+2024-11-22 07:31:55,177 - INFO - added node 5782 from ./datasets/other/politician_edges.edges, size: 5785/5908
+2024-11-22 07:32:39,336 - INFO - added node 5783 from ./datasets/other/politician_edges.edges, size: 5786/5908
+2024-11-22 07:33:10,398 - INFO - added node 5784 from ./datasets/other/politician_edges.edges, size: 5787/5908
+2024-11-22 07:37:48,814 - INFO - added node 5785 from ./datasets/other/politician_edges.edges, size: 5788/5908
+2024-11-22 07:38:16,730 - INFO - added node 5786 from ./datasets/other/politician_edges.edges, size: 5789/5908
+2024-11-22 07:39:19,797 - INFO - added node 5787 from ./datasets/other/politician_edges.edges, size: 5790/5908
+2024-11-22 07:40:33,617 - INFO - added node 5788 from ./datasets/other/politician_edges.edges, size: 5791/5908
+2024-11-22 07:41:28,975 - INFO - added node 5789 from ./datasets/other/politician_edges.edges, size: 5792/5908
+2024-11-22 07:42:31,073 - INFO - added node 5790 from ./datasets/other/politician_edges.edges, size: 5793/5908
+2024-11-22 07:43:28,602 - INFO - added node 5791 from ./datasets/other/politician_edges.edges, size: 5794/5908
+2024-11-22 07:43:55,652 - INFO - added node 5792 from ./datasets/other/politician_edges.edges, size: 5795/5908
+2024-11-22 07:44:21,868 - INFO - added node 5793 from ./datasets/other/politician_edges.edges, size: 5796/5908
+2024-11-22 07:44:48,012 - INFO - added node 5794 from ./datasets/other/politician_edges.edges, size: 5797/5908
+2024-11-22 07:45:24,453 - INFO - added node 5795 from ./datasets/other/politician_edges.edges, size: 5798/5908
+2024-11-22 07:47:52,730 - INFO - added node 5796 from ./datasets/other/politician_edges.edges, size: 5799/5908
+2024-11-22 07:52:59,984 - INFO - added node 5797 from ./datasets/other/politician_edges.edges, size: 5800/5908
+2024-11-22 07:53:29,539 - INFO - added node 5798 from ./datasets/other/politician_edges.edges, size: 5801/5908
+2024-11-22 07:55:43,266 - INFO - added node 5799 from ./datasets/other/politician_edges.edges, size: 5802/5908
+2024-11-22 08:00:01,534 - INFO - added node 5800 from ./datasets/other/politician_edges.edges, size: 5803/5908
+2024-11-22 08:01:01,310 - INFO - added node 5801 from ./datasets/other/politician_edges.edges, size: 5804/5908
+2024-11-22 08:01:53,054 - INFO - added node 5802 from ./datasets/other/politician_edges.edges, size: 5805/5908
+2024-11-22 08:03:00,287 - INFO - added node 5803 from ./datasets/other/politician_edges.edges, size: 5806/5908
+2024-11-22 08:03:37,093 - INFO - added node 5804 from ./datasets/other/politician_edges.edges, size: 5807/5908
+2024-11-22 08:04:07,949 - INFO - added node 5805 from ./datasets/other/politician_edges.edges, size: 5808/5908
+2024-11-22 08:06:16,211 - INFO - added node 5806 from ./datasets/other/politician_edges.edges, size: 5809/5908
+2024-11-22 08:06:49,603 - INFO - added node 5807 from ./datasets/other/politician_edges.edges, size: 5810/5908
+2024-11-22 08:12:04,149 - INFO - added node 5808 from ./datasets/other/politician_edges.edges, size: 5811/5908
+2024-11-22 08:12:41,208 - INFO - added node 5809 from ./datasets/other/politician_edges.edges, size: 5812/5908
+2024-11-22 08:13:20,809 - INFO - added node 5810 from ./datasets/other/politician_edges.edges, size: 5813/5908
+2024-11-22 08:13:52,928 - INFO - added node 5811 from ./datasets/other/politician_edges.edges, size: 5814/5908
+2024-11-22 08:14:31,471 - INFO - added node 5812 from ./datasets/other/politician_edges.edges, size: 5815/5908
+2024-11-22 08:15:03,086 - INFO - added node 5813 from ./datasets/other/politician_edges.edges, size: 5816/5908
+2024-11-22 08:15:34,023 - INFO - added node 5814 from ./datasets/other/politician_edges.edges, size: 5817/5908
+2024-11-22 08:16:08,297 - INFO - added node 5815 from ./datasets/other/politician_edges.edges, size: 5818/5908
+2024-11-22 08:17:42,278 - INFO - added node 5816 from ./datasets/other/politician_edges.edges, size: 5819/5908
+2024-11-22 08:21:13,067 - INFO - added node 5817 from ./datasets/other/politician_edges.edges, size: 5820/5908
+2024-11-22 08:21:42,886 - INFO - added node 5818 from ./datasets/other/politician_edges.edges, size: 5821/5908
+2024-11-22 08:23:00,782 - INFO - added node 5819 from ./datasets/other/politician_edges.edges, size: 5822/5908
+2024-11-22 08:23:59,972 - INFO - added node 5820 from ./datasets/other/politician_edges.edges, size: 5823/5908
+2024-11-22 08:24:29,442 - INFO - added node 5821 from ./datasets/other/politician_edges.edges, size: 5824/5908
+2024-11-22 08:25:12,189 - INFO - added node 5822 from ./datasets/other/politician_edges.edges, size: 5825/5908
+2024-11-22 08:25:45,645 - INFO - added node 5823 from ./datasets/other/politician_edges.edges, size: 5826/5908
+2024-11-22 08:26:21,128 - INFO - added node 5824 from ./datasets/other/politician_edges.edges, size: 5827/5908
+2024-11-22 08:27:30,322 - INFO - added node 5825 from ./datasets/other/politician_edges.edges, size: 5828/5908
+2024-11-22 08:29:11,544 - INFO - added node 5826 from ./datasets/other/politician_edges.edges, size: 5829/5908
+2024-11-22 08:30:41,269 - INFO - added node 5827 from ./datasets/other/politician_edges.edges, size: 5830/5908
+2024-11-22 08:31:47,534 - INFO - added node 5828 from ./datasets/other/politician_edges.edges, size: 5831/5908
+2024-11-22 08:32:27,059 - INFO - added node 5829 from ./datasets/other/politician_edges.edges, size: 5832/5908
+2024-11-22 08:34:21,219 - INFO - added node 5830 from ./datasets/other/politician_edges.edges, size: 5833/5908
+2024-11-22 08:34:53,396 - INFO - added node 5831 from ./datasets/other/politician_edges.edges, size: 5834/5908
+2024-11-22 08:35:35,331 - INFO - added node 5832 from ./datasets/other/politician_edges.edges, size: 5835/5908
+2024-11-22 08:37:31,562 - INFO - added node 5833 from ./datasets/other/politician_edges.edges, size: 5836/5908
+2024-11-22 08:38:02,339 - INFO - added node 5834 from ./datasets/other/politician_edges.edges, size: 5837/5908
+2024-11-22 08:38:59,684 - INFO - added node 5835 from ./datasets/other/politician_edges.edges, size: 5838/5908
+2024-11-22 08:39:55,520 - INFO - added node 5836 from ./datasets/other/politician_edges.edges, size: 5839/5908
+2024-11-22 08:41:36,111 - INFO - added node 5837 from ./datasets/other/politician_edges.edges, size: 5840/5908
+2024-11-22 08:42:28,820 - INFO - added node 5838 from ./datasets/other/politician_edges.edges, size: 5841/5908
+2024-11-22 08:43:02,422 - INFO - added node 5839 from ./datasets/other/politician_edges.edges, size: 5842/5908
+2024-11-22 08:43:43,663 - INFO - added node 5840 from ./datasets/other/politician_edges.edges, size: 5843/5908
+2024-11-22 08:44:37,121 - INFO - added node 5841 from ./datasets/other/politician_edges.edges, size: 5844/5908
+2024-11-22 08:45:23,164 - INFO - added node 5842 from ./datasets/other/politician_edges.edges, size: 5845/5908
+2024-11-22 08:45:55,811 - INFO - added node 5843 from ./datasets/other/politician_edges.edges, size: 5846/5908
+2024-11-22 08:46:32,684 - INFO - added node 5844 from ./datasets/other/politician_edges.edges, size: 5847/5908
+2024-11-22 08:47:02,998 - INFO - added node 5845 from ./datasets/other/politician_edges.edges, size: 5848/5908
+2024-11-22 08:47:39,941 - INFO - added node 5846 from ./datasets/other/politician_edges.edges, size: 5849/5908
+2024-11-22 08:48:12,517 - INFO - added node 5847 from ./datasets/other/politician_edges.edges, size: 5850/5908
+2024-11-22 08:48:57,746 - INFO - added node 5848 from ./datasets/other/politician_edges.edges, size: 5851/5908
+2024-11-22 08:49:27,971 - INFO - added node 5849 from ./datasets/other/politician_edges.edges, size: 5852/5908
+2024-11-22 08:49:59,924 - INFO - added node 5850 from ./datasets/other/politician_edges.edges, size: 5853/5908
+2024-11-22 08:50:35,194 - INFO - added node 5851 from ./datasets/other/politician_edges.edges, size: 5854/5908
+2024-11-22 08:51:08,108 - INFO - added node 5852 from ./datasets/other/politician_edges.edges, size: 5855/5908
+2024-11-22 08:52:08,619 - INFO - added node 5853 from ./datasets/other/politician_edges.edges, size: 5856/5908
+2024-11-22 08:52:41,704 - INFO - added node 5854 from ./datasets/other/politician_edges.edges, size: 5857/5908
+2024-11-22 08:57:50,044 - INFO - added node 5855 from ./datasets/other/politician_edges.edges, size: 5858/5908
+2024-11-22 08:58:27,552 - INFO - added node 5856 from ./datasets/other/politician_edges.edges, size: 5859/5908
+2024-11-22 08:59:44,626 - INFO - added node 5857 from ./datasets/other/politician_edges.edges, size: 5860/5908
+2024-11-22 09:00:17,768 - INFO - added node 5858 from ./datasets/other/politician_edges.edges, size: 5861/5908
+2024-11-22 09:01:04,522 - INFO - added node 5859 from ./datasets/other/politician_edges.edges, size: 5862/5908
+2024-11-22 09:02:29,702 - INFO - added node 5860 from ./datasets/other/politician_edges.edges, size: 5863/5908
+2024-11-22 09:04:04,611 - INFO - added node 5861 from ./datasets/other/politician_edges.edges, size: 5864/5908
+2024-11-22 09:04:46,885 - INFO - added node 5862 from ./datasets/other/politician_edges.edges, size: 5865/5908
+2024-11-22 09:05:29,253 - INFO - added node 5863 from ./datasets/other/politician_edges.edges, size: 5866/5908
+2024-11-22 09:06:02,951 - INFO - added node 5864 from ./datasets/other/politician_edges.edges, size: 5867/5908
+2024-11-22 09:06:44,204 - INFO - added node 5865 from ./datasets/other/politician_edges.edges, size: 5868/5908
+2024-11-22 09:10:04,235 - INFO - added node 5866 from ./datasets/other/politician_edges.edges, size: 5869/5908
+2024-11-22 09:14:18,197 - INFO - added node 5867 from ./datasets/other/politician_edges.edges, size: 5870/5908
+2024-11-22 09:18:07,866 - INFO - added node 5868 from ./datasets/other/politician_edges.edges, size: 5871/5908
+2024-11-22 09:18:44,436 - INFO - added node 5869 from ./datasets/other/politician_edges.edges, size: 5872/5908
+2024-11-22 09:21:13,216 - INFO - added node 5870 from ./datasets/other/politician_edges.edges, size: 5873/5908
+2024-11-22 09:26:32,108 - INFO - added node 5871 from ./datasets/other/politician_edges.edges, size: 5874/5908
+2024-11-22 09:27:41,540 - INFO - added node 5872 from ./datasets/other/politician_edges.edges, size: 5875/5908
+2024-11-22 09:31:26,040 - INFO - added node 5873 from ./datasets/other/politician_edges.edges, size: 5876/5908
+2024-11-22 09:32:04,602 - INFO - added node 5874 from ./datasets/other/politician_edges.edges, size: 5877/5908
+2024-11-22 09:33:15,696 - INFO - added node 5875 from ./datasets/other/politician_edges.edges, size: 5878/5908
+2024-11-22 09:33:53,838 - INFO - added node 5876 from ./datasets/other/politician_edges.edges, size: 5879/5908
+2024-11-22 09:34:25,746 - INFO - added node 5877 from ./datasets/other/politician_edges.edges, size: 5880/5908
+2024-11-22 09:34:59,206 - INFO - added node 5878 from ./datasets/other/politician_edges.edges, size: 5881/5908
+2024-11-22 09:38:41,361 - INFO - added node 5879 from ./datasets/other/politician_edges.edges, size: 5882/5908
+2024-11-22 09:40:21,417 - INFO - added node 5880 from ./datasets/other/politician_edges.edges, size: 5883/5908
+2024-11-22 09:41:12,262 - INFO - added node 5881 from ./datasets/other/politician_edges.edges, size: 5884/5908
+2024-11-22 09:45:44,434 - INFO - added node 5882 from ./datasets/other/politician_edges.edges, size: 5885/5908
+2024-11-22 09:46:18,606 - INFO - added node 5883 from ./datasets/other/politician_edges.edges, size: 5886/5908
+2024-11-22 09:47:12,288 - INFO - added node 5884 from ./datasets/other/politician_edges.edges, size: 5887/5908
+2024-11-22 09:51:30,789 - INFO - added node 5885 from ./datasets/other/politician_edges.edges, size: 5888/5908
+2024-11-22 09:52:18,997 - INFO - added node 5886 from ./datasets/other/politician_edges.edges, size: 5889/5908
+2024-11-22 09:52:50,381 - INFO - added node 5887 from ./datasets/other/politician_edges.edges, size: 5890/5908
+2024-11-22 09:55:11,382 - INFO - added node 5888 from ./datasets/other/politician_edges.edges, size: 5891/5908
+2024-11-22 09:57:33,873 - INFO - added node 5889 from ./datasets/other/politician_edges.edges, size: 5892/5908
+2024-11-22 09:58:11,151 - INFO - added node 5890 from ./datasets/other/politician_edges.edges, size: 5893/5908
+2024-11-22 10:00:32,388 - INFO - added node 5891 from ./datasets/other/politician_edges.edges, size: 5894/5908
+2024-11-22 10:01:10,067 - INFO - added node 5892 from ./datasets/other/politician_edges.edges, size: 5895/5908
+2024-11-22 10:02:36,500 - INFO - added node 5893 from ./datasets/other/politician_edges.edges, size: 5896/5908
+2024-11-22 10:03:24,060 - INFO - added node 5894 from ./datasets/other/politician_edges.edges, size: 5897/5908
+2024-11-22 10:03:56,073 - INFO - added node 5895 from ./datasets/other/politician_edges.edges, size: 5898/5908
+2024-11-22 10:05:34,800 - INFO - added node 5896 from ./datasets/other/politician_edges.edges, size: 5899/5908
+2024-11-22 10:06:15,446 - INFO - added node 5897 from ./datasets/other/politician_edges.edges, size: 5900/5908
+2024-11-22 10:07:00,566 - INFO - added node 5898 from ./datasets/other/politician_edges.edges, size: 5901/5908
+2024-11-22 10:10:31,591 - INFO - added node 5899 from ./datasets/other/politician_edges.edges, size: 5902/5908
+2024-11-22 10:13:46,948 - INFO - added node 5900 from ./datasets/other/politician_edges.edges, size: 5903/5908
+2024-11-22 10:14:38,397 - INFO - added node 5901 from ./datasets/other/politician_edges.edges, size: 5904/5908
+2024-11-22 10:15:07,553 - INFO - added node 5902 from ./datasets/other/politician_edges.edges, size: 5905/5908
+2024-11-22 10:16:11,174 - INFO - added node 5903 from ./datasets/other/politician_edges.edges, size: 5906/5908
+2024-11-22 10:17:25,277 - INFO - added node 5904 from ./datasets/other/politician_edges.edges, size: 5907/5908
+2024-11-22 10:19:01,165 - INFO - added node 5905 from ./datasets/other/politician_edges.edges, size: 5908/5908
+2024-11-22 10:20:33,242 - INFO - added node 5906 from ./datasets/other/politician_edges.edges, size: 5909/5908
+2024-11-22 10:23:18,027 - INFO - added node 5907 from ./datasets/other/politician_edges.edges, size: 5910/5908
+2024-11-22 10:23:18,027 - INFO - done with /datasets/SIR_Results/politician_edges/0.csv
+2024-11-22 10:23:18,028 - INFO - done with politician_edges
+2024-11-22 10:23:18,030 - WARNING - closing a process!
+2024-11-22 10:23:18,053 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:23:22,634 - INFO - machine: BA_mch_1
+2024-11-22 10:23:22,634 - INFO - pool size: 2
+2024-11-22 10:23:23,105 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:23:23,105 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:23:23,105 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:23:23,105 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:23:23,105 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:23:23,105 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:23:23,147 - WARNING - closing a process!
+2024-11-22 10:23:23,160 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:23:41,641 - INFO - machine: BA_mch_1
+2024-11-22 10:23:41,642 - INFO - pool size: 2
+2024-11-22 10:23:42,022 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:23:42,022 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:23:42,022 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:23:42,022 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:23:42,022 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:23:42,022 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:23:42,064 - WARNING - closing a process!
+2024-11-22 10:23:42,076 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:24:16,770 - INFO - machine: BA_mch_1
+2024-11-22 10:24:16,770 - INFO - pool size: 2
+2024-11-22 10:24:17,153 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:24:17,154 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:24:17,154 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:24:17,154 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:24:17,154 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:24:17,154 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:24:17,205 - WARNING - closing a process!
+2024-11-22 10:24:17,218 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:25:13,625 - INFO - machine: BA_mch_1
+2024-11-22 10:25:13,626 - INFO - pool size: 2
+2024-11-22 10:25:14,006 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:25:14,006 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:25:14,006 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:25:14,006 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:25:14,006 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:25:14,006 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:25:14,049 - WARNING - closing a process!
+2024-11-22 10:25:14,060 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:26:42,846 - INFO - machine: BA_mch_1
+2024-11-22 10:26:42,847 - INFO - pool size: 2
+2024-11-22 10:26:43,230 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:26:43,230 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:26:43,230 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:26:43,230 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:26:43,230 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:26:43,230 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:26:43,278 - WARNING - closing a process!
+2024-11-22 10:26:43,289 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:29:35,742 - INFO - machine: BA_mch_1
+2024-11-22 10:29:35,743 - INFO - pool size: 2
+2024-11-22 10:29:36,163 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:29:36,163 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:29:36,163 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:29:36,163 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:29:36,163 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:29:36,163 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:29:36,204 - WARNING - closing a process!
+2024-11-22 10:29:36,215 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:34:54,701 - INFO - machine: BA_mch_1
+2024-11-22 10:34:54,701 - INFO - pool size: 2
+2024-11-22 10:34:55,079 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:34:55,080 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:34:55,080 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:34:55,080 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:34:55,080 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:34:55,080 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:34:55,124 - WARNING - closing a process!
+2024-11-22 10:34:55,152 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:40:01,821 - INFO - machine: BA_mch_1
+2024-11-22 10:40:01,822 - INFO - pool size: 2
+2024-11-22 10:40:02,217 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:40:02,217 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:40:02,217 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:40:02,218 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:40:02,218 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:40:02,218 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:40:02,265 - WARNING - closing a process!
+2024-11-22 10:40:02,275 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:45:16,663 - INFO - machine: BA_mch_1
+2024-11-22 10:45:16,663 - INFO - pool size: 2
+2024-11-22 10:45:17,065 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:45:17,065 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:45:17,065 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:45:17,065 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:45:17,065 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:45:17,065 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:45:17,115 - WARNING - closing a process!
+2024-11-22 10:45:17,126 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:50:30,847 - INFO - machine: BA_mch_1
+2024-11-22 10:50:30,848 - INFO - pool size: 2
+2024-11-22 10:50:31,284 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:50:31,284 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:50:31,284 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:50:31,284 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:50:31,284 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:50:31,284 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:50:31,330 - WARNING - closing a process!
+2024-11-22 10:50:31,341 - INFO - All graphs have been processed or terminated.
+2024-11-22 10:55:43,755 - INFO - machine: BA_mch_1
+2024-11-22 10:55:43,755 - INFO - pool size: 2
+2024-11-22 10:55:44,128 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 10:55:44,129 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 10:55:44,129 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 10:55:44,129 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 10:55:44,129 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 10:55:44,129 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 10:55:44,170 - WARNING - closing a process!
+2024-11-22 10:55:44,181 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:00:59,710 - INFO - machine: BA_mch_1
+2024-11-22 11:00:59,710 - INFO - pool size: 2
+2024-11-22 11:01:00,106 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:01:00,106 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:01:00,106 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:01:00,106 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:01:00,106 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:01:00,106 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:01:00,152 - WARNING - closing a process!
+2024-11-22 11:01:00,163 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:06:08,972 - INFO - machine: BA_mch_1
+2024-11-22 11:06:08,973 - INFO - pool size: 2
+2024-11-22 11:06:09,387 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:06:09,387 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:06:09,387 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:06:09,387 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:06:09,387 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:06:09,387 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:06:09,435 - WARNING - closing a process!
+2024-11-22 11:06:09,455 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:11:16,700 - INFO - machine: BA_mch_1
+2024-11-22 11:11:16,700 - INFO - pool size: 2
+2024-11-22 11:11:17,093 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:11:17,093 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:11:17,093 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:11:17,093 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:11:17,093 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:11:17,093 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:11:17,147 - WARNING - closing a process!
+2024-11-22 11:11:17,160 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:16:24,800 - INFO - machine: BA_mch_1
+2024-11-22 11:16:24,800 - INFO - pool size: 2
+2024-11-22 11:16:25,181 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:16:25,181 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:16:25,181 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:16:25,181 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:16:25,181 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:16:25,181 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:16:25,223 - WARNING - closing a process!
+2024-11-22 11:16:25,235 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:21:37,882 - INFO - machine: BA_mch_1
+2024-11-22 11:21:37,883 - INFO - pool size: 2
+2024-11-22 11:21:38,335 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:21:38,335 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:21:38,335 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:21:38,335 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:21:38,335 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:21:38,336 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:21:38,381 - WARNING - closing a process!
+2024-11-22 11:21:38,393 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:26:48,713 - INFO - machine: BA_mch_1
+2024-11-22 11:26:48,713 - INFO - pool size: 2
+2024-11-22 11:26:49,127 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:26:49,128 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:26:49,128 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:26:49,128 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:26:49,128 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:26:49,128 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:26:49,175 - WARNING - closing a process!
+2024-11-22 11:26:49,187 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:32:00,002 - INFO - machine: BA_mch_1
+2024-11-22 11:32:00,002 - INFO - pool size: 2
+2024-11-22 11:32:00,414 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:32:00,414 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:32:00,414 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:32:00,414 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:32:00,414 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:32:00,414 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:32:00,479 - WARNING - closing a process!
+2024-11-22 11:32:00,490 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:37:13,985 - INFO - machine: BA_mch_1
+2024-11-22 11:37:13,985 - INFO - pool size: 2
+2024-11-22 11:37:14,432 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:37:14,432 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:37:14,432 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:37:14,432 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:37:14,432 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:37:14,432 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:37:14,483 - WARNING - closing a process!
+2024-11-22 11:37:14,497 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:42:23,043 - INFO - machine: BA_mch_1
+2024-11-22 11:42:23,044 - INFO - pool size: 2
+2024-11-22 11:42:23,438 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:42:23,438 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:42:23,438 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:42:23,438 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:42:23,438 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:42:23,438 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:42:23,486 - WARNING - closing a process!
+2024-11-22 11:42:23,498 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:47:33,876 - INFO - machine: BA_mch_1
+2024-11-22 11:47:33,876 - INFO - pool size: 2
+2024-11-22 11:47:34,279 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:47:34,279 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:47:34,279 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:47:34,279 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:47:34,280 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:47:34,280 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:47:34,325 - WARNING - closing a process!
+2024-11-22 11:47:34,336 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:52:48,153 - INFO - machine: BA_mch_1
+2024-11-22 11:52:48,154 - INFO - pool size: 2
+2024-11-22 11:52:48,580 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:52:48,581 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:52:48,581 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:52:48,581 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:52:48,581 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:52:48,581 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:52:48,627 - WARNING - closing a process!
+2024-11-22 11:52:48,652 - INFO - All graphs have been processed or terminated.
+2024-11-22 11:57:58,961 - INFO - machine: BA_mch_1
+2024-11-22 11:57:58,962 - INFO - pool size: 2
+2024-11-22 11:57:59,356 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 11:57:59,356 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 11:57:59,356 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 11:57:59,356 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 11:57:59,357 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 11:57:59,357 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 11:57:59,400 - WARNING - closing a process!
+2024-11-22 11:57:59,411 - INFO - All graphs have been processed or terminated.
+2024-11-22 12:03:06,880 - INFO - machine: BA_mch_1
+2024-11-22 12:03:06,880 - INFO - pool size: 2
+2024-11-22 12:03:07,275 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 12:03:07,275 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 12:03:07,275 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 12:03:07,275 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 12:03:07,276 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 12:03:07,276 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 12:03:07,317 - WARNING - closing a process!
+2024-11-22 12:03:07,328 - INFO - All graphs have been processed or terminated.
+2024-11-22 12:08:12,881 - INFO - machine: BA_mch_1
+2024-11-22 12:08:12,882 - INFO - pool size: 2
+2024-11-22 12:08:13,265 - INFO - items of the machine.json of this machine: ba_edgelist_exp2_2000_10
+2024-11-22 12:08:13,266 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_2
+2024-11-22 12:08:13,266 - INFO - items of the machine.json of this machine: ba_edgelist_exp3_4000_10
+2024-11-22 12:08:13,266 - INFO - items of the machine.json of this machine: ba_edgelist_exp1_7000_4
+2024-11-22 12:08:13,266 - INFO - items of the machine.json of this machine: vidal
+2024-11-22 12:08:13,266 - INFO - items of the machine.json of this machine: politician_edges
+2024-11-22 12:08:13,309 - WARNING - closing a process!
+2024-11-22 12:08:13,320 - INFO - All graphs have been processed or terminated.
