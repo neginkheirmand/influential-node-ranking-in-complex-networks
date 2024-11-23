@@ -129,27 +129,25 @@ def load_graph_and_metrics(graph_file):
 
 # Title and Header
 st.title("LCNN Graph Management App")
-st.header("Welcome to LCNN Graph Management Application")
 
 # Sidebar
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Select a Page", ["Graph Files", "Home", "About", "Graph Viewer", "SIR analyzer"])
+page = st.sidebar.radio("Select a Page", ["Home", "About","Graph Files", "Graph Viewer", "SIR analyzer"])
 
 # Main Page Logic
 if page == "Home":
-    st.subheader("Home Page")
-    st.write("This is the home page. Here you can interact with the main content.")
-    
-    # Input Fields
-    name = st.text_input("Enter your name", "")
-    age = st.number_input("Enter your age", min_value=0, max_value=120, value=25)
-    
-    if st.button("Submit"):
-        st.success(f"Hello, {name}! You are {age} years old.")
+    st.subheader("Spreading Influence Identification Home Page")
+    st.write("""Welcome to the LCNN Graph Management Application! """)    
         
 elif page == "About":
     st.subheader("About Page")
-    st.write("This page contains information about the application.")
+    st.write("""Welcome to the LCNN Graph Management Application! """)
+    st.write("""This tool is designed to empower researchers, analysts, and enthusiasts working with complex networks. With intuitive navigation and advanced visualization features, you can:""")
+    st.write("""- Explore graph structures and analyze their properties.""")
+    st.write("""- Visualize and interpret node importance using the SIR model.""")
+    st.write("""- Manage datasets and effortlessly switch between multiple graph files.""")
+    st.write("""Whether you're studying information flow, modeling network dynamics, or simply exploring graph theory concepts, this application provides the tools to make your work seamless and insightful.""")
+    st.write("""Feel free to reach out with feedback or suggestions—we're constantly evolving to meet your needs!""")
 
 elif page == "Graph Files":
     st.header("Graph Files in Dataset Directory")
