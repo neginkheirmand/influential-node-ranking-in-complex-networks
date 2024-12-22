@@ -2,15 +2,12 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
 file_paths = [
-    "C:\\Users\\venus\\Desktop\\spreading influence identification\\sir_labeling\\images\\b1_9_plot_for_B=0.042.png",
-    "C:\\Users\\venus\\Desktop\\spreading influence identification\\sir_labeling\\images\\b1_9_plot_for_B=0.051.png",
-    "C:\\Users\\venus\\Desktop\\spreading influence identification\\sir_labeling\\images\\b1_9_plot_for_B=0.06.png",
-    "C:\\Users\\venus\\Desktop\\spreading influence identification\\sir_labeling\\images\\b1_9_plot_for_B=0.07.png",
-    "C:\\Users\\venus\\Desktop\\spreading influence identification\\sir_labeling\\images\\b1_9_plot_for_B=0.079.png",
-]
+    "./sir_labeling/images/diff_prec_plot_2.png",
+    "./sir_labeling/images/diff_prec_plot.png"
+    ]
 
 # Create a figure and axes for the 1x5 grid
-fig, axes = plt.subplots(1, 5, figsize=(15, 5))  # Adjust figsize as needed
+fig, axes = plt.subplots(1, 2, figsize=(15, 5))  # Adjust figsize as needed
 
 # Iterate over the file paths and axes to display images
 for i, ax in enumerate(axes.flat):
