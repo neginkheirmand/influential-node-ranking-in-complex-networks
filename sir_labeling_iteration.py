@@ -138,7 +138,8 @@ def analyze_sir_vs_iterations(net_name, G, infected_nodes, B_values, gama, num_i
     plt.title(f"IS per node over Iterations: {net_name}")
     plt.xlabel("Number of Iterations")
     plt.ylabel("Average SIR Value(Influential Scale)")
-    plt.legend(loc='upper left', framealpha=0.6)
+    # plt.legend(loc='upper left', framealpha=0.6)
+    plt.legend(loc='upper left', bbox_to_anchor=(1, 1), framealpha=0.6)
 
     plt.grid(True)
 
