@@ -108,7 +108,7 @@ def plot_interactive_sir(graph_path, sir_csv_paths):
     fig.update_layout(
         title="Node Importance using SIR for Different B Values",
         xaxis_title="Node Index",
-        yaxis_title="SIR Value",
+        yaxis_title="Influential Scale (IS)",
         legend_title="B Values",
         height=600,
         width=1200,
@@ -229,9 +229,9 @@ elif page == "Graph Viewer":
     else:
         st.warning("No saved graph visualizations found in the pickle directory.")
 elif page=="SIR analyzer":
-    st.header("My Graph SIR Analyzer")
-    st.title("My Graph SIR Analyzer")
-    st.header("Select and View SIR Results of a graph")
+    st.header("My Graph Influential Scale Analyzer")
+    st.title("My Graph Influential Scale Analyzer")
+    st.header("Select and View SIR simulation Results of a graph")
 
     # Get the list of available `.pkl` files
     graph_list = get_graph_paths()
