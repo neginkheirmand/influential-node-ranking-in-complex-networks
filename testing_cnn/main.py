@@ -22,11 +22,11 @@ def get_graph_all_paths(dataset_dir= "./datasets/"):
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
-            print(filename)
             try:
-                if filename.endswith(".edges"):
-                    file_path = os.path.join(dirpath, filename) 
-                    graph_list.append((file_path, os.path.splitext(filename)[0]))
+                if filename.endswith(".edges") :
+                    if filename.startswith("ba_edgelist_exp") or not filename.startswith("ba_edgelist"):
+                        file_path = os.path.join(dirpath, filename) 
+                        graph_list.append((file_path, os.path.splitext(filename)[0]))
             except Exception as e: 
                 print(e, f'{filename}')
     return graph_list
@@ -221,20 +221,17 @@ def initialize_weights(m):
 
 # ################################################# #
 val_loss_list = []
-
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
 
 graph_list = get_graph_all_paths()
-print(graph_list)
 graph_list = [item for item in graph_list if item[0] not in skip_graphs]
-print(graph_list)
 
 for g in graph_list:
-    print(f"{graph_name}")
     start_time = time.time()
     
     graph_name =g[1]
+    print(f"{graph_name}")
 
     graph_path = get_graph_path(graph_list, graph_name)
     print(graph_path)
@@ -242,6 +239,7 @@ for g in graph_list:
     print(sir_list)
     feature_path = get_feature_path(graph_name)
     print(feature_path)
+    # input()
 
     graph_feature_path = get_feature_path(graph_name)    #'./data/jazz_Features.csv'
     graph_sir_path = sir_list[0]   #'./data/0.csv'
@@ -255,7 +253,7 @@ for g in graph_list:
     sir_labels = labels_df['SIR'].values  # Convert to NumPy array for easier handling
 
 
-    hist_output_path = f'./testing_cnn/img/{graph_name}-hist.png'
+    hist_output_path = f'./testing_cnn/img/{graph_name}_hist.png'
     plt.hist(sir_labels, bins=100, color='blue', alpha=0.7)
     plt.xlabel("Influential Scale", fontsize=16)
     plt.ylabel("Frequency", fontsize=16)
@@ -263,15 +261,6 @@ for g in graph_list:
     plt.savefig(hist_output_path, dpi=300, bbox_inches='tight')
     # plt.show()
 
-
-    if torch.cuda.is_available():
-        print(f"GPU: {torch.cuda.get_device_name(0)}")
-        print(f"Total GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB")
-        print(f"Reserved GPU Memory: {torch.cuda.memory_reserved(0) / 1e9:.2f} GB")
-        print(f"Allocated GPU Memory: {torch.cuda.memory_allocated(0) / 1e9:.2f} GB")
-        print(f"Free GPU Memory: {(torch.cuda.memory_reserved(0) - torch.cuda.memory_allocated(0)) / 1e9:.2f} GB")
-    else:
-        print("CUDA is not available.")
 
     # Assuming you have all the nodes and labels loaded properly
     nodes = labels_df['Node'].values
@@ -375,7 +364,7 @@ for g in graph_list:
         print(f"Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}, Spearman Rank Correlation: {spearman_corr:.4f}")
 
     # Plotting Training and Validation Loss
-    loss_output_path = f'./testing_cnn/img/{graph_name}-loss.png'
+    loss_output_path = f'./testing_cnn/img/{graph_name}_loss.png'
     plt.figure(figsize=(10, 5))
     plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
     plt.plot(range(1, num_epochs + 1), val_losses, label="Validation Loss", marker='o')
@@ -388,7 +377,7 @@ for g in graph_list:
     plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
     # Plotting Spearman Rank Correlation
-    spearman_rank_output_path = f'./testing_cnn/img/{graph_name}-spearman_rank.png'
+    spearman_rank_output_path = f'./testing_cnn/img/{graph_name}_spearman_rank.png'
 
     plt.figure(figsize=(10, 5))
     plt.plot(range(1, num_epochs + 1), spearman_scores, label="Spearman Rank Correlation", marker='o')
@@ -422,6 +411,11 @@ for g in graph_list:
     duration = end_time - start_time  # Duration in seconds
     print(f"Graph: {graph_name} Validation Loss: {val_loss/len(val_loader):.4f}, time: {duration}")
     val_loss_list.append((graph_name, f"Validation Loss: {val_loss/len(val_loader):.4f}", duration))
+    
+    #  Save the Model (optional):
+    cnn_model_path = f'./testing_cnn/img/{graph_name}_cnn_model_path.png'
+
+    torch.save(model.state_dict(), 'influence_cnn_model.pth')
 
 val_loss_path = './testing_cnn/data/val_loss.json'
 # Save execution times to JSON after everything is processed
