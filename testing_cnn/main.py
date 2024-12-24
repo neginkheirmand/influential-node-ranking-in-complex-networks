@@ -373,7 +373,7 @@ for g in graph_list:
     plt.title("Training and Validation Loss Over Epochs", fontsize=16)
     plt.legend(fontsize=16)
     plt.grid()
-    plt.show()
+    # plt.show()
     plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
     # Plotting Spearman Rank Correlation
@@ -386,7 +386,7 @@ for g in graph_list:
     plt.title("Spearman Rank Correlation Over Epochs", fontsize=16)
     plt.legend(fontsize=16)
     plt.grid()
-    plt.show()
+    # plt.show()
     plt.savefig(spearman_rank_output_path, dpi=300, bbox_inches='tight')
 
     # 6. Validation Loop:
@@ -417,7 +417,7 @@ for g in graph_list:
 
     torch.save(model.state_dict(), 'influence_cnn_model.pth')
 
-val_loss_path = './testing_cnn/data/val_loss.json'
-# Save execution times to JSON after everything is processed
-with open(val_loss_path, "w") as json_file:
-    json.dump(val_loss_list, json_file, indent=4)
+    val_loss_path = './testing_cnn/data/val_loss.json'
+    # Save execution times to JSON after everything is processed
+    with open(val_loss_path, "w") as json_file:
+        json.dump(val_loss_list, json_file, indent=4)
