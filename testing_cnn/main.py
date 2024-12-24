@@ -13,13 +13,16 @@ import matplotlib.pyplot as plt
 from scipy.stats import spearmanr
 import os
 
+print("done importing!")
+
 def file_exists(file_path):
     return os.path.isfile(file_path)
 
-def get_graph_all_paths(dataset_dir= "./../datasets/"):
+def get_graph_all_paths(dataset_dir= "./datasets/"):
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
+            print(filename)
             try:
                 if filename.endswith(".edges"):
                     file_path = os.path.join(dirpath, filename) 
@@ -34,7 +37,7 @@ def get_graph_path(graph_list, graph_name):
             return graph[0]
     return None
 
-def get_sir_paths(net_name, num_b=3,  result_path = './../datasets/SIR_Results/'):
+def get_sir_paths(net_name, num_b=3,  result_path = './datasets/SIR_Results/'):
     paths= []
     for i in range(num_b):
         sir_dir =os.path.join(result_path, net_name)
@@ -43,7 +46,7 @@ def get_sir_paths(net_name, num_b=3,  result_path = './../datasets/SIR_Results/'
             paths.append(sir_dir)
     return paths
 
-def get_feature_path(net_name,  result_path = './../datasets/Features/'):
+def get_feature_path(net_name,  result_path = './datasets/Features/'):
     feature_path =os.path.join(result_path, f'{net_name}.csv')
     if file_exists(feature_path):
         return feature_path
@@ -223,9 +226,12 @@ skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa'
 
 
 graph_list = get_graph_all_paths()
+print(graph_list)
 graph_list = [item for item in graph_list if item[0] not in skip_graphs]
+print(graph_list)
 
 for g in graph_list:
+    print(f"{graph_name}")
     start_time = time.time()
     
     graph_name =g[1]
@@ -249,7 +255,7 @@ for g in graph_list:
     sir_labels = labels_df['SIR'].values  # Convert to NumPy array for easier handling
 
 
-    hist_output_path = f'./img/{graph_name}-hist.png'
+    hist_output_path = f'./testing_cnn/img/{graph_name}-hist.png'
     plt.hist(sir_labels, bins=100, color='blue', alpha=0.7)
     plt.xlabel("Influential Scale", fontsize=16)
     plt.ylabel("Frequency", fontsize=16)
@@ -369,7 +375,7 @@ for g in graph_list:
         print(f"Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}, Spearman Rank Correlation: {spearman_corr:.4f}")
 
     # Plotting Training and Validation Loss
-    loss_output_path = f'./img/{graph_name}-loss.png'
+    loss_output_path = f'./testing_cnn/img/{graph_name}-loss.png'
     plt.figure(figsize=(10, 5))
     plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
     plt.plot(range(1, num_epochs + 1), val_losses, label="Validation Loss", marker='o')
@@ -382,7 +388,7 @@ for g in graph_list:
     plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
     # Plotting Spearman Rank Correlation
-    spearman_rank_output_path = f'./img/{graph_name}-spearman_rank.png'
+    spearman_rank_output_path = f'./testing_cnn/img/{graph_name}-spearman_rank.png'
 
     plt.figure(figsize=(10, 5))
     plt.plot(range(1, num_epochs + 1), spearman_scores, label="Spearman Rank Correlation", marker='o')
