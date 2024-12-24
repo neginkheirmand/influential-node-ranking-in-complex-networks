@@ -17,7 +17,7 @@ for i, ax in enumerate(axes.flat):
         ax.imshow(img)  # Display the image
         ax.axis('off')  # Turn off the axes
         # Add a title for each subplot with larger font size
-        ax.set_title(f"SIR Dynamics for β={['0.042', '0.062', '0.083'][i]}", fontsize=14)
+        ax.set_title(f"SIR Dynamics for β={['0.042', '0.062', '0.083'][i]}", fontsize=12)
 
     else:
         ax.axis('off')  # Hide any extra axes
