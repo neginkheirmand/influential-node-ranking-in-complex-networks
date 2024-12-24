@@ -90,7 +90,7 @@ def get_sir_graph_paths(net_name, num_b=3,  result_path = './datasets/SIR_Result
     return paths
 
 
-# Function to plot node importance using SIR for different B values
+# Function to plot node importance using Influential Scale for different B values
 def plot_interactive_sir(graph_path, sir_csv_paths):
     fig = go.Figure()
     
