@@ -288,6 +288,10 @@ epoch_spearman_scores = []
 
 start_time = time.time()
 
+current_time = time.strftime("%H:%M:%S", time.localtime())
+print('current time: ', current_time)
+
+
 # Training phase
 print("Starting training...")
 for graph_name in [graph[1] for graph in train_graph_list]:
@@ -440,8 +444,10 @@ plt.savefig("./spearman_rank_correlation.png", dpi=300, bbox_inches='tight')
 
 end_time = time.time()
 duration = end_time - start_time  # Duration in seconds
-print(f" time: {duration}")
+print(f"duration time: {duration}")
 
+current_time = time.strftime("%H:%M:%S", time.localtime())
+print('current time: ', current_time)
 #  Save the Model (optional):
 cnn_model_path = f'./testing_cnn/img/ompy_cnn_model_path.png'
 
