@@ -250,7 +250,7 @@ def initialize_weights(m):
 
 # Initialize lists for training and validation data
 all_train_nodes, all_train_labels = [], []
-all_val_nodes, all_val_labels = []
+all_val_nodes, all_val_labels = [], []
 
 train_graph_list = get_train_graph_paths()
 val_graph_list = get_test_graph_paths()
