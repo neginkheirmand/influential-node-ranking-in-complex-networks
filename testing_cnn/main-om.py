@@ -32,7 +32,7 @@ def get_graph_all_paths(dataset_dir= "./datasets/"):
     return graph_list
 
 
-def get_test_graph_paths(dataset_dir= "./../datasets/"):
+def get_test_graph_paths(dataset_dir= "./datasets/"):
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
@@ -45,7 +45,7 @@ def get_test_graph_paths(dataset_dir= "./../datasets/"):
                 print(e, f'{filename}')
     return graph_list
 
-def get_train_graph_paths(dataset_dir= "./../datasets/"):
+def get_train_graph_paths(dataset_dir= "./datasets/"):
     graph_list = []
     for dirpath, _, files in os.walk(dataset_dir):
         for filename in files:
@@ -256,61 +256,11 @@ skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa'
 graph_list = get_graph_all_paths()
 graph_list = [item for item in graph_list if item[0] not in skip_graphs]
 
-start_time = time.time()
-
-graph_name ='jazz'
-print(f"{graph_name}")
-
-graph_path = get_graph_path(graph_list, graph_name)
-print(graph_path)
-sir_list = get_sir_paths(graph_name)
-print(sir_list)
-feature_path = get_feature_path(graph_name)
-print(feature_path)
-
-graph_feature_path = get_feature_path(graph_name)    #'./data/jazz_Features.csv'
-graph_sir_path = sir_list[0]   #'./data/0.csv'
-
-G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
-
-# Load CSV file
-labels_df = pd.read_csv(graph_sir_path)
-
-# Extract the SIR column as labels
-sir_labels = labels_df['SIR'].values  # Convert to NumPy array for easier handling
-
-
-hist_output_path = f'./testing_cnn/img/{graph_name}_hist.png'
-plt.hist(sir_labels, bins=100, color='blue', alpha=0.7)
-plt.xlabel("Influential Scale", fontsize=16)
-plt.ylabel("Frequency", fontsize=16)
-plt.title("Distribution of Influential Scale values", fontsize=16)
-plt.savefig(hist_output_path, dpi=300, bbox_inches='tight')
-# plt.show()
-
-
-# Assuming you have all the nodes and labels loaded properly
-nodes = labels_df['Node'].values
-sir_labels = labels_df['SIR'].values
-
-# Split into training and validation sets (80% train, 20% validation)
-train_nodes, val_nodes, train_labels, val_labels = train_test_split(nodes, sir_labels, test_size=0.2, random_state=42)
-
-# Create datasets
-train_dataset = NodeDataset(G, train_nodes, graph_feature_path, train_labels, L=9)
-val_dataset = NodeDataset(G, val_nodes, graph_feature_path, val_labels, L=9)
-
-
-print(train_nodes[1],train_labels[1])   #just checking that its correctly split and gives the correct node
-
-
-# Create DataLoaders:
-
-train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)  #TODO: the paper uses batch_size of 4
-val_loader = DataLoader(val_dataset, batch_size=4, shuffle=False)
-
-# Define the Model, Loss Function, and Optimizer:
-
+# Get train and validation graph lists
+train_graph_list = get_train_graph_paths()
+val_graph_list = get_test_graph_paths()
+# print(train_graph_list)
+# print(val_graph_list)
 
 # Define the model
 model = InfluenceCNN(input_size=9)  # Adjust input_size according to your data
@@ -329,36 +279,110 @@ optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
-num_epochs=20
 
-# Lists to store metrics
-train_losses = []
-val_losses = []
-spearman_scores = []
 
-for epoch in range(num_epochs):
+# Initialize lists to track losses and Spearman correlation
+epoch_train_losses = []
+epoch_val_losses = []
+epoch_spearman_scores = []
+
+start_time = time.time()
+
+# Training phase
+print("Starting training...")
+for graph_name in [graph[1] for graph in train_graph_list]:
+    print(f"Processing training graph: {graph_name}")
+
+    # Load graph data
+    graph_path = get_graph_path(train_graph_list, graph_name)
+    sir_list = get_sir_paths(graph_name)
+    feature_path = get_feature_path(graph_name)
+    if not graph_path or not sir_list or not feature_path:
+        print(f"Missing data for graph {graph_name}. Skipping...")
+        continue
+    print(graph_path)
+    print(sir_list)
+    print(feature_path)
+    
+    # todo
+    graph_sir_path = sir_list
+    G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
+
+    # Load CSV file
+    labels_df = pd.read_csv(graph_sir_path)
+
+    # Assuming you have all the nodes and labels loaded properly
+    nodes = labels_df['Node'].values
+    sir_labels = labels_df['SIR'].values
+
+    hist_output_path = f'./testing_cnn/img/{graph_name}_hist.png'
+    plt.hist(sir_labels, bins=100, color='blue', alpha=0.7)
+    plt.xlabel("Influential Scale", fontsize=16)
+    plt.ylabel("Frequency", fontsize=16)
+    plt.title("Distribution of Influential Scale values", fontsize=16)
+    plt.savefig(hist_output_path, dpi=300, bbox_inches='tight')
+    # plt.show()
+
+    # Create a dataset and dataloader
+    train_dataset = NodeDataset(G, nodes, feature_path, sir_labels, L=9)
+    train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)
+
+    # Lists to store metrics
+    num_epochs=20
     model.train()
-    train_loss = 0.0
+    for epoch in range(num_epochs):
+        train_loss = 0.0
 
-    for degree_batch, h_index_batch, label_batch in train_loader:
-        degree_batch, h_index_batch, label_batch = degree_batch.to(device), h_index_batch.to(device), label_batch.to(device)
-        optimizer.zero_grad()
+        for degree_batch, h_index_batch, label_batch in train_loader:
+            degree_batch, h_index_batch, label_batch = degree_batch.to(device), h_index_batch.to(device), label_batch.to(device)
+            optimizer.zero_grad()
 
-        output = model(degree_batch, h_index_batch).squeeze()
-        loss = criterion(output, label_batch)
-        loss.backward()
-        optimizer.step()
+            output = model(degree_batch, h_index_batch).squeeze()
+            loss = criterion(output, label_batch)
+            loss.backward()
+            optimizer.step()
 
-        train_loss += loss.item() * degree_batch.size(0)
+            train_loss += loss.item() * degree_batch.size(0)
 
-    train_loss /= len(train_loader.dataset)
-    train_losses.append(train_loss)
+        train_loss /= len(train_loader.dataset)
+        epoch_train_losses.append(train_loss)
+        print(f"Epoch [{epoch+1}/{num_epochs}] - Graph: {graph_name} - Train Loss: {train_loss:.4f}")
 
+
+# Save the trained model after training on all graphs
+torch.save(model.state_dict(), "influence_cnn_trained_model_om.pth")
+# Validation phase
+print("Starting validation...")
+
+# val_losses = []
+# spearman_scores = []
+all_preds, all_labels = [], []
+
+model.eval()
+for graph_name in [graph[1] for graph in val_graph_list]:
     # Validation Phase
-    model.eval()
+    print(f"Processing validation graph: {graph_name}")
+
+    # Load graph data
+    graph_path = get_graph_path(val_graph_list, graph_name)
+    sir_list = get_sir_paths(graph_name)
+    feature_path = get_feature_path(graph_name)
+    
+    if not graph_path or not sir_list or not feature_path:
+        print(f"Missing data for validation graph {graph_name}. Skipping...")
+        continue
+    
+    # Load the graph and data
+    G = nx.read_edgelist(graph_path, comments="%", nodetype=int)
+    labels_df = pd.read_csv(sir_list)
+    sir_labels = labels_df['SIR'].values
+    nodes = labels_df['Node'].values
+
+    val_dataset = NodeDataset(G, nodes, feature_path, sir_labels, L=9)
+    val_loader = DataLoader(val_dataset, batch_size=4, shuffle=False)
+
     val_loss = 0.0
-    all_preds = []
-    all_labels = []
+    graph_preds, graph_labels = [], []
 
     with torch.no_grad():  # No need to compute gradients for validation
         for degree_batch, h_index_batch, label_batch in val_loader:
@@ -375,76 +399,55 @@ for epoch in range(num_epochs):
             val_loss += loss.item() * degree_batch.size(0)
 
             # Collect predictions and labels
-            all_preds.extend(output.cpu().numpy())
-            all_labels.extend(label_batch.cpu().numpy())
+            graph_preds.extend(output.cpu().numpy())
+            graph_labels.extend(label_batch.cpu().numpy())
 
     val_loss /= len(val_loader.dataset)
-    val_losses.append(val_loss)
+    epoch_val_losses.append(val_loss)
+    all_preds.extend(graph_preds)
+    all_labels.extend(graph_labels)
+    print(f"Validation Loss for {graph_name}: {val_loss:.4f}")
 
-    # Check for constant arrays before computing Spearman correlation
-    if np.std(all_preds) > 0 and np.std(all_labels) > 0:
-        spearman_corr, _ = spearmanr(all_preds, all_labels)
-    else:
-        spearman_corr = 0  # Set to 0 if one of the arrays is constant
+# Check for constant arrays before computing Spearman correlation
+if np.std(all_preds) > 0 and np.std(all_labels) > 0:
+    spearman_corr, _ = spearmanr(all_preds, all_labels)
+else:
+    spearman_corr = 0  # Set to 0 if one of the arrays is constant
+epoch_spearman_scores.append(spearman_corr)
+print(f"Overall Spearman Rank Correlation: {spearman_corr:.4f}")
 
-    spearman_scores.append(spearman_corr)
-    print(f"Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}, Spearman Rank Correlation: {spearman_corr:.4f}")
 
 # Plotting Training and Validation Loss
-loss_output_path = f'./testing_cnn/img/{graph_name}_loss.png'
 plt.figure(figsize=(10, 5))
-plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
-plt.plot(range(1, num_epochs + 1), val_losses, label="Validation Loss", marker='o')
+plt.plot(range(1, len(epoch_train_losses) + 1), epoch_train_losses, label="Training Loss", marker='o')
+plt.plot(range(1, len(epoch_val_losses) + 1), epoch_val_losses, label="Validation Loss", marker='o')
 plt.xlabel("Epochs", fontsize=16)
 plt.ylabel("Loss", fontsize=16)
 plt.title("Training and Validation Loss Over Epochs", fontsize=16)
 plt.legend(fontsize=16)
 plt.grid()
-# plt.show()
-plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
+plt.savefig("./training_validation_loss.png", dpi=300, bbox_inches='tight')
 
 # Plotting Spearman Rank Correlation
-spearman_rank_output_path = f'./testing_cnn/img/{graph_name}_spearman_rank.png'
-
 plt.figure(figsize=(10, 5))
-plt.plot(range(1, num_epochs + 1), spearman_scores, label="Spearman Rank Correlation", marker='o')
+plt.plot(range(1, len(epoch_spearman_scores) + 1), epoch_spearman_scores, label="Spearman Rank Correlation", marker='o')
 plt.xlabel("Epochs", fontsize=16)
 plt.ylabel("Spearman Rank Correlation", fontsize=16)
 plt.title("Spearman Rank Correlation Over Epochs", fontsize=16)
 plt.legend(fontsize=16)
 plt.grid()
-# plt.show()
-plt.savefig(spearman_rank_output_path, dpi=300, bbox_inches='tight')
-
-# 6. Validation Loop:
-
-model.eval()  # Set model to evaluation mode
-
-# Tracking validation loss
-val_loss = 0.0
-
-with torch.no_grad():  # No gradient calculation during validation
-    for degree_input, h_index_input, label in val_loader:
-        degree_input, h_index_input, label = degree_input.to(device), h_index_input.to(device), label.to(device)
-
-        # Forward pass
-        output = model(degree_input, h_index_input)
-
-        # Calculate loss
-        loss = criterion(output.squeeze(), label)  # squeeze to match dimensions
-        val_loss += loss.item()
+plt.savefig("./spearman_rank_correlation.png", dpi=300, bbox_inches='tight')
 
 end_time = time.time()
 duration = end_time - start_time  # Duration in seconds
-print(f"Graph: {graph_name} Validation Loss: {val_loss/len(val_loader):.4f}, time: {duration}")
-val_loss_list.append((graph_name, f"Validation Loss: {val_loss/len(val_loader):.4f}", duration))
+print(f" time: {duration}")
 
 #  Save the Model (optional):
-cnn_model_path = f'./testing_cnn/img/{graph_name}_cnn_model_path.png'
+cnn_model_path = f'./testing_cnn/img/ompy_cnn_model_path.png'
 
-torch.save(model.state_dict(), 'influence_cnn_model.pth')
+torch.save(model.state_dict(), 'ompy_cnn_model_path.pth')
 
-val_loss_path = './testing_cnn/data/val_loss.json'
-# Save execution times to JSON after everything is processed
-with open(val_loss_path, "w") as json_file:
-    json.dump(val_loss_list, json_file, indent=4)
+# val_loss_path = './testing_cnn/data/val_loss.json'
+# # Save execution times to JSON after everything is processed
+# with open(val_loss_path, "w") as json_file:
+#     json.dump(val_loss_list, json_file, indent=4)
