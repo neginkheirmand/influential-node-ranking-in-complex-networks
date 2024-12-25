@@ -415,7 +415,6 @@ plt.grid()
 plt.show()
 plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
-input()
 # Plotting Spearman Rank Correlation
 spearman_rank_output_path = f'./testing_cnn/img/{graph_name}_spearman_rank.png'
 
@@ -429,14 +428,17 @@ plt.grid()
 plt.show()
 plt.savefig(spearman_rank_output_path, dpi=300, bbox_inches='tight')
 
-# plt.figure(figsize=(10, 5))
-# plt.plot(range(1, num_epochs + 1), kendall_scores, label="Kendall's Tau", marker='o')
-# plt.xlabel("Epochs", fontsize=16)
-# plt.ylabel("Kendall's Tau", fontsize=16)
-# plt.title("Kendall's Tau Over Epochs", fontsize=16)
-# plt.legend(fontsize=16)
-# plt.grid()
-# plt.savefig(f'./testing_cnn/img/{graph_name}_kendall_tau.png', dpi=300, bbox_inches='tight')
+
+plt.figure(figsize=(10, 5))
+plt.plot(range(1, num_epochs + 1), kendall_scores, label="Kendall's Tau", marker='o')
+plt.xlabel("Epochs", fontsize=16)
+plt.ylabel("Kendall's Tau", fontsize=16)
+plt.title("Kendall's Tau Over Epochs", fontsize=16)
+plt.legend(fontsize=16)
+plt.grid()
+plt.show()
+
+plt.savefig(f'./testing_cnn/img/{graph_name}_kendall_tau.png', dpi=300, bbox_inches='tight')
 
 
 # 6. Validation Loop:
