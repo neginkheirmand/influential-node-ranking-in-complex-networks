@@ -323,7 +323,7 @@ for graph_name in [graph[1] for graph in train_graph_list]:
     plt.hist(sir_labels, bins=100, color='blue', alpha=0.7)
     plt.xlabel("Influential Scale", fontsize=16)
     plt.ylabel("Frequency", fontsize=16)
-    plt.title("Distribution of Influential Scale values", fontsize=16)
+    plt.title("Distribution of Influential Scale(sir) values", fontsize=16)
     plt.savefig(hist_output_path, dpi=300, bbox_inches='tight')
     # plt.show()
 
@@ -350,7 +350,7 @@ for graph_name in [graph[1] for graph in train_graph_list]:
 
         train_loss /= len(train_loader.dataset)
         epoch_train_losses.append(train_loss)
-        print(f"Epoch [{epoch+1}/{num_epochs}] - Graph: {graph_name} - Train Loss: {train_loss:.4f}")
+        print(f"Epoch [{epoch+1}/{num_epochs}] - Graph: {graph_name} - Train Loss: {train_loss:.8f}")
 
 
 # Save the trained model after training on all graphs
