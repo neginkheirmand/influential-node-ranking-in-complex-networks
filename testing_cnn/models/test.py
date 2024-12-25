@@ -263,11 +263,13 @@ criterion = torch.nn.MSELoss()
 # Metrics Storage
 validation_results = []
 
-
+index = 0
 for g in test_graph_list:
+
     start_time = time.time()
+    index+=1
     graph_name, graph_path = g[1], g[0]
-    print(f"Validating on graph: {graph_name}")
+    print(f"{index}) Validating on graph: {graph_name}")
 
     graph_path = get_graph_path(test_graph_list, graph_name)
     print(graph_path)
@@ -327,6 +329,9 @@ for g in test_graph_list:
         spearman_corr = 0
         kendall_corr = 0
 
+
+    end_time = time.time()
+    duration = end_time - start_time  # Duration in seconds
     print(
         f"Graph: {graph_name}, "
         f"Validation Loss: {val_loss:.8f}, "
@@ -334,20 +339,15 @@ for g in test_graph_list:
         f"Kendall's Tau: {kendall_corr:.8f}, "
         f"time: {duration}"
     )
-
-    end_time = time.time()
-    duration = end_time - start_time  # Duration in seconds
-    print(f"Graph: {graph_name} , time: {duration}")
     # Save Results
     validation_results.append({
         'graph_name': graph_name,
         'validation_loss': val_loss,
         'spearman_rank': spearman_corr,
         'kendall_tau': kendall_corr,
-        'duration': duration
+        'predictions': all_preds,  # Save predictions
+        'labels': all_labels       # Save ground truth labels
     })
-
-
 
     # Save Validation Results to JSON
     with open('./testing_cnn/data/validation_results.json', 'w') as f:
