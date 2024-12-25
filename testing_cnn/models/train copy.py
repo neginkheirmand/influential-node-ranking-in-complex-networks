@@ -25,7 +25,7 @@ def get_graph_all_paths(dataset_dir= "./datasets/"):
         for filename in files:
             try:
                 if filename.endswith(".edges") :
-                    if filename.startswith("ba_edgelist_exp") or not filename.startswith("ba_edgelist"):
+                    if filename.startswith("ba_edgelist_exp") or not filename.startswith("ba_edgelist") or filename.startswith('ba_edgelist_1000_4'):
                         file_path = os.path.join(dirpath, filename) 
                         graph_list.append((file_path, os.path.splitext(filename)[0]))
             except Exception as e: 
@@ -39,25 +39,13 @@ def get_test_graph_paths(dataset_dir= "./../datasets/"):
         for filename in files:
             try:
                 if filename.endswith(".edges") :
-                    if not filename.startswith("ba_edgelist"):
+                    if filename.startswith("ba_edgelist_exp") or not filename.startswith("ba_edgelist"):
                         file_path = os.path.join(dirpath, filename) 
                         graph_list.append((file_path, os.path.splitext(filename)[0]))
             except Exception as e: 
                 print(e, f'{filename}')
     return graph_list
 
-def get_train_graph_paths(dataset_dir= "./../datasets/"):
-    graph_list = []
-    for dirpath, _, files in os.walk(dataset_dir):
-        for filename in files:
-            try:
-                if filename.endswith(".edges") :
-                    if filename.startswith("ba_edgelist_exp"):
-                        file_path = os.path.join(dirpath, filename) 
-                        graph_list.append((file_path, os.path.splitext(filename)[0]))
-            except Exception as e: 
-                print(e, f'{filename}')
-    return graph_list
 
 
 def get_graph_path(graph_list, graph_name):
@@ -259,7 +247,7 @@ graph_list = [item for item in graph_list if item[0] not in skip_graphs]
 
 start_time = time.time()
 
-graph_name ='jazz'
+graph_name ='ba_edgelist_1000_4'
 print(f"{graph_name}")
 
 graph_path = get_graph_path(graph_list, graph_name)
@@ -330,7 +318,7 @@ optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
-num_epochs=20
+num_epochs=200
 
 # Lists to store metrics
 train_losses = []
