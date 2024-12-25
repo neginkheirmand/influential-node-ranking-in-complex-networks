@@ -14,7 +14,10 @@ from scipy.stats import spearmanr
 import os
 
 print("done importing!")
+if torch.cuda.is_available():
+    print("GPU  UNAVAILABLE")
 
+    
 def file_exists(file_path):
     return os.path.isfile(file_path)
 
