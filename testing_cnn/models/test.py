@@ -245,8 +245,25 @@ def initialize_weights(m):
 # ################################################# #
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
+
+
+with open('./testing_cnn/data/validation_results.json', 'r') as f:
+    validation_results = json.load(f)
+
+# Extract the list of "graph_name" values
+tested_graphs = [result['graph_name'] for result in validation_results]
+print("tested graphs: ")
+for i in range(len(tested_graphs)):
+    print(f'{i}) {tested_graphs[i]}')
+input()
+
+
 test_graph_list = get_test_graph_paths()
-test_graph_list = [item for item in test_graph_list if item[1] not in skip_graphs]
+test_graph_list = [item for item in test_graph_list if item[1] not in skip_graphs and item[1] not in tested_graphs]
+print("present graphs: ")
+for g in test_graph_list:
+    print(g)
+input()
 
 
 # Define the model
@@ -312,17 +329,38 @@ for g in test_graph_list:
                 h_index_batch.to(device),
                 label_batch.to(device),
             )
-            output = model(degree_batch, h_index_batch).squeeze()
-            loss = criterion(output, label_batch)
-            
-            print("Output shape:", output.shape)
-            print("Label batch shape:", label_batch.shape)
 
+
+        # this next few lines handles the 'email' graph bug
+            # output = model(degree_batch, h_index_batch).squeeze()
+            output = model(degree_batch, h_index_batch)
+
+            # Ensure output is always 1D
+            if output.dim() == 1:  # This is the expected case
+                pass
+            elif output.dim() == 0:  # Handle scalar outputs
+                output = output.unsqueeze(0)
+
+            label_batch = label_batch.view_as(output)  # Ensure both have the same shape
+        # this previous few lines handles the 'email' graph bug
+
+
+
+
+
+            loss = criterion(output, label_batch)
+
+            # print("Output shape:", output.shape)
+            # print("Label batch shape:", label_batch.shape)
+            # print("**********************")
             val_loss += loss.item() * degree_batch.size(0)
 
             # Collect predictions and labels
-            all_preds.extend(output.cpu().numpy())
-            all_labels.extend(label_batch.cpu().numpy())
+            # all_preds.extend(output.cpu().numpy())
+            # all_labels.extend(label_batch.cpu().numpy())
+            all_preds.extend(output.cpu().numpy().ravel())
+            all_labels.extend(label_batch.cpu().numpy().ravel())
+
     val_loss /= len(test_loader.dataset)
     
     # Compute Spearman and Kendall Correlations

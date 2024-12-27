@@ -254,7 +254,7 @@ graph_list = [item for item in graph_list if item[1] not in skip_graphs]
 
 start_time = time.time()
 
-sir_alpha = 0
+sir_alpha = 1
 
 graph_name ='ba_edgelist_1000_4'
 print(f"{graph_name}")
