@@ -279,7 +279,7 @@ plt.xlabel("Influential Scale", fontsize=16)
 plt.ylabel("Frequency", fontsize=16)
 plt.title("Distribution of Influential Scale values", fontsize=16)
 plt.savefig(hist_output_path, dpi=300, bbox_inches='tight')
-plt.show()
+# plt.show()
 
 
 # Assuming you have all the nodes and labels loaded properly
@@ -347,7 +347,7 @@ plt.ylabel("Loss", fontsize=16)
 plt.title("Training and Validation Loss Over Epochs", fontsize=16)
 plt.legend(fontsize=16)
 plt.grid()
-plt.show()
+# plt.show()
 plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
 end_time = time.time()
