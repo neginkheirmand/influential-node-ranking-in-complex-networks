@@ -248,24 +248,25 @@ def initialize_weights(m):
 # ################################################# #
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
-# Metrics Storage
-validation_results = []
-
-
-# Load existing data if the file exists
-try:
-    with open('./testing_cnn/data/validation_results.json', 'r') as f:
-        validation_results = json.load(f)
-        print(f"Loaded {len(validation_results)} validation results from {'./testing_cnn/data/validation_results.json'}.")
-except FileNotFoundError:
-    print(f"No existing validation results found at {'./testing_cnn/data/validation_results.json'}. Starting fresh.")
-except json.JSONDecodeError as e:
-    print(f"Error decoding JSON file {'./testing_cnn/data/validation_results.json'}: {e}. Starting fresh.")
-
 # parameters
 sir_alpha = 1
 _model_L = 20
 num_epochs=200
+
+# Metrics Storage
+validation_results = []
+
+
+validation_results_path =f'./testing_cnn/data/validation_results_sir{sir_alpha}_L{_model_L}_ep{num_epochs}.json' 
+# Load existing data if the file exists
+try:
+    with open(validation_results_path, 'r') as f:
+        validation_results = json.load(f)
+        print(f"Loaded {len(validation_results)} validation results from {validation_results_path}.")
+except FileNotFoundError:
+    print(f"No existing validation results found at {validation_results_path}. Starting fresh.")
+except json.JSONDecodeError as e:
+    print(f"Error decoding JSON file {validation_results_path}: {e}. Starting fresh.")
 
 
 
@@ -274,7 +275,6 @@ tested_graphs = [result['graph_name'] for result in validation_results]
 print("tested graphs: ")
 for i in range(len(tested_graphs)):
     print(f'{i}) {tested_graphs[i]}')
-input()
 
 
 test_graph_list = get_test_graph_paths()
@@ -282,13 +282,13 @@ test_graph_list = [item for item in test_graph_list if item[1] not in skip_graph
 print("present graphs: ")
 for g in test_graph_list:
     print(g)
-input()
 
 
 # Define the model
 model = InfluenceCNN(input_size=_model_L)  # Adjust input_size according to your data
 model.load_state_dict(torch.load(f'./testing_cnn/data/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth'))
 model.eval()
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
@@ -408,7 +408,7 @@ for g in test_graph_list:
         'duration': duration
     })
 
-    with open('./testing_cnn/data/validation_results.json', 'w') as f:
+    with open(validation_results_path, 'w') as f:
         json_compatible_results = [
             {
                 'graph_name': result['graph_name'],
