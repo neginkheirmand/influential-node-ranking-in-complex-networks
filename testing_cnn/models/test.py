@@ -248,9 +248,6 @@ skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa'
 test_graph_list = get_test_graph_paths()
 test_graph_list = [item for item in test_graph_list if item[1] not in skip_graphs]
 
-for g in test_graph_list:
-    print(g)
-input()
 
 # Define the model
 model = InfluenceCNN(input_size=9)  # Adjust input_size according to your data
