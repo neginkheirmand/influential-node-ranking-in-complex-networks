@@ -247,7 +247,7 @@ skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa'
 
 
 graph_list = get_graph_all_paths()
-graph_list = [item for item in graph_list if item[0] not in skip_graphs]
+graph_list = [item for item in graph_list if item[1] not in skip_graphs]
 
 start_time = time.time()
 

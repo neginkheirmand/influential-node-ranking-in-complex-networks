@@ -1,8 +1,0 @@
-[
-    {
-        "graph_name": "ba_edgelist_exp1_3000_4",
-        "validation_loss": 2.835048647739313e-06,
-        "spearman_rank": 0.6010939125954117,
-        "kendall_tau": 0.5424982183930398,
-        "predictions": [
-            
