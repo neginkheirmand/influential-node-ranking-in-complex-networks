@@ -59,7 +59,7 @@ def get_graph_path(graph_list, graph_name):
             return graph[0]
     return None
 
-def get_sir_paths(net_name, num_b=3,  result_path = './datasets/SIR_Results/'):
+def get_sir_paths(net_name, sir_alpha=0,  num_b=3,  result_path = './datasets/SIR_Results/'):
     paths= []
     for i in range(num_b):
         sir_dir =os.path.join(result_path, net_name)
@@ -67,6 +67,9 @@ def get_sir_paths(net_name, num_b=3,  result_path = './datasets/SIR_Results/'):
         if file_exists(sir_dir):
             paths.append(sir_dir)
     #todo
+    if sir_alpha<3 and sir_alpha>=0:
+        return paths[sir_alpha]
+    
     return paths[0]
 
 def get_feature_path(net_name,  result_path = './datasets/Features/'):
@@ -259,6 +262,11 @@ except FileNotFoundError:
 except json.JSONDecodeError as e:
     print(f"Error decoding JSON file {'./testing_cnn/data/validation_results.json'}: {e}. Starting fresh.")
 
+# parameters
+sir_alpha = 1
+_model_L = 20
+num_epochs=200
+
 
 
 # Extract the list of "graph_name" values
@@ -278,8 +286,8 @@ input()
 
 
 # Define the model
-model = InfluenceCNN(input_size=9)  # Adjust input_size according to your data
-model.load_state_dict(torch.load('./testing_cnn/data/EP200_TRAINED_ba_1000_4_cnn_model.pth'))
+model = InfluenceCNN(input_size=_model_L)  # Adjust input_size according to your data
+model.load_state_dict(torch.load(f'./testing_cnn/data/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth'))
 model.eval()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -320,7 +328,7 @@ for g in test_graph_list:
 
     start_time = time.time()
     # Create Dataset and DataLoader
-    test_dataset = NodeDataset(G_test, test_nodes, graph_feature_path, test_labels, L=9)
+    test_dataset = NodeDataset(G_test, test_nodes, graph_feature_path, test_labels, L=_model_L)
     test_loader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 
     # print(test_nodes[1],test_labels[1])   #just checking that its correctly split and gives the correct node

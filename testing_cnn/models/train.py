@@ -254,7 +254,11 @@ graph_list = [item for item in graph_list if item[1] not in skip_graphs]
 
 start_time = time.time()
 
+# parameters
 sir_alpha = 1
+_model_L = 20
+num_epochs=200
+
 
 graph_name ='ba_edgelist_1000_4'
 print(f"{graph_name}")
@@ -294,14 +298,14 @@ train_labels = labels_df['SIR'].values
 print(train_nodes[1],train_labels[1])   #just checking that its correctly split and gives the correct node
 
 # Create Dataset and DataLoader for Training
-train_dataset = NodeDataset(G, train_nodes, graph_feature_path, train_labels, L=9)
+train_dataset = NodeDataset(G, train_nodes, graph_feature_path, train_labels, L=_model_L)
 train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)
 
 # Define the Model, Loss Function, and Optimizer:
 
 
 # Define the model
-model = InfluenceCNN(input_size=9)  # Adjust input_size according to your data
+model = InfluenceCNN(input_size=_model_L)  # Adjust input_size according to your data
 # Apply weight initialization
 model.apply(initialize_weights)
 model.to(torch.device('cuda' if torch.cuda.is_available() else 'cpu'))
@@ -315,7 +319,6 @@ optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
-num_epochs=200
 
 # Lists to store metrics
 train_losses = []
@@ -360,4 +363,4 @@ duration = end_time - start_time  # Duration in seconds
 print(f"Graph: {graph_name} time: {duration}")
 
 #  Save the Model (optional):
-torch.save(model.state_dict(), f'EP200_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw.pth')
+torch.save(model.state_dict(), f'EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth')
