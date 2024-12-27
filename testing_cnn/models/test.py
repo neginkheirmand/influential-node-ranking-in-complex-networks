@@ -245,10 +245,21 @@ def initialize_weights(m):
 # ################################################# #
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
+# Metrics Storage
+validation_results = []
 
 
-with open('./testing_cnn/data/validation_results.json', 'r') as f:
-    validation_results = json.load(f)
+# Load existing data if the file exists
+try:
+    with open('./testing_cnn/data/validation_results.json', 'r') as f:
+        validation_results = json.load(f)
+        print(f"Loaded {len(validation_results)} validation results from {'./testing_cnn/data/validation_results.json'}.")
+except FileNotFoundError:
+    print(f"No existing validation results found at {'./testing_cnn/data/validation_results.json'}. Starting fresh.")
+except json.JSONDecodeError as e:
+    print(f"Error decoding JSON file {'./testing_cnn/data/validation_results.json'}: {e}. Starting fresh.")
+
+
 
 # Extract the list of "graph_name" values
 tested_graphs = [result['graph_name'] for result in validation_results]
@@ -277,13 +288,9 @@ model.to(device)
 
 criterion = torch.nn.MSELoss()
 
-# Metrics Storage
-validation_results = []
-
 index = 0
 for g in test_graph_list:
 
-    start_time = time.time()
     index+=1
     graph_name, graph_path = g[1], g[0]
     print(f"{index}) Validating on graph: {graph_name}")
@@ -311,11 +318,12 @@ for g in test_graph_list:
     plt.savefig(hist_output_path, dpi=300, bbox_inches='tight')
     # plt.show()
 
+    start_time = time.time()
     # Create Dataset and DataLoader
     test_dataset = NodeDataset(G_test, test_nodes, graph_feature_path, test_labels, L=9)
     test_loader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 
-    print(test_nodes[1],test_labels[1])   #just checking that its correctly split and gives the correct node
+    # print(test_nodes[1],test_labels[1])   #just checking that its correctly split and gives the correct node
 
     # Validation Loop
     val_loss = 0.0
@@ -388,7 +396,8 @@ for g in test_graph_list:
         'spearman_rank': spearman_corr,
         'kendall_tau': kendall_corr,
         'predictions': all_preds,  # Save predictions
-        'labels': all_labels       # Save ground truth labels
+        'labels': all_labels,       # Save ground truth labels
+        'duration': duration
     })
 
     with open('./testing_cnn/data/validation_results.json', 'w') as f:
@@ -398,9 +407,18 @@ for g in test_graph_list:
                 'validation_loss': float(result['validation_loss']),  # Ensure float
                 'spearman_rank': float(result['spearman_rank']),  # Ensure float
                 'kendall_tau': float(result['kendall_tau']),  # Ensure float
-                'predictions': [float(pred) for pred in result['predictions']],  # Convert predictions
-                'labels': [float(label) for label in result['labels']]  # Convert labels
+                # 'predictions': [float(pred) for pred in result['predictions']],  # Convert predictions
+                # 'labels': [float(label) for label in result['labels']],  # Convert labels
+                'duration': float(result['duration'])
             }
             for result in validation_results
         ]
         json.dump(json_compatible_results, f, indent=4)
+    
+    csv_output_path = f'./testing_cnn/data/{graph_name}_df.csv'  # Path for the CSV file
+    results_df = pd.DataFrame({
+        'Node_Index': test_nodes,       # Node indices
+        'Label': all_labels,            # Ground truth labels
+        'Prediction': all_preds         # Model predictions
+    })
+    results_df.to_csv(csv_output_path, index=False)
