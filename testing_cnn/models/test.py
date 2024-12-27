@@ -246,8 +246,11 @@ def initialize_weights(m):
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
 test_graph_list = get_test_graph_paths()
-test_graph_list = [item for item in test_graph_list if item[0] not in skip_graphs]
+test_graph_list = [item for item in test_graph_list if item[1] not in skip_graphs]
 
+for g in test_graph_list:
+    print(g)
+input()
 
 # Define the model
 model = InfluenceCNN(input_size=9)  # Adjust input_size according to your data
@@ -349,6 +352,16 @@ for g in test_graph_list:
         'labels': all_labels       # Save ground truth labels
     })
 
-    # Save Validation Results to JSON
     with open('./testing_cnn/data/validation_results.json', 'w') as f:
-        json.dump(validation_results, f, indent=4)
+        json_compatible_results = [
+            {
+                'graph_name': result['graph_name'],
+                'validation_loss': float(result['validation_loss']),  # Ensure float
+                'spearman_rank': float(result['spearman_rank']),  # Ensure float
+                'kendall_tau': float(result['kendall_tau']),  # Ensure float
+                'predictions': [float(pred) for pred in result['predictions']],  # Convert predictions
+                'labels': [float(label) for label in result['labels']]  # Convert labels
+            }
+            for result in validation_results
+        ]
+        json.dump(json_compatible_results, f, indent=4)
