@@ -59,7 +59,7 @@ def get_graph_path(graph_list, graph_name):
             return graph[0]
     return None
 
-def get_sir_paths(net_name, num_b=3,  result_path = './datasets/SIR_Results/'):
+def get_sir_paths(net_name, sir_alpha=0,  num_b=3,  result_path = './datasets/SIR_Results/'):
     paths= []
     for i in range(num_b):
         sir_dir =os.path.join(result_path, net_name)
@@ -67,6 +67,9 @@ def get_sir_paths(net_name, num_b=3,  result_path = './datasets/SIR_Results/'):
         if file_exists(sir_dir):
             paths.append(sir_dir)
     #todo
+    if sir_alpha<3 and sir_alpha>=0:
+        return paths[sir_alpha]
+    
     return paths[0]
 
 def get_feature_path(net_name,  result_path = './datasets/Features/'):
@@ -251,12 +254,14 @@ graph_list = [item for item in graph_list if item[1] not in skip_graphs]
 
 start_time = time.time()
 
+sir_alpha = 0
+
 graph_name ='ba_edgelist_1000_4'
 print(f"{graph_name}")
 
 graph_path = get_graph_path(graph_list, graph_name)
 print(graph_path)
-sir_list = get_sir_paths(graph_name)
+sir_list = get_sir_paths(graph_name, sir_alpha)
 print(sir_list)
 feature_path = get_feature_path(graph_name)
 print(feature_path)
@@ -335,7 +340,7 @@ for epoch in range(num_epochs):
 
     print(
         f"Epoch [{epoch + 1}/{num_epochs}], "
-        f"Train Loss: {train_loss:.8f} "
+        f"Train Loss: {train_loss} "
     )
 
 # Plotting Training and Validation Loss
@@ -355,4 +360,4 @@ duration = end_time - start_time  # Duration in seconds
 print(f"Graph: {graph_name} time: {duration}")
 
 #  Save the Model (optional):
-torch.save(model.state_dict(), 'EP200_TRAINED_ba_1000_4_cnn_model.pth')
+torch.save(model.state_dict(), f'EP200_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw.pth')
