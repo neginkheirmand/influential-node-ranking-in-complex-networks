@@ -314,6 +314,10 @@ for g in test_graph_list:
             )
             output = model(degree_batch, h_index_batch).squeeze()
             loss = criterion(output, label_batch)
+            
+            print("Output shape:", output.shape)
+            print("Label batch shape:", label_batch.shape)
+
             val_loss += loss.item() * degree_batch.size(0)
 
             # Collect predictions and labels
