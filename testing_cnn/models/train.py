@@ -28,8 +28,6 @@ print('NUM_EPOCH: ', num_epochs)
 
 print("done loading the params!")
 
-input("continue?")
-
 if not torch.cuda.is_available():
     print("GPU UNAVAILABLE!")
 else:
