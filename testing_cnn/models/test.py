@@ -35,6 +35,7 @@ else:
 
 input("continue?")
 
+
 def file_exists(file_path):
     return os.path.isfile(file_path)
 
@@ -293,7 +294,6 @@ print("present graphs: ")
 for g in test_graph_list:
     print(g)
 
-input()
 
 
 # Define the model
