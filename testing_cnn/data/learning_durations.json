@@ -1,0 +1,10 @@
+[
+    {
+        "training_graph": "ba_edgelist_1000_4",
+        "sir_alpha": 0,
+        "L": 20,
+        "num_epoch": 150,
+        "duration_seconds": 2085.974496126175,
+        "formatted_duration": "00:34:45:974"
+    }
+]
