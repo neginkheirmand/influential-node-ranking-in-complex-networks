@@ -13,13 +13,25 @@ import matplotlib.pyplot as plt
 from scipy.stats import spearmanr
 from scipy.stats import kendalltau
 import os
+from dotenv import load_dotenv
 
 print("done importing!")
 
+# parameters
+load_dotenv("./testing_cnn/models/model.env")
+sir_alpha = int(os.getenv("SIR_ALPHA"))
+print('POOL size: ', sir_alpha)
+_model_L  = int(os.getenv("_MODEL_L"))
+print('_MODEL_L: ', _model_L)
+num_epochs = int(os.getenv("NUM_EPOCH"))
+print('NUM_EPOCH: ', num_epochs)
+
+print("done loading the params!")
+
 if not torch.cuda.is_available():
-    print("GPU UNAVAILABLE")
+    print("GPU UNAVAILABLE!")
 else:
-    print("working on GPU ")
+    print("working on GPU!")
 
 def file_exists(file_path):
     return os.path.isfile(file_path)
@@ -254,12 +266,6 @@ graph_list = [item for item in graph_list if item[1] not in skip_graphs]
 
 start_time = time.time()
 
-# parameters
-sir_alpha = 1
-_model_L = 20
-num_epochs=200
-
-
 graph_name ='ba_edgelist_1000_4'
 print(f"{graph_name}")
 
@@ -347,7 +353,8 @@ for epoch in range(num_epochs):
     )
 
 # Plotting Training and Validation Loss
-loss_output_path = f'./testing_cnn/img/{graph_name}_loss.png'
+
+loss_output_path = f'./testing_cnn/img/trained_on_{graph_name}_sir{sir_alpha}_raw_L{_model_L}_loss.png'
 plt.figure(figsize=(10, 5))
 plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
 plt.xlabel("Epochs", fontsize=16)

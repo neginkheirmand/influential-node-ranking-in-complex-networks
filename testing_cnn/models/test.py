@@ -13,8 +13,25 @@ import matplotlib.pyplot as plt
 from scipy.stats import spearmanr
 from scipy.stats import kendalltau
 import os
+from dotenv import load_dotenv
 
 print("done importing!")
+
+# parameters
+load_dotenv("./testing_cnn/models/model.env")
+sir_alpha = int(os.getenv("SIR_ALPHA"))
+print('POOL size: ', sir_alpha)
+_model_L  = int(os.getenv("_MODEL_L"))
+print('_MODEL_L: ', _model_L)
+num_epochs = int(os.getenv("NUM_EPOCH"))
+print('NUM_EPOCH: ', num_epochs)
+
+print("done loading the params!")
+
+if not torch.cuda.is_available():
+    print("GPU UNAVAILABLE!")
+else:
+    print("working on GPU!")
 
 if not torch.cuda.is_available():
     print("GPU UNAVAILABLE")
@@ -248,11 +265,6 @@ def initialize_weights(m):
 # ################################################# #
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
-# parameters
-sir_alpha = 1
-_model_L = 20
-num_epochs=200
-
 # Metrics Storage
 validation_results = []
 
@@ -282,6 +294,8 @@ test_graph_list = [item for item in test_graph_list if item[1] not in skip_graph
 print("present graphs: ")
 for g in test_graph_list:
     print(g)
+
+input()
 
 
 # Define the model
@@ -359,10 +373,6 @@ for g in test_graph_list:
 
             label_batch = label_batch.view_as(output)  # Ensure both have the same shape
         # this previous few lines handles the 'email' graph bug
-
-
-
-
 
             loss = criterion(output, label_batch)
 
