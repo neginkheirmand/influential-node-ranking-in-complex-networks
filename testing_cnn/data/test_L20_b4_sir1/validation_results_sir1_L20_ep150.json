@@ -1,0 +1,170 @@
+[
+    {
+        "graph_name": "ba_edgelist_exp1_3000_4",
+        "validation_loss": 0.00020029532037248523,
+        "spearman_rank": 0.8475118554572179,
+        "kendall_tau": 0.7052990709623804,
+        "duration": 49.285807847976685
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_4000_4",
+        "validation_loss": 0.0002005931655949098,
+        "spearman_rank": 0.7520837532105097,
+        "kendall_tau": 0.6364068471643637,
+        "duration": 76.03882098197937
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_5000_4",
+        "validation_loss": 0.00020599564172734972,
+        "spearman_rank": 0.6886246908033129,
+        "kendall_tau": 0.6146424383942531,
+        "duration": 131.5392119884491
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_6000_4",
+        "validation_loss": 0.00022412120845516863,
+        "spearman_rank": 0.5934904380703426,
+        "kendall_tau": 0.5548468932107078,
+        "duration": 204.08919548988342
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_7000_4",
+        "validation_loss": 0.00020890318255909992,
+        "spearman_rank": 0.46921650386765834,
+        "kendall_tau": 0.46715833917824645,
+        "duration": 259.8165831565857
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_8000_4",
+        "validation_loss": 0.000206895276970954,
+        "spearman_rank": 0.608942071706106,
+        "kendall_tau": 0.5602116078701082,
+        "duration": 292.9148757457733
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_10",
+        "validation_loss": 0.000174110797330286,
+        "spearman_rank": -0.9192881500165003,
+        "kendall_tau": -0.7506667811865935,
+        "duration": 31.660253286361694
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_20",
+        "validation_loss": 1.4093506506469566e-05,
+        "spearman_rank": -0.920184008550814,
+        "kendall_tau": -0.7602278958979893,
+        "duration": 32.615795850753784
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_4",
+        "validation_loss": 0.00019871910560686956,
+        "spearman_rank": 0.9259238679233648,
+        "kendall_tau": 0.7853858929251819,
+        "duration": 29.207839012145996
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_10",
+        "validation_loss": 0.00013416341857524117,
+        "spearman_rank": -0.9165071761981399,
+        "kendall_tau": -0.7474961556991345,
+        "duration": 101.62881350517273
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_2",
+        "validation_loss": 3.944687209695985e-05,
+        "spearman_rank": 0.942356984758611,
+        "kendall_tau": 0.7977813353211853,
+        "duration": 75.2414162158966
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_6",
+        "validation_loss": 0.0004956264172910778,
+        "spearman_rank": -0.009870899472158943,
+        "kendall_tau": 0.07156322347835849,
+        "duration": 97.46485090255737
+    },
+    {
+        "graph_name": "CA-GrQc",
+        "validation_loss": 0.00020892405760332725,
+        "spearman_rank": 0.3416413990369561,
+        "kendall_tau": 0.3835710561735917,
+        "duration": 172.27871465682983
+    },
+    {
+        "graph_name": "email",
+        "validation_loss": 0.00022003000781083853,
+        "spearman_rank": -0.773822051720232,
+        "kendall_tau": -0.6047951444714212,
+        "duration": 19.712624549865723
+    },
+    {
+        "graph_name": "facebook_combined",
+        "validation_loss": 2.9266365746537227e-05,
+        "spearman_rank": -0.7060052617870386,
+        "kendall_tau": -0.56903912068285,
+        "duration": 140.51842069625854
+    },
+    {
+        "graph_name": "figeys",
+        "validation_loss": 4.495336382755602e-05,
+        "spearman_rank": -0.7461080306051446,
+        "kendall_tau": -0.5490846662079135,
+        "duration": 46.00928568840027
+    },
+    {
+        "graph_name": "jazz",
+        "validation_loss": 0.001323740901731218,
+        "spearman_rank": -0.9404996100496877,
+        "kendall_tau": -0.8263409709748937,
+        "duration": 3.5022034645080566
+    },
+    {
+        "graph_name": "LastFM",
+        "validation_loss": 0.00014640775636402679,
+        "spearman_rank": -0.68392044144972,
+        "kendall_tau": -0.47904631970227407,
+        "duration": 336.9156382083893
+    },
+    {
+        "graph_name": "Peh_edge",
+        "validation_loss": 3.764269278355929e-05,
+        "spearman_rank": -0.9367689176619234,
+        "kendall_tau": -0.7742120080541791,
+        "duration": 52.5162250995636
+    },
+    {
+        "graph_name": "politician_edges",
+        "validation_loss": 8.648282032007081e-05,
+        "spearman_rank": -0.9118325566348613,
+        "kendall_tau": -0.7394736179380622,
+        "duration": 221.74780178070068
+    },
+    {
+        "graph_name": "Stelzl",
+        "validation_loss": 0.00014070946577353856,
+        "spearman_rank": 0.5532269121524432,
+        "kendall_tau": 0.4864392252698786,
+        "duration": 31.25739073753357
+    },
+    {
+        "graph_name": "tvshow_edges",
+        "validation_loss": 0.0002516949910567627,
+        "spearman_rank": -0.31396067260029686,
+        "kendall_tau": -0.15342776174704603,
+        "duration": 101.00182628631592
+    },
+    {
+        "graph_name": "vidal",
+        "validation_loss": 0.0002455666607458048,
+        "spearman_rank": 0.6207556128638952,
+        "kendall_tau": 0.5441909950934177,
+        "duration": 72.20478367805481
+    },
+    {
+        "graph_name": "web-EPA",
+        "validation_loss": 0.00023465159864220316,
+        "spearman_rank": 0.08465771101545712,
+        "kendall_tau": 0.06863749722619529,
+        "duration": 134.3045904636383
+    }
+]
