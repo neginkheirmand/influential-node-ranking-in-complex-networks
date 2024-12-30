@@ -20,7 +20,7 @@ print("done importing!")
 # parameters
 load_dotenv("./testing_cnn/models/model.env")
 sir_alpha = int(os.getenv("SIR_ALPHA"))
-print('POOL size: ', sir_alpha)
+print('SIR_ALPHA: ', sir_alpha)
 _model_L  = int(os.getenv("_MODEL_L"))
 print('_MODEL_L: ', _model_L)
 num_epochs = int(os.getenv("NUM_EPOCH"))
