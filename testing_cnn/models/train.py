@@ -358,6 +358,14 @@ for epoch in range(num_epochs):
 
 # Plotting Training and Validation Loss
 
+end_time = time.time()
+duration = end_time - start_time  # Duration in seconds
+print(f"Graph: {graph_name} time: {duration}")
+
+# Write the graph name and duration to a file
+with open("./testing_cnn/data/learning_durations.txt", "a") as file:  # Open in append mode
+    file.write(f"training_graph: {graph_name} - sir_alpha: {sir_alpha} - L: {_model_L} - num_epoch: {num_epochs}, Duration: {duration:.8f} seconds\n")
+
 loss_output_path = f'./testing_cnn/img/trained_on_{graph_name}_sir{sir_alpha}_raw_L{_model_L}_loss.png'
 plt.figure(figsize=(10, 5))
 plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
@@ -369,9 +377,6 @@ plt.grid()
 # plt.show()
 plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
-end_time = time.time()
-duration = end_time - start_time  # Duration in seconds
-print(f"Graph: {graph_name} time: {duration}")
 
 #  Save the Model (optional):
 torch.save(model.state_dict(), f'./testing_cnn/data/{save_folder}/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth')
