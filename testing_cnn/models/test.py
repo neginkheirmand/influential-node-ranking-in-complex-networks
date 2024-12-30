@@ -33,10 +33,7 @@ if not torch.cuda.is_available():
 else:
     print("working on GPU!")
 
-if not torch.cuda.is_available():
-    print("GPU UNAVAILABLE")
-else:
-    print("working on GPU ")
+input("continue?")
 
 def file_exists(file_path):
     return os.path.isfile(file_path)
@@ -268,8 +265,9 @@ skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa'
 # Metrics Storage
 validation_results = []
 
+test_folder = f'test_L{_model_L}_b4_sir{sir_alpha}'
 
-validation_results_path =f'./testing_cnn/data/validation_results_sir{sir_alpha}_L{_model_L}_ep{num_epochs}.json' 
+validation_results_path =f'./testing_cnn/data/{test_folder}/validation_results_sir{sir_alpha}_L{_model_L}_ep{num_epochs}.json' 
 # Load existing data if the file exists
 try:
     with open(validation_results_path, 'r') as f:
@@ -300,7 +298,7 @@ input()
 
 # Define the model
 model = InfluenceCNN(input_size=_model_L)  # Adjust input_size according to your data
-model.load_state_dict(torch.load(f'./testing_cnn/data/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth'))
+model.load_state_dict(torch.load(f'./testing_cnn/data/{test_folder}/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth'))
 model.eval()
 
 
@@ -433,7 +431,7 @@ for g in test_graph_list:
         ]
         json.dump(json_compatible_results, f, indent=4)
     
-    csv_output_path = f'./testing_cnn/data/{graph_name}_df.csv'  # Path for the CSV file
+    csv_output_path = f'./testing_cnn/data/{test_folder}/{graph_name}_df.csv'  # Path for the CSV file
     results_df = pd.DataFrame({
         'Node_Index': test_nodes,       # Node indices
         'Label': all_labels,            # Ground truth labels

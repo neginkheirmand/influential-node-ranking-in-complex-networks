@@ -28,10 +28,14 @@ print('NUM_EPOCH: ', num_epochs)
 
 print("done loading the params!")
 
+input("continue?")
+
 if not torch.cuda.is_available():
     print("GPU UNAVAILABLE!")
 else:
     print("working on GPU!")
+
+input("continue?")
 
 def file_exists(file_path):
     return os.path.isfile(file_path)
@@ -261,6 +265,8 @@ def initialize_weights(m):
 skip_graphs= ['p2p-Gnutella04','CA-HepTh', 'arenas-pgp', 'powergrid','NS', 'faa', 'ChicagoRegional', 'ia-crime-moreno', 'maybe-PROTEINS-full', 'sex']
 
 
+save_folder = f'test_L{_model_L}_b4_sir{sir_alpha}'
+
 graph_list = get_graph_all_paths()
 graph_list = [item for item in graph_list if item[1] not in skip_graphs]
 
@@ -359,7 +365,7 @@ plt.figure(figsize=(10, 5))
 plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
 plt.xlabel("Epochs", fontsize=16)
 plt.ylabel("Loss", fontsize=16)
-plt.title("Training and Validation Loss Over Epochs", fontsize=16)
+plt.title(f"Training Loss Over Epochs (trained on {graph_name} sir:{sir_alpha}_raw L:{_model_L})", fontsize=16)
 plt.legend(fontsize=16)
 plt.grid()
 # plt.show()
@@ -370,4 +376,4 @@ duration = end_time - start_time  # Duration in seconds
 print(f"Graph: {graph_name} time: {duration}")
 
 #  Save the Model (optional):
-torch.save(model.state_dict(), f'EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth')
+torch.save(model.state_dict(), f'./testing_cnn/data/{save_folder}/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth')
