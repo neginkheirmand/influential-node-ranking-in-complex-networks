@@ -35,6 +35,26 @@ else:
 
 input("continue?")
 
+
+def format_duration(duration):
+    
+    # Convert duration into hours, minutes, seconds, and milliseconds
+    hours = int(duration // 3600)
+    minutes = int((duration % 3600) // 60)
+    seconds = int(duration % 60)
+    milliseconds = int((duration * 1000) % 1000)
+
+    # Format and print the result
+    formatted_duration = f"{hours:02}:{minutes:02}:{seconds:02}:{milliseconds:03}"
+    return formatted_duration
+
+def create_folder(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+        print(f"Folder created: {folder_path}")
+    else:
+        print(f"Folder already exists: {folder_path}")
+
 def file_exists(file_path):
     return os.path.isfile(file_path)
 
@@ -360,11 +380,12 @@ for epoch in range(num_epochs):
 
 end_time = time.time()
 duration = end_time - start_time  # Duration in seconds
-print(f"Graph: {graph_name} time: {duration}")
+formatted_duration = format_duration(duration)
+print(f"Graph: {graph_name} time: {formatted_duration}")
 
 # Write the graph name and duration to a file
 with open("./testing_cnn/data/learning_durations.txt", "a") as file:  # Open in append mode
-    file.write(f"training_graph: {graph_name} - sir_alpha: {sir_alpha} - L: {_model_L} - num_epoch: {num_epochs}, Duration: {duration:.8f} seconds\n")
+    file.write(f"training_graph: {graph_name} - sir_alpha: {sir_alpha} - L: {_model_L} - num_epoch: {num_epochs}, Duration: {duration:.8f} seconds ({formatted_duration})\n")
 
 loss_output_path = f'./testing_cnn/img/trained_on_{graph_name}_sir{sir_alpha}_raw_L{_model_L}_loss.png'
 plt.figure(figsize=(10, 5))
@@ -377,6 +398,6 @@ plt.grid()
 # plt.show()
 plt.savefig(loss_output_path, dpi=300, bbox_inches='tight')
 
-
 #  Save the Model (optional):
+create_folder(f'./testing_cnn/data/{save_folder}')
 torch.save(model.state_dict(), f'./testing_cnn/data/{save_folder}/EP{num_epochs}_TRAINED_ba_1000_4_cnn_model_sir{sir_alpha}_raw_L{_model_L}.pth')
