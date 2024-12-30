@@ -22,5 +22,13 @@
         "num_epoch": 150,
         "duration_seconds": 2206.285788297653,
         "formatted_duration": "00:36:46:285"
+    },
+    {
+        "training_graph": "ba_edgelist_1000_4",
+        "sir_alpha": 0,
+        "L": 40,
+        "num_epoch": 150,
+        "duration_seconds": 2786.1261711120605,
+        "formatted_duration": "00:46:26:126"
     }
 ]
