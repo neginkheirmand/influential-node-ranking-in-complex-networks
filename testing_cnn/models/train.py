@@ -387,6 +387,37 @@ print(f"Graph: {graph_name} time: {formatted_duration}")
 with open("./testing_cnn/data/learning_durations.txt", "a") as file:  # Open in append mode
     file.write(f"training_graph: {graph_name} - sir_alpha: {sir_alpha} - L: {_model_L} - num_epoch: {num_epochs}, Duration: {duration:.8f} seconds ({formatted_duration})\n")
 
+
+# save info and duration
+data = {
+    "training_graph": graph_name,
+    "sir_alpha": sir_alpha,
+    "L": _model_L,
+    "num_epoch": num_epochs,
+    "duration_seconds": duration,
+    "formatted_duration": formatted_duration,
+}
+
+# Save data to a JSON file
+json_file_path = "./testing_cnn/data/learning_durations.json"
+
+# If the file exists, load existing data
+if os.path.exists(json_file_path):
+    with open(json_file_path, "r") as file:
+        all_data = json.load(file)
+else:
+    all_data = []
+
+# Append the new entry
+all_data.append(data)
+
+# Write the updated data back to the file
+with open(json_file_path, "w") as file:
+    json.dump(all_data, file, indent=4)
+
+print(f"Saved duration data to {json_file_path}")
+
+
 loss_output_path = f'./testing_cnn/img/trained_on_{graph_name}_sir{sir_alpha}_raw_L{_model_L}_loss.png'
 plt.figure(figsize=(10, 5))
 plt.plot(range(1, num_epochs + 1), train_losses, label="Training Loss", marker='o')
