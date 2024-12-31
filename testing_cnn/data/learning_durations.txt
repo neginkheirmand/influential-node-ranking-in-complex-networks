@@ -5,3 +5,4 @@ training_graph: ba_edgelist_1000_4 - sir_alpha: 1 - L: 20 - num_epoch: 150, Dura
 training_graph: ba_edgelist_1000_4 - sir_alpha: 2 - L: 20 - num_epoch: 150, Duration: 2206.28578830 seconds (00:36:46:285)
 training_graph: ba_edgelist_1000_4 - sir_alpha: 0 - L: 40 - num_epoch: 150, Duration: 2786.12617111 seconds (00:46:26:126)
 training_graph: ba_edgelist_1000_4 - sir_alpha: 1 - L: 40 - num_epoch: 150, Duration: 2555.89019918 seconds (00:42:35:890)
+training_graph: ba_edgelist_1000_4 - sir_alpha: 2 - L: 40 - num_epoch: 150, Duration: 2559.69671488 seconds (00:42:39:696)

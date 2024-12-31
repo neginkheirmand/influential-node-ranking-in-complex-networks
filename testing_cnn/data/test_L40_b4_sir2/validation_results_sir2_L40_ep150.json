@@ -1,0 +1,37 @@
+[
+    {
+        "graph_name": "ba_edgelist_exp1_3000_4",
+        "validation_loss": 0.00147403154685162,
+        "spearman_rank": 0.8467473081653304,
+        "kendall_tau": 0.6975293157479688,
+        "duration": 53.23463177680969
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_4000_4",
+        "validation_loss": 0.0014208989267062862,
+        "spearman_rank": 0.7705389157443502,
+        "kendall_tau": 0.6397504887684559,
+        "duration": 78.41125321388245
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_5000_4",
+        "validation_loss": 0.0014298780493321827,
+        "spearman_rank": 0.7253323008069353,
+        "kendall_tau": 0.6259737683273353,
+        "duration": 133.78424978256226
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_6000_4",
+        "validation_loss": 0.001441008939531457,
+        "spearman_rank": 0.5967746164450677,
+        "kendall_tau": 0.5460899090023809,
+        "duration": 174.8137948513031
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_7000_4",
+        "validation_loss": 0.0014097489890451211,
+        "spearman_rank": 0.5619500710339226,
+        "kendall_tau": 0.5103683455173688,
+        "duration": 216.4907591342926
+    }
+]
