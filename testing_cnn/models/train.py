@@ -33,7 +33,7 @@ if not torch.cuda.is_available():
 else:
     print("working on GPU!")
 
-input("continue?")
+# input("continue?")
 
 
 def format_duration(duration):

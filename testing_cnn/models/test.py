@@ -33,7 +33,7 @@ if not torch.cuda.is_available():
 else:
     print("working on GPU!")
 
-input("continue?")
+# input("continue?")
 
 
 def file_exists(file_path):
