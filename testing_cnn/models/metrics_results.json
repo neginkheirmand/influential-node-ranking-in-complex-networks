@@ -180,5 +180,18 @@
             "kendall": 0.07823008849557524,
             "map": 1.0
         }
+    },
+    {
+        "graph_name": "facebook_combined",
+        "metrics_top_10": {
+            "spearman": 0.09759183796515791,
+            "kendall": 0.0650511115034285,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": -0.04514751594927071,
+            "kendall": -0.03038192555520797,
+            "map": 1.0
+        }
     }
 ]
