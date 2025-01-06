@@ -24,5 +24,18 @@
             "kendall": 0.2639180254572073,
             "map": 1.0
         }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_5000_4",
+        "metrics_top_10": {
+            "spearman": 0.41921249291725293,
+            "kendall": 0.2948634955417243,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.33533961367950754,
+            "kendall": 0.23199990225892672,
+            "map": 1.0
+        }
     }
 ]
