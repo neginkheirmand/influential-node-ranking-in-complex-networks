@@ -193,5 +193,31 @@
             "kendall": -0.03038192555520797,
             "map": 1.0
         }
+    },
+    {
+        "graph_name": "figeys",
+        "metrics_top_10": {
+            "spearman": -0.0428927384336306,
+            "kendall": -0.026472960809512728,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.1384473339276294,
+            "kendall": 0.09255862855519224,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "jazz",
+        "metrics_top_10": {
+            "spearman": 0.13859649122807016,
+            "kendall": 0.08771929824561403,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.08806113680997925,
+            "kendall": 0.06482108162338279,
+            "map": 1.0
+        }
     }
 ]
