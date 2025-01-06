@@ -1,5 +1,226 @@
 [
     {
+        "graph_name": "ba_edgelist_exp1_3000_4",
+        "metrics_top_10": {
+            "spearman": 0.4423533532104193,
+            "kendall": 0.30403462704875345,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.37954877649982155,
+            "kendall": 0.26298446216139393,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_4000_4",
+        "metrics_top_10": {
+            "spearman": 0.36228476622498096,
+            "kendall": 0.2506079808185422,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.38017903753529286,
+            "kendall": 0.2639180254572073,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_5000_4",
+        "metrics_top_10": {
+            "spearman": 0.41921249291725293,
+            "kendall": 0.2948634955417243,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.33533961367950754,
+            "kendall": 0.23199990225892672,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_6000_4",
+        "metrics_top_10": {
+            "spearman": 0.40916748415383375,
+            "kendall": 0.2866546484251932,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.3644094308399296,
+            "kendall": 0.2515819367627106,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_7000_4",
+        "metrics_top_10": {
+            "spearman": 0.4218044835377111,
+            "kendall": 0.296318350510732,
+            "map": 0.9999999999999999
+        },
+        "metrics_top_20": {
+            "spearman": 0.3487936264734517,
+            "kendall": 0.24079427090821467,
+            "map": 0.9999999999999999
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_8000_4",
+        "metrics_top_10": {
+            "spearman": 0.416553877539882,
+            "kendall": 0.29041424164556173,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.4009313301164927,
+            "kendall": 0.27909479722594666,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_10",
+        "metrics_top_10": {
+            "spearman": 0.6530883017492577,
+            "kendall": 0.47900490389396005,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.6623983226880489,
+            "kendall": 0.48513561485163414,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_20",
+        "metrics_top_10": {
+            "spearman": 0.7912954225934161,
+            "kendall": 0.6203985242644131,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.7739918392857843,
+            "kendall": 0.593391448049438,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_4",
+        "metrics_top_10": {
+            "spearman": 0.5198172200887037,
+            "kendall": 0.36180424962046154,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.4519080970879367,
+            "kendall": 0.31887546352389784,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_10",
+        "metrics_top_10": {
+            "spearman": 0.5655298544125403,
+            "kendall": 0.39899228137086745,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.5675291617938214,
+            "kendall": 0.4046407905759735,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_2",
+        "metrics_top_10": {
+            "spearman": 0.36575386778109875,
+            "kendall": 0.25040580704305737,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.34409431818928626,
+            "kendall": 0.24218542550593736,
+            "map": 0.9999999999999999
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_6",
+        "metrics_top_10": {
+            "spearman": 0.5649751433905547,
+            "kendall": 0.4072549178123686,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.5050507156342949,
+            "kendall": 0.35754676608502406,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "CA-GrQc",
+        "metrics_top_10": {
+            "spearman": 0.02184661066152841,
+            "kendall": 0.014906214619649093,
+            "map": 0.9999999999999998
+        },
+        "metrics_top_20": {
+            "spearman": 0.0131493490771287,
+            "kendall": 0.008701048026191175,
+            "map": 0.9999999999999998
+        }
+    },
+    {
+        "graph_name": "email",
+        "metrics_top_10": {
+            "spearman": 0.11071095881296163,
+            "kendall": 0.0720606826801517,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.11650695879302951,
+            "kendall": 0.07823008849557524,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "facebook_combined",
+        "metrics_top_10": {
+            "spearman": 0.09759183796515791,
+            "kendall": 0.0650511115034285,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": -0.04514751594927071,
+            "kendall": -0.03038192555520797,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "figeys",
+        "metrics_top_10": {
+            "spearman": -0.0428927384336306,
+            "kendall": -0.026472960809512728,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.1384473339276294,
+            "kendall": 0.09255862855519224,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "jazz",
+        "metrics_top_10": {
+            "spearman": 0.13859649122807016,
+            "kendall": 0.08771929824561403,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.08806113680997925,
+            "kendall": 0.06482108162338279,
+            "map": 1.0
+        }
+    },
+    {
         "graph_name": "Peh_edge",
         "metrics_top_10": {
             "spearman": 0.17074560087970492,
