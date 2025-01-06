@@ -63,5 +63,57 @@
             "kendall": 0.24079427090821467,
             "map": 0.9999999999999999
         }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_8000_4",
+        "metrics_top_10": {
+            "spearman": 0.416553877539882,
+            "kendall": 0.29041424164556173,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.4009313301164927,
+            "kendall": 0.27909479722594666,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_10",
+        "metrics_top_10": {
+            "spearman": 0.6530883017492577,
+            "kendall": 0.47900490389396005,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.6623983226880489,
+            "kendall": 0.48513561485163414,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_20",
+        "metrics_top_10": {
+            "spearman": 0.7912954225934161,
+            "kendall": 0.6203985242644131,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.7739918392857843,
+            "kendall": 0.593391448049438,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_4",
+        "metrics_top_10": {
+            "spearman": 0.5198172200887037,
+            "kendall": 0.36180424962046154,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.4519080970879367,
+            "kendall": 0.31887546352389784,
+            "map": 1.0
+        }
     }
 ]
