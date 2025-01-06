@@ -271,5 +271,278 @@
             "kendall": 0,
             "map": 0
         }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_3000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_4000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_5000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_6000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_7000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_8000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_10",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_20",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp2_2000_4",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_10",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_2",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp3_4000_6",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "CA-GrQc",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "email",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "facebook_combined",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "figeys",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "jazz",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "Peh_edge",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "Stelzl",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "vidal",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
+    },
+    {
+        "graph_name": "web-EPA",
+        "metrics_top_10": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        },
+        "metrics_top_20": {
+            "spearman": 0,
+            "kendall": 0,
+            "map": 0
+        }
     }
 ]
