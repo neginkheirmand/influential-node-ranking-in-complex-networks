@@ -1,0 +1,28 @@
+[
+    {
+        "graph_name": "ba_edgelist_exp1_3000_4",
+        "metrics_top_10": {
+            "spearman": 0.4423533532104193,
+            "kendall": 0.30403462704875345,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.37954877649982155,
+            "kendall": 0.26298446216139393,
+            "map": 1.0
+        }
+    },
+    {
+        "graph_name": "ba_edgelist_exp1_4000_4",
+        "metrics_top_10": {
+            "spearman": 0.36228476622498096,
+            "kendall": 0.2506079808185422,
+            "map": 1.0
+        },
+        "metrics_top_20": {
+            "spearman": 0.38017903753529286,
+            "kendall": 0.2639180254572073,
+            "map": 1.0
+        }
+    }
+]
